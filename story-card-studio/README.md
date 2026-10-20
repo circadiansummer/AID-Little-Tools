@@ -9,6 +9,7 @@ Standalone offline AI Dungeon Story Card JSON editor, merger, trigger analyzer, 
 - [Locked desktop v4.12](desktop/aid-story-card-editor-v4.12.html) — byte-preserved approved snapshot.
 - [Initial responsive mobile prototype](mobile/aid-story-card-editor-v4.12-mobile-dev.html) — standalone experimental clone.
 - [Mobile prototype with touch drag-and-drop](mobile/aid-story-card-editor-v4.12-mobile-touch-dev.html) — most current development candidate. Long-press to drag between Types and RE Acts.
+- [Encounter Analysis highlight experiment](development/encounter-highlight/README.md) — isolated desktop/mobile development builds with border-highlight selector, shared color keys, Encounter Spread palette, and test records; **not merged or deployed**.
 - [Mobile development handoff](docs/MOBILE-DEVELOPMENT-HANDOFF.md) — responsive UI, architecture, checks.
 - [Touch-drag handoff](docs/MOBILE-TOUCH-DRAG-HANDOFF.md) — gesture behavior, verification, remaining iOS tests.
 
