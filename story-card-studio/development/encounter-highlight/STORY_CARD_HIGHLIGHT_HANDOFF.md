@@ -17,6 +17,15 @@ Date: 2026-10-20
 - Encounter Spread graphs already have separate Importance/Rarity/Duration tab buttons. Their stacked bars, donut slices and legends now reuse the same mapping as the rail border and Color Key. Act Structure also uses the revised importance palette.
 - The rail highlight dropdown and graph dimension tab are independent: changing one does not change the other.
 
+## Additional development work approved on 2026-10-20
+
+- Added sixth **Cards in Largest Act** summary metric after **Awareness bypass**, using the standard metric component. The top value is the number of encounters in the most-populated Act and the sublabel reads **Largest Act: Act N**. When Acts tie, select the lowest-numbered Act; the analysis re-renders on normal editor updates.
+- Renamed visible tabs and page headings to **🃏 - RE Encounter Analysis**, **🎲 - RE Settings**, **🎭 - Inner Self Settings**, and **🪪 - Auto-Cards Settings**. The mobile View selector uses the same labels.
+- Bold **Required for Use:** precedes existing Random Encounters installation links in both related descriptions. Inner Self and Auto-Cards descriptions include corresponding setup guidance with [GitHub](https://github.com/LewdLeah/Inner-Self) linked, without modifying Story Card data.
+- Only user-visible terms were standardized to **Inner Self** and **Auto-Cards**; internal variable names and established Story Card structure are preserved.
+- Both amended experimental HTML files passed inline JavaScript parse checks; metric arithmetic was checked against four controlled Act distributions including a tie. **No new full Chromium, real device, or AI Dungeon tests have been run** for this revision. The prior 83 Chromium assertions apply to the earlier highlight-only version.
+- Current experimental SHA-256: desktop `e5be4a9912de23b9d1d1ee90c2b8d720c815fafee04e442b83ad60a1b66f2c31`, mobile `693ff9966fc5e54d52595a4df716ac9e0cbc6a4ae041bccc1ecc936ce641c7b8`.
+
 ## Canonical color map
 
 | Dimension | Value | Hex |
@@ -45,8 +54,8 @@ Date: 2026-10-20
 
 ## Verification
 
-- JavaScript syntax: `node --check` PASS for both modified builds.
-- Chromium browser emulation: **83 assertions passed**, desktop 1400×900 and mobile 390×844 (no reported browser JS errors).
+- Previous highlight-only build: JavaScript syntax `node --check` PASS. New metric/navigation revision: inline JavaScript parse PASS for both experimental files; Node was NOT RUN for this revision.
+- Previous highlight-only build: Chromium browser emulation **83 assertions passed**, desktop 1400×900 and mobile 390×844 (no reported browser JS errors). These checks have not been rerun on the later metric/navigation revision.
 - Tests cover dropdown order/default, neutral/importance/rarity/duration rail colors, bar and donut mappings, color key entries and labels, selection, Escape, and tooltip position.
 - **NOT RUN**: actual iOS Safari and real device gesture regressions; Vercel deployment of the new experimental version; third-party browsers, original AI Dungeon platform integrations.
 

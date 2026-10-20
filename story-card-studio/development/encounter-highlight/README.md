@@ -1,4 +1,4 @@
-# Encounter Analysis highlight experiment
+# Encounter Analysis UI experiments
 
 **Status:** Implemented and browser-tested in isolated development copies. **Not released, not merged, not deployed.** The locked desktop v4.12, current mobile touch prototype, and Vercel testing site have not been changed.
 
@@ -16,9 +16,16 @@
 - Selection retains an independent purple outline without concealing metadata border colors.
 - No edits to creator Story Card contents or JSON schema.
 
+## Additional development features (2026-10-20)
+- Encounter Analysis now includes a sixth matching metric tile immediately after Awareness bypass: **Cards in Largest Act**. It shows the maximum number of encounter cards belonging to one Act, and the sublabel **Largest Act: Act N**. Ties use the lowest Act number. Cards are counted from live editor data and the metric refreshes with the normal analysis render.
+- Visible navigation tabs, workspace headings, and the mobile View selector use **🃏 - RE Encounter Analysis**, **🎲 - RE Settings**, **🎭 - Inner Self Settings**, and **🪪 - Auto-Cards Settings**.
+- Encounter Analysis and RE Settings use bold **Required for Use:** before the existing Random Encounters installation links. Inner Self and Auto-Cards configuration descriptions use the requested revised copy, bold callouts, and the linked [LewdLeah/Inner-Self repository](https://github.com/LewdLeah/Inner-Self).
+- User-facing terminology is standardized to **Inner Self** and **Auto-Cards**; internal identifiers and original Story Card entries, Notes, keys and imported JSON remain unchanged.
+- **Verification of this revision**: inline JS parse checks PASS for both files, static copy/navigation checks PASS, four independent pure-JavaScript largest-Act count/tie cases PASS. New browser/UI/AI Dungeon/iOS Safari testing **NOT RUN**; the 83 historical Chromium checks predate these additional changes.
+
 ## Verification, preservation, distribution
-- Development SHA-256: `desktop-color-dev.html` = `71a8b358e738bd4072f64f4aa5bfdb0a64d314811f16f9301560cd9afe57e650`; `mobile-color-dev.html` = `86b8b7016dcf38f145e0be8979854bc3f39d5b02174455cb30cabb4e37dfb852`.
-- Test suite: 83 Chromium assertions (desktop 1400×900 and mobile emulation 390×844), PASS on 2026-10-20, rerun successfully; no reported browser JS errors. Node JS syntax checks were reported PASS during development.
+- Development SHA-256 (current): `desktop-color-dev.html` = `e5be4a9912de23b9d1d1ee90c2b8d720c815fafee04e442b83ad60a1b66f2c31`; `mobile-color-dev.html` = `693ff9966fc5e54d52595a4df716ac9e0cbc6a4ae041bccc1ecc936ce641c7b8`.
+- **Previous highlight-only revision**: 83 Chromium assertions (desktop 1400×900 and mobile emulation 390×844), PASS on 2026-10-20, rerun successfully; no reported browser JS errors. Node JS syntax checks were reported PASS during that development.
 - Real iPhone Safari, AI Dungeon integration, full regression coverage, and Vercel deployment of these experimental builds: **NOT RUN**.
 - No desktop/mobile layout override per creator decision: final integration should use responsive layout and device input capability detection.
 - Suggested distribution: desktop portable single HTML + optional ZIP, mobile offline-first PWA installed once over HTTPS, with explicit JSON export/backup instructions.

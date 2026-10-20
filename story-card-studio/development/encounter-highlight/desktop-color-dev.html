@@ -334,10 +334,10 @@ a:hover{color:#e1d7ff}
   <button id="mergeTab" class="tab-button" type="button" aria-selected="false">🧬 - Merge JSONs</button>
   <button id="cardsTab" class="tab-button active" type="button" aria-selected="true">📝 - Story Card Editor</button>
   <button id="triggerTab" class="tab-button" type="button" aria-selected="false">🧠 - Trigger Analysis</button>
-  <button id="analysisTab" class="tab-button" type="button" aria-selected="false">#RE - Encounter Analysis</button>
-  <button id="settingsTab" class="tab-button" type="button" aria-selected="false">#RE - Settings</button>
-  <button id="innerSelfTab" class="tab-button" type="button" aria-selected="false">LL - InnerSelf Settings</button>
-  <button id="autoCardsTab" class="tab-button" type="button" aria-selected="false">LL - AutoCards Settings</button>
+  <button id="analysisTab" class="tab-button" type="button" aria-selected="false">🃏 - RE Encounter Analysis</button>
+  <button id="settingsTab" class="tab-button" type="button" aria-selected="false">🎲 - RE Settings</button>
+  <button id="innerSelfTab" class="tab-button" type="button" aria-selected="false">🎭 - Inner Self Settings</button>
+  <button id="autoCardsTab" class="tab-button" type="button" aria-selected="false">🪪 - Auto-Cards Settings</button>
 </nav>
 <main class="layout" id="cardsPage">
 <section class="library">
@@ -370,7 +370,7 @@ a:hover{color:#e1d7ff}
     <div id="analysisCardList"></div>
   </aside>
   <div class="encounter-content">
-  <div class="analysis-heading"><div><h2 id="analysisHeading">Encounter Analysis</h2><p>Explore the distribution of your <strong>Random Encounters</strong> cards and their potential effects on narrative pacing. Set up the <strong>Random Encounters</strong> custom event script via <a href="https://play.aidungeon.com/script/gttjIy7gaVZX/random-encounters?share=true&amp;published=true" target="_blank" rel="noopener noreferrer">AI Dungeon</a> or <a href="https://github.com/circadiansummer/AID-RandomEncounters" target="_blank" rel="noopener noreferrer">GitHub</a>.</p></div><div class="analysis-head-badges"><div class="color-key" id="analysisColorKey"><button type="button" class="count color-key-button" aria-controls="analysisColorKeyTooltip" aria-expanded="false">ⓘ Color Key</button><div class="color-key-tooltip" id="analysisColorKeyTooltip" role="tooltip"></div></div><span class="count" id="analysisCount">0 encounters</span></div></div>
+  <div class="analysis-heading"><div><h2 id="analysisHeading">🃏 - RE Encounter Analysis</h2><p>Explore the distribution of your <strong>Random Encounters</strong> cards and their potential effects on narrative pacing. <strong>Required for Use:</strong> Set up the <strong>Random Encounters</strong> custom event script via <a href="https://play.aidungeon.com/script/gttjIy7gaVZX/random-encounters?share=true&amp;published=true" target="_blank" rel="noopener noreferrer">AI Dungeon</a> or <a href="https://github.com/circadiansummer/AID-RandomEncounters" target="_blank" rel="noopener noreferrer">GitHub</a>.</p></div><div class="analysis-head-badges"><div class="color-key" id="analysisColorKey"><button type="button" class="count color-key-button" aria-controls="analysisColorKeyTooltip" aria-expanded="false">ⓘ Color Key</button><div class="color-key-tooltip" id="analysisColorKeyTooltip" role="tooltip"></div></div><span class="count" id="analysisCount">0 encounters</span></div></div>
   <div id="analysisEmpty" class="empty-state" hidden><h3>No encounters to analyze</h3><p>Import or create cards with RAND_## keys to see their Act distribution and settings, or click the 'Demo RE Cards' button in the header.</p><button type="button" class="btn primary" id="analysisToCards">Open Story Cards</button></div>
   <div id="analysisContent">
     <div class="metric-strip" id="analysisMetrics" aria-label="Encounter overview"></div>
@@ -396,7 +396,7 @@ a:hover{color:#e1d7ff}
 
 <section id="settingsPage" class="analysis-page settings-page config-workspace" aria-labelledby="settingsHeading" hidden>
   <div class="config-main">
-  <div class="analysis-heading"><div><h2 id="settingsHeading">#RE - Settings</h2><p>Visual editing for <strong>Random Encounters</strong> Config and Advanced RE Settings Story Cards. Changes are written directly to your local Story Cards and included when you export for AI Dungeon. Set up the <strong>Random Encounters</strong> custom event script via <a href="https://play.aidungeon.com/script/gttjIy7gaVZX/random-encounters?share=true&amp;published=true" target="_blank" rel="noopener noreferrer">AI Dungeon</a> or <a href="https://github.com/circadiansummer/AID-RandomEncounters" target="_blank" rel="noopener noreferrer">GitHub</a>.</p></div><div class="settings-status-badges"><span class="count" id="settingsOverridesStatus">Overrides disabled</span><span class="count" id="settingsAdvancedCardStatus">No Advanced card</span><span class="count" id="settingsCardStatus">No Config card</span></div></div>
+  <div class="analysis-heading"><div><h2 id="settingsHeading">🎲 - RE Settings</h2><p>Visual editing for <strong>Random Encounters</strong> Config and Advanced RE Settings Story Cards. Changes are written directly to your local Story Cards and included when you export for AI Dungeon. <strong>Required for Use:</strong> Set up the <strong>Random Encounters</strong> custom event script via <a href="https://play.aidungeon.com/script/gttjIy7gaVZX/random-encounters?share=true&amp;published=true" target="_blank" rel="noopener noreferrer">AI Dungeon</a> or <a href="https://github.com/circadiansummer/AID-RandomEncounters" target="_blank" rel="noopener noreferrer">GitHub</a>.</p></div><div class="settings-status-badges"><span class="count" id="settingsOverridesStatus">Overrides disabled</span><span class="count" id="settingsAdvancedCardStatus">No Advanced card</span><span class="count" id="settingsCardStatus">No Config card</span></div></div>
   <div class="settings-intro-row">
     <div class="settings-notice"><strong>Where your settings go:</strong> Changes to standard controls edit the <code>Config</code> Story Card. Changes to advanced numbers edit <code>Advanced RE Settings</code>. Cards are created only when their controls are edited. One-shot action flags begin off to avoid accidental changes. Nothing is sent to AI Dungeon until you export and import the resulting JSON.</div>
     <div class="settings-story-card-actions" aria-label="Open settings Story Cards">
@@ -430,14 +430,14 @@ a:hover{color:#e1d7ff}
 </section>
 <section class="analysis-page ll-page config-workspace" id="innerSelfPage" aria-labelledby="innerSelfHeading" hidden>
  <div class="config-main">
- <div class="analysis-heading"><div><h2 id="innerSelfHeading">LL - InnerSelf Settings</h2><p>Inner Self grants story characters the ability to learn, plan, and adapt over time. Edit below to control how Inner Self behaves:</p></div><div class="ll-config-actions"><button type="button" class="btn slim ll-create-card" data-ll-create="inner">Create config card</button><button type="button" class="btn slim ll-view-card" data-ll-jump="inner" disabled>View config card</button></div></div>
+ <div class="analysis-heading"><div><h2 id="innerSelfHeading">🎭 - Inner Self Settings</h2><p>Inner Self grants story characters the ability to learn, plan, and adapt over time. Edit below to control how Inner Self behaves. <strong>Required for Use:</strong> Set up the Inner Self &amp; Auto-Cards scripts via <a href="https://github.com/LewdLeah/Inner-Self" target="_blank" rel="noopener noreferrer">GitHub</a>.</p></div><div class="ll-config-actions"><button type="button" class="btn slim ll-create-card" data-ll-create="inner">Create config card</button><button type="button" class="btn slim ll-view-card" data-ll-jump="inner" disabled>View config card</button></div></div>
  <div id="innerSelfEditor" class="ll-editor"></div>
  </div>
  <aside class="config-inspector" id="innerInspector" aria-label="Card Details for Inner Self"><div class="empty-state">Select View config card to edit the original Story Card.</div></aside>
 </section>
 <section class="analysis-page ll-page config-workspace" id="autoCardsPage" aria-labelledby="autoCardsHeading" hidden>
  <div class="config-main">
- <div class="analysis-heading"><div><h2 id="autoCardsHeading">LL - AutoCards Settings</h2><p>Auto-Cards automatically creates and updates plot-relevant story cards while you play. You may configure the following settings:</p></div><div class="ll-config-actions"><button type="button" class="btn slim ll-create-card" data-ll-create="auto">Create config card</button><button type="button" class="btn slim ll-view-card" data-ll-jump="auto" disabled>View config card</button></div></div>
+ <div class="analysis-heading"><div><h2 id="autoCardsHeading">🪪 - Auto-Cards Settings</h2><p>Auto-Cards automatically creates and updates plot-relevant story cards while you play. You may configure the below settings. <strong>Required for Use:</strong> Set up the Inner Self &amp; Auto-Cards scripts via <a href="https://github.com/LewdLeah/Inner-Self" target="_blank" rel="noopener noreferrer">GitHub</a>.</p></div><div class="ll-config-actions"><button type="button" class="btn slim ll-create-card" data-ll-create="auto">Create config card</button><button type="button" class="btn slim ll-view-card" data-ll-jump="auto" disabled>View config card</button></div></div>
  <div id="autoCardsEditor" class="ll-editor"></div>
  </div>
  <aside class="config-inspector" id="autoInspector" aria-label="Card Details for Auto-Cards"><div class="empty-state">Select View config card to edit the original Story Card.</div></aside>
@@ -603,7 +603,7 @@ function renderInspector(){
   syncConfigDetailButtons();
 }
 // The active configuration card can be closed without leaving its settings tab.
-// In #RE - Settings, keep the other card's View button available for direct switching.
+// In 🎲 - RE Settings, keep the other card's View button available for direct switching.
 function syncConfigDetailButtons(){
  const selected=getSelected();
  for(const [id,key,label] of [
@@ -867,7 +867,11 @@ function renderAnalysis(){
  el('analysisEmpty').hidden=!isEmpty;el('analysisContent').hidden=isEmpty;
  if(isEmpty)return;
  const acts=orderedActs(cards),required=cards.filter(c=>valI(c)==='Required').length,asap=cards.filter(c=>valI(c)==='ASAP').length,optional=cards.filter(c=>valI(c)==='Optional').length,bypassed=cards.filter(bypass).length;
- const metrics=[['Total encounters',cards.length,'RAND-identified Story Cards'],['Acts with cards',acts.length,'Highest Act: '+acts[acts.length-1]],['Progression gates',required+asap,required+' Required + '+asap+' ASAP'],['ASAP encounters',asap,Math.round(asap/cards.length*100)+'% of encounter pool'],['Awareness bypass',bypassed,Math.round(bypassed/cards.length*100)+'% of encounter pool']];
+ const actCounts=new Map(acts.map(a=>[a,0]));
+ for(const card of cards){const act=actOf(card);actCounts.set(act,actCounts.get(act)+1)}
+ const largestAct=acts.reduce((best,act)=>actCounts.get(act)>actCounts.get(best)?act:best,acts[0]);
+ const largestActCards=actCounts.get(largestAct);
+ const metrics=[['Total encounters',cards.length,'RAND-identified Story Cards'],['Acts with cards',acts.length,'Highest Act: '+acts[acts.length-1]],['Progression gates',required+asap,required+' Required + '+asap+' ASAP'],['ASAP encounters',asap,Math.round(asap/cards.length*100)+'% of encounter pool'],['Awareness bypass',bypassed,Math.round(bypassed/cards.length*100)+'% of encounter pool'],['Cards in Largest Act',largestActCards,'Largest Act: Act '+largestAct]];
  el('analysisMetrics').innerHTML=metrics.map(m=>`<div class="metric"><div class="metric-value">${m[1]}</div><div class="metric-title">${chartEsc(m[0])}</div><div class="metric-sub">${chartEsc(m[2])}</div></div>`).join('');
  el('actStructureChart').innerHTML=actStructureStackedChart(cards);
  el('actStructureLegend').innerHTML=legend(['ASAP','Required','Optional']);
@@ -1148,7 +1152,7 @@ function llMarkup(kind){const available=!!llCard(kind);const card=llCard(kind)||
  llNoteControl(card,'generation','AI prompt: generate or update cards','The full text of the generation prompt, including its placeholders.'),
  llNoteControl(card,'memory','AI prompt: summarize card memories','The full memory-compression prompt.'),
  llNoteControl(card,'banned','Titles banned from new card creation','Comma-separated titles kept in the existing Notes line.')].join('');
- const controls=`<section class="ll-panel"><h3>${kind==='inner'?'InnerSelf: Settings':'AutoCards: Settings'}</h3><div class="ll-fields">${settingRows}</div><details class="ll-raw"><summary>View or edit full Entry text</summary><label class="ll-field wide"><span>Original Entry (advanced)</span><textarea data-ll-raw="value" spellcheck="false">${esc(card.value)}</textarea></label></details></section><section class="ll-panel"><h3>${kind==='inner'?'InnerSelf: Add NPCs':'AutoCards: Generation'}</h3>${kind==='inner'?'<p>Write the name(s) of your non-player characters at the very bottom of the section below. This is mandatory because it allows Inner Self to assemble independent minds for the correct individuals.</p>':''}<div class="ll-fields">${notesControls||'<p class="ll-caption">No recognized Notes subsections in this card. Use the raw Notes editor below.</p>'}</div><details class="ll-raw"><summary>View or edit full Notes text</summary><label class="ll-field wide"><span>Original Notes (advanced)</span><textarea data-ll-raw="description" spellcheck="false">${esc(card.description)}</textarea></label></details></section>`;return available?controls:`<fieldset class="ll-disabled-controls" disabled><div class="ll-disabled-message">Create config card to enable these settings.</div><div class="ll-disabled-panels">${controls}</div></fieldset>`;}
+ const controls=`<section class="ll-panel"><h3>${kind==='inner'?'Inner Self: Settings':'Auto-Cards: Settings'}</h3><div class="ll-fields">${settingRows}</div><details class="ll-raw"><summary>View or edit full Entry text</summary><label class="ll-field wide"><span>Original Entry (advanced)</span><textarea data-ll-raw="value" spellcheck="false">${esc(card.value)}</textarea></label></details></section><section class="ll-panel"><h3>${kind==='inner'?'Inner Self: Add NPCs':'Auto-Cards: Generation'}</h3>${kind==='inner'?'<p>Write the name(s) of your non-player characters at the very bottom of the section below. This is mandatory because it allows Inner Self to assemble independent minds for the correct individuals.</p>':''}<div class="ll-fields">${notesControls||'<p class="ll-caption">No recognized Notes subsections in this card. Use the raw Notes editor below.</p>'}</div><details class="ll-raw"><summary>View or edit full Notes text</summary><label class="ll-field wide"><span>Original Notes (advanced)</span><textarea data-ll-raw="description" spellcheck="false">${esc(card.description)}</textarea></label></details></section>`;return available?controls:`<fieldset class="ll-disabled-controls" disabled><div class="ll-disabled-message">Create config card to enable these settings.</div><div class="ll-disabled-panels">${controls}</div></fieldset>`;}
 function renderLLSettings(kind){el(kind==='inner'?'innerSelfEditor':'autoCardsEditor').innerHTML=llMarkup(kind);}
 function fitTabLabels(){
  const nav=document.querySelector('.mode-tabs');if(!nav)return;
