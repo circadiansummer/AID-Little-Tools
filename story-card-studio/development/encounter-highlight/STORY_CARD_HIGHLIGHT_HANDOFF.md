@@ -67,3 +67,11 @@ Date: 2026-10-20
 4. Package desktop as portable single HTML and ZIP (README, checksum, example fixtures) with no installer required.
 5. Package mobile as **offline-first PWA** (manifest/icons/service worker precache). Host once over HTTPS and install via Safari Add to Home Screen. Offline reopens are contingent on browser cache retention; provide explicit local JSON export/backups, no external upload. Local HTML downloads through iOS Files/Quick Look are not equivalent to Safari web-app runtime.
 6. Preserve Vercel protected test version until separately approved for replacement. Do not tag, publish or merge into locked desktop without authorization.
+
+## Scenario-label follow-up (2026-10-20)
+
+- Four script-dependent tabs/page headings use literal trailing `*`: 🃏 - RE Encounter Analysis*, 🎲 - RE Settings*, 🎭 - Inner Self Settings*, and 🪪 - Auto-Cards Settings*. The mobile selector matches.
+- Inner Self and Auto-Cards descriptions have the bold label `Required for Use in Scenarios:`; RE descriptions continue using `Required for Use:`.
+- All changes are presentation-only. Story Card contents, import/export, and the locked desktop v4.12 remain untouched.
+- Both revised experimental HTML files passed Node embedded-script syntax checking and focused Chromium rendering at desktop 1440×844/mobile emulation 390×844. Physical iOS Safari and full regression testing remain pending.
+- SHA-256: desktop `cc1dfae73732346bcddb9ba8d83fa608821ce5d3f5bcb10888fc19ded43b7870`; mobile `6fd8ca7ae582c79fe9171adc67ecc4042e5d7cc5c5f511bbcea892f8717275a3`.

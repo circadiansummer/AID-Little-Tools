@@ -23,8 +23,14 @@
 - User-facing terminology is standardized to **Inner Self** and **Auto-Cards**; internal identifiers and original Story Card entries, Notes, keys and imported JSON remain unchanged.
 - **Verification of this revision**: inline JS parse checks PASS for both files, static copy/navigation checks PASS, four independent pure-JavaScript largest-Act count/tie cases PASS. New browser/UI/AI Dungeon/iOS Safari testing **NOT RUN**; the 83 historical Chromium checks predate these additional changes.
 
+## Scenario-dependency labels (2026-10-20, later revision)
+- Four script-dependent navigation tabs and their page headings now display a literal terminal asterisk: **🃏 - RE Encounter Analysis\***, **🎲 - RE Settings\***, **🎭 - Inner Self Settings\***, and **🪪 - Auto-Cards Settings\***. Mobile View selector uses these same labels. This is a visual indicator that the corresponding AI Dungeon scripts must be installed in a scenario for their features to run.
+- Inner Self and Auto-Cards page descriptions now use bold **Required for Use in Scenarios:**; Random Encounters descriptions retain the shorter **Required for Use:**.
+- Only UI labels and explanatory text changed; configuration schemas, Story Card JSON, creator content, state logic, and other script behavior were not touched.
+- Current experimental files were verified against downloadable HTML by SHA-256. The two inline JavaScript blocks pass Node syntax checking. Chromium render smoke tests passed for desktop and mobile emulation (tabs, headings, descriptions/links, no reported JS errors); these focused tests do not replace full regressions or real iOS Safari acceptance.
+
 ## Verification, preservation, distribution
-- Development SHA-256 (current): `desktop-color-dev.html` = `e5be4a9912de23b9d1d1ee90c2b8d720c815fafee04e442b83ad60a1b66f2c31`; `mobile-color-dev.html` = `693ff9966fc5e54d52595a4df716ac9e0cbc6a4ae041bccc1ecc936ce641c7b8`.
+- Development SHA-256 (current): `desktop-color-dev.html` = `cc1dfae73732346bcddb9ba8d83fa608821ce5d3f5bcb10888fc19ded43b7870`; `mobile-color-dev.html` = `6fd8ca7ae582c79fe9171adc67ecc4042e5d7cc5c5f511bbcea892f8717275a3`.
 - **Previous highlight-only revision**: 83 Chromium assertions (desktop 1400×900 and mobile emulation 390×844), PASS on 2026-10-20, rerun successfully; no reported browser JS errors. Node JS syntax checks were reported PASS during that development.
 - Real iPhone Safari, AI Dungeon integration, full regression coverage, and Vercel deployment of these experimental builds: **NOT RUN**.
 - No desktop/mobile layout override per creator decision: final integration should use responsive layout and device input capability detection.
