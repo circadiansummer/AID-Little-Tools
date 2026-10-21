@@ -1,0 +1,78 @@
+name: Publish Story Card Studio v5.0 to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/story-card-studio-pages.yml"
+      - "story-card-studio/Story-Card-Studio-v5.0.html"
+      - "story-card-studio/index.html"
+      - "story-card-studio/docs/V5.0-BASELINE.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Package approved v5.0 static files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v6
+
+      - name: Verify v5.0 and prepare isolated website artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_file="story-card-studio/Story-Card-Studio-v5.0.html"
+          entry_file="story-card-studio/index.html"
+          baseline="story-card-studio/docs/V5.0-BASELINE.md"
+
+          test -f "$source_file"
+          test -f "$entry_file"
+          grep -Fq 'data-app-version="5.0"' "$source_file"
+          grep -Fq '<title>Story Card Studio v5.0</title>' "$source_file"
+          grep -Fq 'Story-Card-Studio-v5.0.html' "$entry_file"
+
+          # Require the published HTML to match the documented, reviewed baseline.
+          expected_sha="$(sed -nE 's/^-[[:space:]]Canonical.*SHA-256: `([0-9a-f]{64})`.*/\1/p' "$baseline")"
+          if [ -z "$expected_sha" ]; then
+            echo "No canonical v5.0 SHA-256 found in $baseline" >&2
+            exit 1
+          fi
+          printf '%s  %s\n' "$expected_sha" "$source_file" | sha256sum --check
+
+          mkdir -p pages-site
+          cp "$entry_file" pages-site/index.html
+          cp "$source_file" pages-site/Story-Card-Studio-v5.0.html
+          touch pages-site/.nojekyll
+          echo "Pages artifact contains only the v5.0 entry page and application HTML."
+          find pages-site -maxdepth 1 -type f -printf '%f\n' | sort
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload isolated static website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: pages-site
+
+  deploy:
+    name: Deploy v5.0
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

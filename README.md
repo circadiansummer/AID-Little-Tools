@@ -10,3 +10,7 @@ Utilities for AI Dungeon creators.
 - [Historical versions](story-card-studio/README.md#historical-files)
 
 A GitHub source update is separate from deploying or publishing a Vercel site, GitHub Pages site, or public GitHub Release.
+
+## GitHub Pages website — v5.0
+
+[Open Story Card Studio v5.0](https://circadiansummer.github.io/AID-Little-Tools/) (available after the Pages deployment succeeds). GitHub Actions publishes only the canonical v5.0 app from `story-card-studio/`, without packaging historical prototypes. See the [GitHub Pages setup and verification guide](story-card-studio/docs/GITHUB-PAGES.md). The website is not a GitHub Release.

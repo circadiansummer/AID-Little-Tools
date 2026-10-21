@@ -54,3 +54,11 @@ The following files remain available as **historical snapshots**, not active dev
 `mobile/index.html` is an old prototype route. Use the **[canonical v5.0 entry point](index.html)** or the versioned v5.0 HTML instead.
 
 A public release, release tag, or hosted deployment requires separate verification and authorization.
+
+## GitHub Pages (v5.0)
+
+- **Website:** https://circadiansummer.github.io/AID-Little-Tools/ (once Pages is enabled and deployment has succeeded).
+- **Versioned URL:** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.0.html
+- **Deployment:** [GitHub Pages setup and testing guide](docs/GITHUB-PAGES.md).
+
+The GitHub Actions workflow publishes only the active `Story-Card-Studio-v5.0.html` and the v5.0 redirect `index.html` as static site assets. It checks the HTML against the documented canonical v5.0 SHA-256. Historical builds and development prototypes are **not** copied into the Pages artifact. Site publication does not constitute a tagged GitHub Release, full iOS testing, or live AI Dungeon validation.
