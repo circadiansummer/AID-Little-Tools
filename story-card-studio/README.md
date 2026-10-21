@@ -41,20 +41,6 @@ Editing uses browser-side code. Save important work with **Export JSON**; local 
 
 **Current HTML SHA-256:** `c2350fd6891217e8498ad24deae6da41cc45b15dc7bfc16d4f1a5cf52457f163`.
 
-## Historical files
-
-The following files remain available as **historical snapshots**, not active development targets:
-
-- [Desktop v4.12](desktop/aid-story-card-editor-v4.12.html) — byte-preserved, SHA-256 `516ae4a06fe9712bf0a3e073ef520bfe78026f42599dda5baa6ae376ef21edf2`.
-- [Initial mobile v4.12 prototype](mobile/aid-story-card-editor-v4.12-mobile-dev.html).
-- [Touch-drag mobile v4.12 prototype](mobile/aid-story-card-editor-v4.12-mobile-touch-dev.html).
-- [Encounter highlighting experiments](development/encounter-highlight/README.md).
-- [Original mobile handoff](docs/MOBILE-DEVELOPMENT-HANDOFF.md) and [touch-drag handoff](docs/MOBILE-TOUCH-DRAG-HANDOFF.md).
-
-`mobile/index.html` is an old prototype route. Use the **[canonical v5.0 entry point](index.html)** or the versioned v5.0 HTML instead.
-
-A public release, release tag, or hosted deployment requires separate verification and authorization.
-
 ## GitHub Pages (v5.0)
 
 - **Website:** https://circadiansummer.github.io/AID-Little-Tools/ (once Pages is enabled and deployment has succeeded).
