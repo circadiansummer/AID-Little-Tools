@@ -1,3 +1,5 @@
+> **HISTORICAL DOCUMENT (superseded status).** This file records an earlier development stage. The active main build is now [Story Card Studio v5.0](../../Story-Card-Studio-v5.0.html). See the [current README](../../README.md) and [v5.0 baseline](../../docs/V5.0-BASELINE.md). Older statements that mobile and desktop have not yet been merged, or that v4.12 is active, no longer describe the current repository. The original technical findings below remain historical evidence.
+
 # Encounter Analysis UI experiments
 
 **Status:** Implemented and browser-tested in isolated development copies. **Not released, not merged, not deployed.** The locked desktop v4.12, current mobile touch prototype, and Vercel testing site have not been changed.

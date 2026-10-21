@@ -1,3 +1,5 @@
+> **HISTORICAL DOCUMENT (superseded status).** This file records an earlier development stage. The active main build is now [Story Card Studio v5.0](../Story-Card-Studio-v5.0.html). See the [current README](../README.md) and [v5.0 baseline](V5.0-BASELINE.md). Any older references below to an unmerged desktop/mobile development plan, an active v4.12 build, or a future unified HTML reflect the state **at that time**; preserve their technical findings as historical evidence.
+
 # Story Card Studio — mobile touch-drag development handoff
 
 **Status:** Isolated experimental mobile HTML build, based on the earlier mobile development clone of desktop Story Card Studio v4.12. **Not merged or released**, no GitHub modifications. The desktop v4.12 and first mobile clone are unchanged.

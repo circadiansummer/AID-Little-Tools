@@ -1,3 +1,5 @@
+> **HISTORICAL DOCUMENT (superseded status).** This file records an earlier development stage. The active main build is now [Story Card Studio v5.0](../Story-Card-Studio-v5.0.html). See the [current README](../README.md) and [v5.0 baseline](V5.0-BASELINE.md). Any older references below to an unmerged desktop/mobile development plan, an active v4.12 build, or a future unified HTML reflect the state **at that time**; preserve their technical findings as historical evidence.
+
 # Offline-first distribution plan — proposed, not released
 
 **Assumption:** Typical users work offline roughly 99% of the time. No desktop/mobile manual view toggle; one shared responsive source is the intended final architecture.

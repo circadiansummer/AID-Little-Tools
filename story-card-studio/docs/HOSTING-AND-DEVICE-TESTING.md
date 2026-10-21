@@ -1,3 +1,5 @@
+> **HISTORICAL DOCUMENT (superseded status).** This file records an earlier development stage. The active main build is now [Story Card Studio v5.0](../Story-Card-Studio-v5.0.html). See the [current README](../README.md) and [v5.0 baseline](V5.0-BASELINE.md). Any older references below to an unmerged desktop/mobile development plan, an active v4.12 build, or a future unified HTML reflect the state **at that time**; preserve their technical findings as historical evidence.
+
 # Mobile device testing / hosting
 
 The mobile HTML builds are standalone static pages with no runtime server requirements. Downloading and opening them through iOS Files/Quick Look may show a non-interactive preview because JavaScript execution can be blocked. To test the app, host the **mobile touch** build as an HTTPS page that executes JS.

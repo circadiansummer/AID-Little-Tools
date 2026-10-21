@@ -1,3 +1,5 @@
+> **HISTORICAL DOCUMENT (superseded status).** This file records an earlier development stage. The active main build is now [Story Card Studio v5.0](../../Story-Card-Studio-v5.0.html). See the [current README](../../README.md) and [v5.0 baseline](../../docs/V5.0-BASELINE.md). Older statements that mobile and desktop have not yet been merged, or that v4.12 is active, no longer describe the current repository. The original technical findings below remain historical evidence.
+
 # Encounter Highlight — acceptance and regression
 
 **Status:** Earlier highlight-only build passed 83 Chromium checks on 2026-10-20. Later metric/navigation/setup-copy changes pass static and inline JavaScript syntax checks but have **not** been browser-tested. iPhone Safari NOT RUN; unchanged locked desktop v4.12; no deployment of this experiment.

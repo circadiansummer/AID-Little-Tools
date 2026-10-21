@@ -1,30 +1,56 @@
-# Story Card Studio
+# Story Card Studio v5.0
 
-Standalone offline AI Dungeon Story Card JSON editor, merger, trigger analyzer, and configuration interface for Random Encounters, Inner Self, and Auto-Cards.
+**Active build on `main`: [Story-Card-Studio-v5.0.html](Story-Card-Studio-v5.0.html)**  
+**Architecture:** One responsive, standalone HTML application, suitable for desktop and mobile browsers.  
+**Status:** Owner-designated canonical development build. This repository update is **not** an automatic Vercel/Pages deployment or published GitHub Release.
 
-**Status:** Development archive only. **The desktop v4.12 build is LOCKED.** The mobile builds are isolated experimental prototypes, not releases. No mobile changes may be integrated into desktop, nor any official release published, without explicit owner permission.
+Story Card Studio lets AI Dungeon creators edit, organize, merge, and analyze Story Card JSON in the browser without uploading the JSON to a server. Ordinary Story Card editing does not depend on third-party scripts.
 
-## Files
+## Quick start
 
-- [Locked desktop v4.12](desktop/aid-story-card-editor-v4.12.html) — byte-preserved approved snapshot.
-- [Initial responsive mobile prototype](mobile/aid-story-card-editor-v4.12-mobile-dev.html) — standalone experimental clone.
-- [Mobile prototype with touch drag-and-drop](mobile/aid-story-card-editor-v4.12-mobile-touch-dev.html) — most current development candidate. Long-press to drag between Types and RE Acts.
-- [Encounter Analysis highlight experiment](development/encounter-highlight/README.md) — isolated desktop/mobile development builds with border-highlight selector, shared color keys, Encounter Spread palette, and test records; **not merged or deployed**.
-- [Mobile development handoff](docs/MOBILE-DEVELOPMENT-HANDOFF.md) — responsive UI, architecture, checks.
-- [Touch-drag handoff](docs/MOBILE-TOUCH-DRAG-HANDOFF.md) — gesture behavior, verification, remaining iOS tests.
+1. Download the **[v5.0 HTML file](Story-Card-Studio-v5.0.html)** using GitHub's *Download raw file* action, not the code-preview webpage.
+2. Open in a modern desktop browser; import your AI Dungeon Story Card JSON or choose **Demo Cards**.
+3. Edit and export JSON. The exported JSON can be imported into AI Dungeon.
 
-## Integrity checks (SHA-256)
+For mobile Safari, hosting over HTTPS is more reliable than opening the file through iOS Files/Quick Look. No installable offline-first PWA has been implemented yet.
 
-| File | SHA-256 |
-| --- | --- |
-| desktop/aid-story-card-editor-v4.12.html | `516ae4a06fe9712bf0a3e073ef520bfe78026f42599dda5baa6ae376ef21edf2` |
-| mobile/aid-story-card-editor-v4.12-mobile-dev.html | `3742c8ff93cf9f8ed1fd9a7ce85953d4344420c133f7d8f89dffe69ed3ebf383` |
-| mobile/aid-story-card-editor-v4.12-mobile-touch-dev.html | `29f66e6d8ab7c78508a095410afd0480fff01be20c4ecfcc15851e5b4077a751` |
+## Features currently included
 
-## Verification and release boundaries
+- **Story Card Editor:** Create, edit, organize, bulk-edit, delete/Undo, and export cards. Edit Title, Keys/Triggers, Entry, Notes, supported flags, and other card fields. Stacked and column layouts, drag-and-drop and responsive mobile details.
+- **Find & Replace:** Previous/Next, individual Replace and confirmed Replace All across Title, Keys, Entry, and Notes. Includes three built-in presets and three editable browser-local presets. Desktop view has a rightward Card Details cue.
+- **Merge JSONs:** Combine selected cards from two sources, export the selection, or move it into the editor while retaining creator-defined fields.
+- **Trigger Analysis:** Potential duplicate/short-trigger warnings, theoretical reference networks, sample-passage matching, and approximate token statistics. These analyses do not guarantee AI Dungeon context activation.
+- **Random Encounters support:** With RE Support enabled, organize `RAND_XX` cards by Act, edit encounter metadata, display six overview metrics (including Cards in Largest Act), color-code cards, inspect responsive distribution charts, and edit supported RE Config/Advanced settings.
+- **Inner Self and Auto-Cards support:** Edit supported script settings and use the **View or Create Config Card / Hide Config Card** toggle to inspect associated Story Cards.
+- **Unified desktop/mobile:** Responsive layouts, mobile navigation, full-screen details, touch long-press dragging and cancellation, and desktop mouse/keyboard editing.
 
-Automated mobile Chromium tests passed during development; **real iOS Safari, iOS Files/Quick Look, and live AI Dungeon behavior were not verified**. Some iOS file previews do not execute the required JavaScript. For device testing, serve the mobile HTML as a real HTTPS webpage. Do not advertise browser emulation as physical-device proof.
+The four RE/Inner Self/Auto-Cards tabs ending in `*` indicate that their corresponding custom AI Dungeon scripts must be installed in a scenario to operate *in game*. Those scripts are not required for using the local editor.
 
-The app runs entirely client-side; do not add external telemetry, upload user Story Card data, or publish private examples. Desktop code changes require explicit owner approval. Work on the isolated mobile copy and preserve creator JSON fields.
+## Mode-specific demo cards
 
-The GitHub folder is a **development archive**, not a public product distribution or release.
+- **RE Support OFF:** The established **7-card** fictional-town example, emphasizing ordinary characters, locations, faction, plot, and trigger references.
+- **RE Support ON:** The user-supplied **[24-card demo](examples/re-enabled-demo.json)**, with **18 Random Encounters**, six in each of **Acts 1–3**, plus six ordinary Character/Location cards. The sample features the Hidden Leaf Village, Sasuke, and the Third Hokage. Original titles, triggers, entries, Notes, metadata, and other fields are preserved.
+
+Loading a demo replaces the current workspace; export real work beforehand.
+
+## Storage, compatibility and limitations
+
+Editing uses browser-side code. Save important work with **Export JSON**; local browser storage is not a reliable cross-device backup and may not persist indefinitely. v5.0 uses the established desktop storage key; older mobile prototypes used a separate key, so export/import is necessary to transfer those workspaces. Custom Find & Replace presets live in browser storage, not in Story Card JSON.
+
+**Latest verification (2026-10-21):** RE ON loads 24 records/18 encounters; RE OFF loads 7 cards. RE ON export has exactly the same 24 Story Card objects as the supplied JSON. Summary metrics and responsive Chromium smoke checks at 390px/768px/1440px passed, with no page errors. Physical iOS Safari, live AI Dungeon integration, the complete current-version regression suite, and a true installable PWA were **not** verified. See [v5.0 baseline](docs/V5.0-BASELINE.md) and [test checklist](docs/V5.0-TESTING.md).
+
+**Current HTML SHA-256:** `c2350fd6891217e8498ad24deae6da41cc45b15dc7bfc16d4f1a5cf52457f163`.
+
+## Historical files
+
+The following files remain available as **historical snapshots**, not active development targets:
+
+- [Desktop v4.12](desktop/aid-story-card-editor-v4.12.html) — byte-preserved, SHA-256 `516ae4a06fe9712bf0a3e073ef520bfe78026f42599dda5baa6ae376ef21edf2`.
+- [Initial mobile v4.12 prototype](mobile/aid-story-card-editor-v4.12-mobile-dev.html).
+- [Touch-drag mobile v4.12 prototype](mobile/aid-story-card-editor-v4.12-mobile-touch-dev.html).
+- [Encounter highlighting experiments](development/encounter-highlight/README.md).
+- [Original mobile handoff](docs/MOBILE-DEVELOPMENT-HANDOFF.md) and [touch-drag handoff](docs/MOBILE-TOUCH-DRAG-HANDOFF.md).
+
+`mobile/index.html` is an old prototype route. Use the **[canonical v5.0 entry point](index.html)** or the versioned v5.0 HTML instead.
+
+A public release, release tag, or hosted deployment requires separate verification and authorization.
