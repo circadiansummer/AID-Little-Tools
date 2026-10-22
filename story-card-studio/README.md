@@ -2,7 +2,7 @@
 
 **Active build on `main`: [Story-Card-Studio-v5.0.html](Story-Card-Studio-v5.0.html)**  
 **Architecture:** One responsive, standalone HTML application, suitable for desktop and mobile browsers.  
-**Status:** Owner-designated canonical development build. This repository update is **not** an automatic Vercel/Pages deployment or published GitHub Release.
+**Status:** Owner-designated canonical development build. GitHub Pages publication is handled by the repository's separate checksum-gated Actions workflow. A GitHub commit is not a public Release or tag. **GitHub is the sole ongoing source and hosting workflow.**
 
 Story Card Studio lets AI Dungeon creators edit, organize, merge, and analyze Story Card JSON in the browser without uploading the JSON to a server. Ordinary Story Card editing does not depend on third-party scripts.
 
@@ -20,7 +20,7 @@ For mobile Safari, hosting over HTTPS is more reliable than opening the file thr
 - **Find & Replace:** Previous/Next, individual Replace and confirmed Replace All across Title, Keys, Entry, and Notes. Includes three built-in presets and three editable browser-local presets. Desktop view has a rightward Card Details cue.
 - **Merge JSONs:** Combine selected cards from two sources, export the selection, or move it into the editor while retaining creator-defined fields.
 - **Trigger Analysis:** Potential duplicate/short-trigger warnings, theoretical reference networks, sample-passage matching, and approximate token statistics. These analyses do not guarantee AI Dungeon context activation.
-- **Random Encounters support:** With RE Support enabled, organize `RAND_XX` cards by Act, edit encounter metadata, display six overview metrics (including Cards in Largest Act), color-code cards, inspect responsive distribution charts, and edit supported RE Config/Advanced settings.
+- **Random Encounters support:** With RE Support enabled, organize `RAND_XX` cards by Act, edit encounter metadata, display six overview metrics (including Cards in Largest Act), color-code cards, inspect responsive distribution charts, and edit supported RE Config/Advanced settings. **Act Structure** and **Encounter Spread** card-count axes scale by encounter cards only; unrelated ordinary Story Cards do not inflate their maxima.
 - **Inner Self and Auto-Cards support:** Edit supported script settings and use the **View or Create Config Card / Hide Config Card** toggle to inspect associated Story Cards.
 - **Unified desktop/mobile:** Responsive layouts, mobile navigation, full-screen details, touch long-press dragging and cancellation, and desktop mouse/keyboard editing.
 
@@ -37,9 +37,11 @@ Loading a demo replaces the current workspace; export real work beforehand.
 
 Editing uses browser-side code. Save important work with **Export JSON**; local browser storage is not a reliable cross-device backup and may not persist indefinitely. v5.0 uses the established desktop storage key; older mobile prototypes used a separate key, so export/import is necessary to transfer those workspaces. Custom Find & Replace presets live in browser storage, not in Story Card JSON.
 
-**Latest verification (2026-10-21):** RE ON loads 24 records/18 encounters; RE OFF loads 7 cards. RE ON export has exactly the same 24 Story Card objects as the supplied JSON. Summary metrics and responsive Chromium smoke checks at 390px/768px/1440px passed, with no page errors. Physical iOS Safari, live AI Dungeon integration, the complete current-version regression suite, and a true installable PWA were **not** verified. See [v5.0 baseline](docs/V5.0-BASELINE.md) and [test checklist](docs/V5.0-TESTING.md).
+**Original v5.0 baseline verification (2026-10-21):** RE ON loads 24 records/18 encounters; RE OFF loads 7 cards. RE ON export has exactly the same 24 Story Card objects as the supplied JSON. Summary metrics and responsive Chromium smoke checks at 390px/768px/1440px passed, with no page errors. Physical iOS Safari, live AI Dungeon integration, the complete current-version regression suite, and a true installable PWA were **not** verified. See [v5.0 baseline](docs/V5.0-BASELINE.md) and [test checklist](docs/V5.0-TESTING.md).
 
-**Current HTML SHA-256:** `c2350fd6891217e8498ad24deae6da41cc45b15dc7bfc16d4f1a5cf52457f163`.
+**Encounter chart-scale fix (2026-10-21):** Verified with 18 encounters plus 120 additional ordinary Story Cards at Chromium widths 1440, 768 and 390px; both card-count chart SVGs remained identical, and a peak of 12 encounters produced an axis maximum of 12 rather than 40. Inline JavaScript passed `node --check`. Other full-suite and physical-device checks remain separate, as described below.
+
+**Current HTML SHA-256:** `d6f4685d32a2b897819afcf5d0a173869005e65c7e5e162cec956c3cf4dc8e4b`.
 
 ## GitHub Pages (v5.0)
 

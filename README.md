@@ -9,7 +9,7 @@ Utilities for AI Dungeon creators.
 - [v5.0 baseline and verification](story-card-studio/docs/V5.0-BASELINE.md)
 - [Historical versions](story-card-studio/README.md#historical-files)
 
-A GitHub source update is separate from deploying or publishing a Vercel site, GitHub Pages site, or public GitHub Release.
+The current development and hosting workflow uses **GitHub only**: repository changes are reviewed on `main`, and the checksum-gated GitHub Pages Actions workflow manages any website deployment. Third-party hosting is no longer part of the process. A public GitHub Release or tag remains a separate approval.
 
 ## GitHub Pages website — v5.0
 

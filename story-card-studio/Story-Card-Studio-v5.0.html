@@ -1340,6 +1340,9 @@ function colorFor(label,index=0){return seriesColors[label]||actPalette[index%ac
 function legend(labels){return labels.map((label,i)=>`<span><i class="swatch" style="background:${colorFor(label,i)}"></i>${chartEsc(label)}</span>`).join('')}
 function orderedActs(cards){return [...new Set(cards.map(actOf))].sort((a,b)=>a-b)}
 function niceMax(n){if(n<=4)return 4;const magnitude=10**Math.floor(Math.log10(n));const unit=magnitude<=1?2:magnitude;return Math.ceil(n/(unit*4))*unit*4}
+// Only RAND_## encounters contribute to the card-count charts. Keep four integer-spaced ticks
+// close to the largest encounter count in a single Act, rather than overinflating the scale.
+function encounterCardAxisMax(counts){const peak=Math.max(0,...counts);return Math.max(4,Math.ceil(peak/4)*4)}
 // Dynamically match SVG coordinate spaces to the visible chart panel, not a fixed minimum width.
 function analysisPlotSize(id,idealHeight=320){
  const panel=el(id);
@@ -1350,13 +1353,14 @@ function analysisPlotSize(id,idealHeight=320){
 function analysisTickCount(plotWidth,max=9){return Math.max(1,Math.min(max,Math.floor(plotWidth/52)))}
 
 function actStructureStackedChart(cards){
+ cards=cards.filter(isRE);
  const maxAct=Math.max(1,...cards.map(actOf));
  const grouped=new Map();for(const c of cards){const a=actOf(c);if(!grouped.has(a))grouped.set(a,[]);grouped.get(a).push(c)}
  // Keep numeric Act positions intact; sparse large Act numbers never produce a giant array.
  const sequence=maxAct<=1000?Array.from({length:maxAct},(_,i)=>i+1):[...new Set([1,...Array.from(grouped.keys()).flatMap(a=>[a-1,a,Math.min(maxAct,a+1)])])].filter(a=>a>=1&&a<=maxAct).sort((a,b)=>a-b);
  const records=sequence.map(a=>{const items=grouped.get(a)||[];return {act:a,ASAP:items.filter(c=>valI(c)==='ASAP').length,Required:items.filter(c=>valI(c)==='Required').length,Optional:items.filter(c=>valI(c)==='Optional').length,total:items.length}});
  const {width:W,height:H}=analysisPlotSize('actStructureChart',350),left=63,right=22,top=22,bottom=54,chartW=W-left-right,chartH=H-top-bottom;
- const maxY=niceMax(Math.max(0,...records.map(r=>r.total))),sx=v=>left+(maxAct===1?chartW/2:(v-1)/(maxAct-1)*chartW),sy=v=>top+chartH-v/maxY*chartH;
+ const maxY=encounterCardAxisMax(records.map(r=>r.total)),sx=v=>left+(maxAct===1?chartW/2:(v-1)/(maxAct-1)*chartW),sy=v=>top+chartH-v/maxY*chartH;
  const barW=Math.max(1,Math.min(55,chartW/Math.max(1,maxAct)*.70));
  let out=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Act Structure stacked bar chart: ASAP, Required, and Optional cards by Act; full bar height is total cards">`;
  for(let i=0;i<=4;i++){const n=maxY*i/4,y=sy(n);out+=`<line class="gridline" x1="${left}" x2="${W-right}" y1="${y}" y2="${y}"/><text x="${left-13}" y="${y+4}" text-anchor="end">${n}</text>`}
@@ -1381,8 +1385,9 @@ function dimensionSpec(cards,dimension){
  return dimensions[dimension]||dimensions.importance;
 }
 function barBreakdown(cards,dim){
+ cards=cards.filter(isRE);
  const spec=dimensionSpec(cards,dim),acts=orderedActs(cards),data=acts.map(a=>{const group=cards.filter(c=>actOf(c)===a);return {act:a,counts:spec.labels.map(l=>group.filter(c=>spec.value(c)===l).length),total:group.length}});
- const maxActBar=Math.max(1,...data.map(d=>d.total)),maxY=niceMax(maxActBar);
+ const maxY=encounterCardAxisMax(data.map(d=>d.total));
  const {width:W,height:H}=analysisPlotSize('breakdownBar',312),left=48,right=20,top=15,bottom=55,chartW=W-left-right,chartH=H-top-bottom;
  const y=v=>top+chartH-v/maxY*chartH;let out=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Stacked bar chart of ${chartEsc(spec.name)} per Act">`;
  for(let i=0;i<=4;i++){const n=maxY*i/4,yy=y(n);out+=`<line class="gridline" x1="${left}" x2="${W-right}" y1="${yy}" y2="${yy}"/><text x="${left-10}" y="${yy+4}" text-anchor="end">${n}</text>`}

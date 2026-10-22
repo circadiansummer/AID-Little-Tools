@@ -19,7 +19,7 @@ The Pages site serves the **canonical v5.0** editor. It does **not** publish his
 4. Check that the **Package approved v5.0 static files** and **Deploy v5.0** jobs both complete successfully.
 5. Open the site URL above. The root `index.html` redirects to the versioned v5.0 page.
 
-The workflow runs automatically when the v5.0 HTML, its root redirect, the baseline checksum document, or this workflow changes on `main`. It can also run manually through `workflow_dispatch`.
+The workflow runs automatically when the v5.0 HTML, its root redirect, the baseline checksum document, or this workflow changes on `main`. It can also run manually through `workflow_dispatch`. **This is the sole supported hosted deployment process for Story Card Studio going forward.** Whenever v5.0 HTML changes, update its SHA-256 in the baseline document in the same commit so the workflow can verify the exact new bytes.
 
 ## Why the workflow verifies a checksum
 
