@@ -64,6 +64,7 @@ jobs:
           cp "$source_file" pages-site/Story-Card-Studio-v5.0.html
           mkdir -p pages-site/deck-builder
           cp deck-builder/Story-Card-Deck-Builder.html pages-site/deck-builder/Story-Card-Deck-Builder.html
+          cp deck-builder/index.html pages-site/deck-builder/index.html
           touch pages-site/.nojekyll
           echo "Pages artifact contains v5.0 and the standalone Deck Builder."
           find pages-site -maxdepth 1 -type f -printf '%f\n' | sort
