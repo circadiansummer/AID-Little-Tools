@@ -8,6 +8,7 @@ on:
       - "story-card-studio/Story-Card-Studio-v5.0.html"
       - "story-card-studio/index.html"
       - "story-card-studio/docs/V5.0-BASELINE.md"
+      - "deck-builder/**"
   workflow_dispatch:
 
 permissions:
@@ -24,6 +25,17 @@ jobs:
     steps:
       - name: Check out main
         uses: actions/checkout@v6
+
+      - name: Set up Node for Deck Builder validation
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Verify standalone Deck Builder
+        run: |
+          node deck-builder/build.cjs
+          git diff --exit-code -- deck-builder/Story-Card-Deck-Builder.html
+          node deck-builder/test.cjs
 
       - name: Verify v5.0 and prepare isolated website artifact
         shell: bash
@@ -50,8 +62,11 @@ jobs:
           mkdir -p pages-site
           cp "$entry_file" pages-site/index.html
           cp "$source_file" pages-site/Story-Card-Studio-v5.0.html
+          mkdir -p pages-site/deck-builder
+          cp deck-builder/Story-Card-Deck-Builder.html pages-site/deck-builder/Story-Card-Deck-Builder.html
+          cp deck-builder/index.html pages-site/deck-builder/index.html
           touch pages-site/.nojekyll
-          echo "Pages artifact contains only the v5.0 entry page and application HTML."
+          echo "Pages artifact contains v5.0 and the standalone Deck Builder."
           find pages-site -maxdepth 1 -type f -printf '%f\n' | sort
 
       - name: Configure GitHub Pages

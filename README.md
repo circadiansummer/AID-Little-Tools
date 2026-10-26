@@ -2,6 +2,8 @@
 
 Utilities for AI Dungeon creators.
 
+**New: [Story Card Deck Builder](deck-builder/Story-Card-Deck-Builder.html)** — choose from a bundled character roster, match Better Dungeons portraits, and merge selected cards with your own JSON. [Usage and build instructions](deck-builder/README.md).
+
 **Current active application: [Story Card Studio v5.0](story-card-studio/Story-Card-Studio-v5.0.html)** — one responsive, self-contained HTML tool for desktop and mobile.
 
 - [Story Card Studio README](story-card-studio/README.md) — usage, features, version and test status
