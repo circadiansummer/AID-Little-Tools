@@ -5,9 +5,9 @@ Open Story-Card-Deck-Builder.html in a modern browser, or use the repository's G
 ## Choose villagers and export
 
 - The wider character-only roster offers search and combined gender, species, personality and star-sign filters. Portrait frames are 2:3 with centered, uncropped images; catchphrases appear below names. Hover or keyboard-focus a card for its full Entry tooltip; Escape dismisses it.
-- The Open Roads deck panel always includes all 66 core cards. Expand its core-deck section to browse their titles and entry text. These fixed cards cannot be deselected or edited here.
+- The Open Roads deck panel always includes all 66 core cards. Core-deck details stay in the background; these fixed cards cannot be deselected or edited here.
 - Select villagers to add them after the core cards in click order. Selected copies can be edited or removed, and selection/edits can be undone. Clear villagers removes only the selections; the 66-card base remains.
-- Personality, gender and species tallies describe selected villagers. Unknown metadata is counted as Unknown. About ten villagers is a guide, not a limit.
+- Personality, gender and species tallies are in a Cast breakdown disclosure, collapsed by default, and describe selected villagers. Unknown metadata is counted as Unknown. About ten villagers is a guide, not a limit.
 - Export defaults to open-roads-custom-villager-deck.json. Every download contains all core cards followed by selected villagers, preserving all original fields unless a selected copy was explicitly edited. Repeated trigger sets prompt for confirmation; no records are silently deduplicated.
 - The former right-hand upload column is removed. The visible roster and Better Dungeons upload controls can still replace browsing sources; neither replaces the fixed base deck. Reload resets selections.
 
@@ -32,3 +32,5 @@ Choose 3, 6, or 12 villagers and click Random. Candidates respect every active f
 Clicking elsewhere, changing a control, or focusing another element returns the button to Random and keeps its current picks as ordinary selections. Hover alone does not end reroll mode. Undo and Redo restore exact selected-card contents and order for up to 30 actions, including rerolls and edits. New deck changes discard redo history. Replacing/resetting the roster clears both stacks. The fixed 66-card base is never part of selectable history.
 
 Targeted Chromium checks: six filtered random picks plus manual Raymond retained seven selections across reroll; the batch changed, Undo restored the first exact assortment, and Redo restored the second. Clicking the filename restored Random appearance. A single eligible female octopus was selected when requesting twelve; a new manual selection after Undo disabled Redo. Node tests cover sizes 3/6/12, uniqueness, empty/limited pools, and alternative assortments.
+
+The selected-villager panel stretches to the roster height and assigns remaining space to its list. Chromium verified no core-deck section, a closed-by-default breakdown that opens to correct tallies, a 518px list at the checked desktop viewport, and 67 total cards after selecting Raymond. No browser errors.
