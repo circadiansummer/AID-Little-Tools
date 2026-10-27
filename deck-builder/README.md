@@ -9,7 +9,7 @@ Open Story-Card-Deck-Builder.html in a modern browser, or use the repository's G
 - Select villagers to add them after the core cards in click order. Selected copies can be edited or removed, and selection/edits can be undone. Clear villagers removes only the selections; the 66-card base remains.
 - Personality, gender and species tallies are in a Cast breakdown disclosure, collapsed by default, and describe selected villagers. Unknown metadata is counted as Unknown. About ten villagers is a guide, not a limit.
 - Export defaults to open-roads-custom-villager-deck.json. Every download contains all core cards followed by selected villagers, preserving all original fields unless a selected copy was explicitly edited. Repeated trigger sets prompt for confirmation; no records are silently deduplicated.
-- The former right-hand upload column is removed. The visible roster and Better Dungeons upload controls can still replace browsing sources; neither replaces the fixed base deck. Reload resets selections.
+- The former right-hand upload column is removed. The roster heading, file information and roster/image upload controls have also been removed; bundled sources are maintained in the repository. Reload resets selections.
 
 ## Bundled sources
 
@@ -37,3 +37,5 @@ The selected-villager panel stretches to the roster height and assigns remaining
 
 The filename, JSON export button and preservation note now sit in the page-title row above the selected-deck column, aligned to its right edge. On narrow screens they stack below the title. Chromium verified matching desktop right edges, export controls above the panel, a 679px selected list at the checked viewport, and no overflow at 390px.
 
+
+The left panel starts at search and filters. Removed header space is assigned to the portrait scroller (620px at the checked desktop viewport). Chromium verified no upload inputs, no console errors, and intact header export/collapsed statistics.
