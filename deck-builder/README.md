@@ -44,3 +44,5 @@ Community-focused display: the main number counts 19 Town NPCs plus selected vil
 
 
 Cherry and Mint are excluded from the selectable roster because their names are too generic. The original extension image configuration is retained; only 248 villagers are selectable.
+
+Every export now appends one generated Lore card titled Villager Roster. Its entry starts with "The following are villager residents of the town:" and then lists selected villager names, one per line, in selection order. Triggers: villager,resident,neighbor,someone. Repeated exports regenerate the card without adding it to selection history or accumulating copies. With no selected villagers, the card contains just the introductory line. Export includes this extra card in its total and limit. Chromium verified a 69-card download with all 66 core cards, Raymond, Shino, and exactly one generated roster card.
