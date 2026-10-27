@@ -1,10 +1,90 @@
 [
   {
+    "keys": "Raymond",
+    "value": "Name: Raymond\nGender: Male\nSpecies: Cat\nPersonality: Smug, Libra\nClothing: Waistcoat (Gray)\nUmbrella: Bat umbrella\nBirthday: October 1\nFavorite Saying: \"Stay on brand!\"\nCatchphrase: \"crisp\"",
+    "type": "character",
+    "title": "Raymond",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Raymond\nScreenshot rank: 1. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Shino",
+    "value": "Name: Shino\nGender: Female\nSpecies: Deer\nPersonality: Peppy, Scorpio\nClothing: Morning-glory yukata (Pale green)\nUmbrella: Paper parasol\nBirthday: October 31\nFavorite Saying: \"Better the demon you know than the one you do not.\"\nCatchphrase: \"okaaay\"",
+    "type": "character",
+    "title": "Shino",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Shino\nScreenshot rank: 2. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Molly",
+    "value": "Name: Molly\nGender: Female\nSpecies: Duck\nPersonality: Normal, Pisces\nClothing: Pintuck-pleated dress (Lime)\nUmbrella: White shiny-bows parasol\nBirthday: March 7\nFavorite Saying: \"Like water off a duck's back.\"\nCatchphrase: \"quackidee\"",
+    "type": "character",
+    "title": "Molly",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Molly\nScreenshot rank: 3. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Lolly",
+    "value": "Name: Lolly\nGender: Female\nSpecies: Cat\nPersonality: Normal, Aries\nClothing: Snowy sweater (Gray)\nUmbrella: Snowflake umbrella\nBirthday: March 27\nFavorite Saying: \"Laughter is the best medicine.\"\nCatchphrase: \"bonbon\"",
+    "type": "character",
+    "title": "Lolly",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Lolly\nScreenshot rank: 4. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Marshal",
+    "value": "Name: Marshal\nGender: Male\nSpecies: Squirrel\nPersonality: Smug, Libra\nClothing: Puffy vest (Navy blue)\nUmbrella: Logo umbrella\nBirthday: September 29\nFavorite Saying: \"Seize the day.\"\nCatchphrase: \"sulky\"",
+    "type": "character",
+    "title": "Marshal",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Marshal\nScreenshot rank: 5. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bob",
+    "value": "Name: Bob\nGender: Male\nSpecies: Cat\nPersonality: Lazy, Capricorn\nClothing: Blossom tee (Pink)\nUmbrella: Eggy parasol\nBirthday: January 1\nFavorite Saying: \"You only live once...or nine times.\"\nCatchphrase: \"pthhpth\"",
+    "type": "character",
+    "title": "Bob",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bob\nScreenshot rank: 6. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Maple",
+    "value": "Name: Maple\nGender: Female\nSpecies: Bear cub\nPersonality: Normal, Gemini\nClothing: Tree sweater\nUmbrella: Candy umbrella\nBirthday: June 15\nFavorite Saying: \"Waste not, want not.\"\nCatchphrase: \"honey\"",
+    "type": "character",
+    "title": "Maple",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Maple\nScreenshot rank: 7. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Sasha",
+    "value": "Name: Sasha\nGender: Male\nSpecies: Rabbit\nPersonality: Lazy, Taurus\nClothing: Letter jacket (Blue)\nUmbrella: Patterned vinyl umbrella\nBirthday: May 19\nFavorite Saying: \"Timing is everything.\"\nCatchphrase: \"hoppity\"",
+    "type": "character",
+    "title": "Sasha",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Sasha\nScreenshot rank: 8. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Judy",
+    "value": "Name: Judy\nGender: Female\nSpecies: Bear cub\nPersonality: Snooty, Pisces\nClothing: Fairy-tale dress (Pink)\nUmbrella: White shiny-bows parasol\nBirthday: March 10\nFavorite Saying: \"I'm dancing my dreams away.\"\nCatchphrase: \"myohmy\"",
+    "type": "character",
+    "title": "Judy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Judy\nScreenshot rank: 9. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Sherb",
+    "value": "Name: Sherb\nGender: Male\nSpecies: Goat\nPersonality: Lazy, Capricorn\nClothing: Snowy sweater (Gray)\nUmbrella: Vinyl umbrella\nBirthday: January 18\nFavorite Saying: \"Forty winks is never enough.\"\nCatchphrase: \"bawwww\"",
+    "type": "character",
+    "title": "Sherb",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Sherb\nScreenshot rank: 10. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
     "keys": "Stitches",
     "value": "Name: Stitches\nGender: Male\nSpecies: Bear cub\nPersonality: Lazy, Aquarius\nClothing: Starry tank\nUmbrella: Panda umbrella\nBirthday: February 10\nFavorite Saying: \"A stitch in time saves nine.\"\nCatchphrase: \"stuffin'\"",
     "type": "character",
     "title": "Stitches",
-    "description": "Source: https://nookipedia.com/wiki/Stitches\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Stitches\nScreenshot rank: 11. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -12,7 +92,7 @@
     "value": "Name: Zucker\nGender: Male\nSpecies: Octopus\nPersonality: Lazy, Pisces\nClothing: Happi tee (Blue)\nUmbrella: Blue umbrella\nBirthday: March 8\nFavorite Saying: \"There's no such thing as luck.\"\nCatchphrase: \"bloop\"",
     "type": "character",
     "title": "Zucker",
-    "description": "Source: https://nookipedia.com/wiki/Zucker\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Zucker\nScreenshot rank: 12. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -20,7 +100,7 @@
     "value": "Name: Marina\nGender: Female\nSpecies: Octopus\nPersonality: Normal, Cancer\nClothing: Dreamy sweater (Pink)\nUmbrella: Candy umbrella\nBirthday: June 26\nFavorite Saying: \"If you can't say something nice, don't say anything at all.\"\nCatchphrase: \"blurp\"",
     "type": "character",
     "title": "Marina",
-    "description": "Source: https://nookipedia.com/wiki/Marina\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Marina\nScreenshot rank: 13. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -28,7 +108,7 @@
     "value": "Name: Ankha\nGender: Female\nSpecies: Cat\nPersonality: Snooty, Virgo\nClothing: Palatial tank dress\nUmbrella: Ghost umbrella\nBirthday: September 22\nFavorite Saying: \"All that glitters is not gold.\"\nCatchphrase: \"me meow\"",
     "type": "character",
     "title": "Ankha",
-    "description": "Source: https://nookipedia.com/wiki/Ankha\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ankha\nScreenshot rank: 14. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -36,7 +116,39 @@
     "value": "Name: Poppy\nGender: Female\nSpecies: Squirrel\nPersonality: Normal, Leo\nClothing: Alpinist dress (Green)\nUmbrella: Mini-flower-print umbrella\nBirthday: August 5\nFavorite Saying: \"It's all about positive thinking!\"\nCatchphrase: \"nutty\"",
     "type": "character",
     "title": "Poppy",
-    "description": "Source: https://nookipedia.com/wiki/Poppy\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Poppy\nScreenshot rank: 15. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Audie",
+    "value": "Name: Audie\nGender: Female\nSpecies: Wolf\nPersonality: Peppy, Virgo\nClothing: Tropical muumuu (Mint)\nUmbrella: Fairy-tale umbrella\nBirthday: August 31\nFavorite Saying: \"Be the kind of person your future self won't regret having been.\"\nCatchphrase: \"foxtrot\"",
+    "type": "character",
+    "title": "Audie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Audie\nScreenshot rank: 16. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Fauna",
+    "value": "Name: Fauna\nGender: Female\nSpecies: Deer\nPersonality: Normal, Aries\nClothing: Bohemian tunic dress (Red)\nUmbrella: Raindrop umbrella\nBirthday: March 26\nFavorite Saying: \"The first step is always the hardest.\"\nCatchphrase: \"dearie\"",
+    "type": "character",
+    "title": "Fauna",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Fauna\nScreenshot rank: 17. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Cherry",
+    "value": "Name: Cherry\nGender: Female\nSpecies: Dog\nPersonality: Big sister, Taurus\nClothing: Spider-web tee\nUmbrella: Spider umbrella\nBirthday: May 11\nFavorite Saying: \"One dog barks at something, the rest bark at him.\"\nCatchphrase: \"what what\"",
+    "type": "character",
+    "title": "Cherry",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Cherry\nScreenshot rank: 18. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Fang",
+    "value": "Name: Fang\nGender: Male\nSpecies: Wolf\nPersonality: Cranky, Sagittarius\nClothing: Snowy sweater (Blue)\nUmbrella: Snowflake umbrella\nBirthday: December 18\nFavorite Saying: \"You mess with the wolf, you get the fangs.\"\nCatchphrase: \"cha-chomp\"",
+    "type": "character",
+    "title": "Fang",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Fang\nScreenshot rank: 19. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -44,7 +156,39 @@
     "value": "Name: Kiki\nGender: Female\nSpecies: Cat\nPersonality: Normal, Libra\nClothing: Argyle sweater (Green)\nUmbrella: Sunny parasol\nBirthday: October 8\nFavorite Saying: \"Nothing ventured, nothing gained.\"\nCatchphrase: \"kitty cat\"",
     "type": "character",
     "title": "Kiki",
-    "description": "Source: https://nookipedia.com/wiki/Kiki\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Kiki\nScreenshot rank: 20. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Diana",
+    "value": "Name: Diana\nGender: Female\nSpecies: Deer\nPersonality: Snooty, Capricorn\nClothing: Mysterious dress (Purple)\nUmbrella: Black chic umbrella\nBirthday: January 4\nFavorite Saying: \"Sometimes you have to lose to win.\"\nCatchphrase: \"no doy\"",
+    "type": "character",
+    "title": "Diana",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Diana\nScreenshot rank: 21. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Goldie",
+    "value": "Name: Goldie\nGender: Female\nSpecies: Dog\nPersonality: Normal, Capricorn\nClothing: Tweed dress (Yellow)\nUmbrella: Strawberry umbrella\nBirthday: December 27\nFavorite Saying: \"A little bit of happiness is better than a lot of anguish.\"\nCatchphrase: \"woof\"",
+    "type": "character",
+    "title": "Goldie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Goldie\nScreenshot rank: 22. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Ione",
+    "value": "Name: Ione\nGender: Female\nSpecies: Squirrel\nPersonality: Normal, Virgo\nClothing: Astro dress (Blue)\nUmbrella: Fairy-tale umbrella\nBirthday: September 11\nFavorite Saying: \"I was born under a lucky star.\"\nCatchphrase: \"gleam\"",
+    "type": "character",
+    "title": "Ione",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ione\nScreenshot rank: 23. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tangy",
+    "value": "Name: Tangy\nGender: Female\nSpecies: Cat\nPersonality: Peppy, Gemini\nClothing: Retro dress (Green)\nUmbrella: Strawberry umbrella\nBirthday: June 17\nFavorite Saying: \"When life gives you lemons, make lemonade!\"\nCatchphrase: \"reeeeOWR\"",
+    "type": "character",
+    "title": "Tangy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tangy\nScreenshot rank: 24. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -52,15 +196,63 @@
     "value": "Name: Coco\nGender: Female\nSpecies: Rabbit\nPersonality: Normal, Pisces\nClothing: Layered tank dress (Beige)\nUmbrella: Leaf umbrella\nBirthday: March 1\nFavorite Saying: \"Don't put off till tomorrow what you can do today.\"\nCatchphrase: \"doyoing\"",
     "type": "character",
     "title": "Coco",
-    "description": "Source: https://nookipedia.com/wiki/Coco\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Coco\nScreenshot rank: 25. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Merengue",
+    "value": "Name: Merengue\nGender: Female\nSpecies: Rhinoceros\nPersonality: Normal, Pisces\nClothing: Chef's outfit (Red)\nUmbrella: Lacy parasol\nBirthday: March 19\nFavorite Saying: \"Life is a piece of cake.\"\nCatchphrase: \"shortcake\"",
+    "type": "character",
+    "title": "Merengue",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Merengue\nScreenshot rank: 26. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Dom",
+    "value": "Name: Dom\nGender: Male\nSpecies: Sheep\nPersonality: Jock, Pisces\nClothing: Tie-dye shirt\nUmbrella: Red umbrella\nBirthday: March 18\nFavorite Saying: \"Be true to your most shiny self.\"\nCatchphrase: \"indeedaroo\"",
+    "type": "character",
+    "title": "Dom",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Dom\nScreenshot rank: 27. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
     "keys": "Rosie",
-    "value": "Name: Rosie\nGender: Female\nSpecies: Cat\nPersonality: Peppy, Pisces\nClothing: Dazed dress (Pink)\nUmbrella: Mint umbrella\nBirthday: February 27\nFavorite Saying: \"One good purr deserves another.\"\nCatchphrase: \"silly\"",
+    "value": "Name: Rosie\nGender: Female\nSpecies: Cat\nPersonality: Peppy, Pisces\nClothing: Dazed dress (Pink)\nUmbrella: Candy umbrella\nBirthday: February 27\nFavorite Saying: \"One good purr deserves another.\"\nCatchphrase: \"silly\"",
     "type": "character",
     "title": "Rosie",
-    "description": "Source: https://nookipedia.com/wiki/Rosie\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Rosie\nScreenshot rank: 28. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Beau",
+    "value": "Name: Beau\nGender: Male\nSpecies: Deer\nPersonality: Lazy, Aries\nClothing: Reindeer sweater (Green)\nUmbrella: Melon umbrella\nBirthday: April 5\nFavorite Saying: \"You snooze, you lose.\"\nCatchphrase: \"saltlick\"",
+    "type": "character",
+    "title": "Beau",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Beau\nScreenshot rank: 29. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Erik",
+    "value": "Name: Erik\nGender: Male\nSpecies: Deer\nPersonality: Lazy, Leo\nClothing: Yodel sweater (Camel)\nUmbrella: Snowflake umbrella\nBirthday: July 27\nFavorite Saying: \"If you're afraid of wolves, don't go to the woods.\"\nCatchphrase: \"chow down\"",
+    "type": "character",
+    "title": "Erik",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Erik\nScreenshot rank: 30. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Ketchup",
+    "value": "Name: Ketchup\nGender: Female\nSpecies: Duck\nPersonality: Peppy, Leo\nClothing: Lacy dress (Blue)\nUmbrella: Fairy-tale umbrella\nBirthday: July 27\nFavorite Saying: \"When in doubt, eat a tomato!\"\nCatchphrase: \"bitty\"",
+    "type": "character",
+    "title": "Ketchup",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ketchup\nScreenshot rank: 31. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Lily",
+    "value": "Name: Lily\nGender: Female\nSpecies: Frog\nPersonality: Normal, Aquarius\nClothing: Tropical muumuu (White)\nUmbrella: Petal parasol\nBirthday: February 4\nFavorite Saying: \"Don't jump to conclusions!\"\nCatchphrase: \"toady\"",
+    "type": "character",
+    "title": "Lily",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Lily\nScreenshot rank: 32. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -68,15 +260,31 @@
     "value": "Name: Moe\nGender: Male\nSpecies: Cat\nPersonality: Lazy, Capricorn\nClothing: Simple parka (Black)\nUmbrella: Pineapple umbrella\nBirthday: January 12\nFavorite Saying: \"Ignorance is bliss.\"\nCatchphrase: \"myawn\"",
     "type": "character",
     "title": "Moe",
-    "description": "Source: https://nookipedia.com/wiki/Moe\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Moe\nScreenshot rank: 33. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Pashmina",
+    "value": "Name: Pashmina\nGender: Female\nSpecies: Goat\nPersonality: Big sister, Capricorn\nClothing: Rainbow sweater (Black)\nUmbrella: Tartan-check umbrella\nBirthday: December 26\nFavorite Saying: \"Before you judge someone, walk a mile in their hooves.\"\nCatchphrase: \"kidders\"",
+    "type": "character",
+    "title": "Pashmina",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Pashmina\nScreenshot rank: 34. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
     "keys": "Roald",
-    "value": "Name: Roald\nGender: Male\nSpecies: Penguin\nPersonality: Jock, Capricorn\nClothing: Flannel shirt (Red)\nUmbrella: Toad parasol\nBirthday: January 5\nFavorite Saying: \"You must learn to waddle before you can swim.\"\nCatchphrase: \"b-b-buddy\"",
+    "value": "Name: Roald\nGender: Male\nSpecies: Penguin\nPersonality: Jock, Capricorn\nClothing: Flannel shirt (Red)\nUmbrella: Two-tone umbrella\nBirthday: January 5\nFavorite Saying: \"You must learn to waddle before you can swim.\"\nCatchphrase: \"b-b-buddy\"",
     "type": "character",
     "title": "Roald",
-    "description": "Source: https://nookipedia.com/wiki/Roald\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Roald\nScreenshot rank: 35. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Cookie",
+    "value": "Name: Cookie\nGender: Female\nSpecies: Dog\nPersonality: Peppy, Gemini\nClothing: Retro dress (Light blue)\nUmbrella: Blue shiny-bows parasol\nBirthday: June 18\nFavorite Saying: \"Don't lose sight of what you're really after.\"\nCatchphrase: \"arfer\"",
+    "type": "character",
+    "title": "Cookie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Cookie\nScreenshot rank: 36. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -84,7 +292,23 @@
     "value": "Name: Lucky\nGender: Male\nSpecies: Dog\nPersonality: Lazy, Scorpio\nClothing: Open-collar shirt (Coral)\nUmbrella: Orange umbrella\nBirthday: November 4\nFavorite Saying: \"Don't bite the hand that feeds you.\"\nCatchphrase: \"rrr-owch\"",
     "type": "character",
     "title": "Lucky",
-    "description": "Source: https://nookipedia.com/wiki/Lucky\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Lucky\nScreenshot rank: 37. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Aurora",
+    "value": "Name: Aurora\nGender: Female\nSpecies: Penguin\nPersonality: Normal, Aquarius\nClothing: Plover cardigan (Red)\nUmbrella: Snowflake umbrella\nBirthday: January 27\nFavorite Saying: \"Always keep your cool.\"\nCatchphrase: \"b-b-baby\"",
+    "type": "character",
+    "title": "Aurora",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Aurora\nScreenshot rank: 38. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Gayle",
+    "value": "Name: Gayle\nGender: Female\nSpecies: Alligator\nPersonality: Normal, Taurus\nClothing: Lace-up dress (Pink)\nUmbrella: Pink shiny-bows parasol\nBirthday: May 17\nFavorite Saying: \"An ounce of prevention is worth a pound of cure.\"\nCatchphrase: \"snacky\"",
+    "type": "character",
+    "title": "Gayle",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Gayle\nScreenshot rank: 39. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -92,23 +316,47 @@
     "value": "Name: Apollo\nGender: Male\nSpecies: Eagle\nPersonality: Cranky, Cancer\nClothing: Flight jacket (Black)\nUmbrella: Bat umbrella\nBirthday: July 4\nFavorite Saying: \"What goes up must come down.\"\nCatchphrase: \"pah\"",
     "type": "character",
     "title": "Apollo",
-    "description": "Source: https://nookipedia.com/wiki/Apollo\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Apollo\nScreenshot rank: 40. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
     "keys": "Genji",
-    "value": "Name: Genji\nGender: Male\nSpecies: Rabbit\nPersonality: Jock, Aquarius\nClothing: Misty tee\nUmbrella: Paper parasol\nBirthday: January 21\nFavorite Saying: \"Fall down seven times, get up eight.\"\nCatchphrase: \"mochi\"",
+    "value": "Name: Genji\nGender: Male\nSpecies: Rabbit\nPersonality: Jock, Aquarius\nClothing: Misty tee\nUmbrella: Maple-leaf umbrella\nBirthday: January 21\nFavorite Saying: \"Fall down seven times, get up eight.\"\nCatchphrase: \"mochi\"",
     "type": "character",
     "title": "Genji",
-    "description": "Source: https://nookipedia.com/wiki/Genji\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Genji\nScreenshot rank: 41. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Melba",
+    "value": "Name: Melba\nGender: Female\nSpecies: Koala\nPersonality: Normal, Aries\nClothing: Plaid-print dress (Fancy plaid)\nUmbrella: Strawberry umbrella\nBirthday: April 12\nFavorite Saying: \"A friend who shares is a friend who cares.\"\nCatchphrase: \"toasty\"",
+    "type": "character",
+    "title": "Melba",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Melba\nScreenshot rank: 42. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
     "keys": "Wolfgang",
-    "value": "Name: Wolfgang\nGender: Male\nSpecies: Wolf\nPersonality: Cranky, Sagittarius\nClothing: Flight jacket (Brown)\nUmbrella: Paper parasol\nBirthday: November 25\nFavorite Saying: \"Don't be afraid to show your fangs.\"\nCatchphrase: \"snarrrl\"",
+    "value": "Name: Wolfgang\nGender: Male\nSpecies: Wolf\nPersonality: Cranky, Sagittarius\nClothing: Flight jacket (Brown)\nUmbrella: Bat umbrella\nBirthday: November 25\nFavorite Saying: \"Don't be afraid to show your fangs.\"\nCatchphrase: \"snarrrl\"",
     "type": "character",
     "title": "Wolfgang",
-    "description": "Source: https://nookipedia.com/wiki/Wolfgang\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Wolfgang\nScreenshot rank: 43. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Ruby",
+    "value": "Name: Ruby\nGender: Female\nSpecies: Rabbit\nPersonality: Peppy, Capricorn\nClothing: Rabbit tee\nUmbrella: Lemon umbrella\nBirthday: December 25\nFavorite Saying: \"You can always take the red-eye.\"\nCatchphrase: \"li'l ears\"",
+    "type": "character",
+    "title": "Ruby",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ruby\nScreenshot rank: 44. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Sylvana",
+    "value": "Name: Sylvana\nGender: Female\nSpecies: Squirrel\nPersonality: Normal, Libra\nClothing: Kiwi dress\nUmbrella: Kiwi umbrella\nBirthday: October 22\nFavorite Saying: \"Remember to see the forest between the trees.\"\nCatchphrase: \"hubbub\"",
+    "type": "character",
+    "title": "Sylvana",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Sylvana\nScreenshot rank: 45. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -116,7 +364,15 @@
     "value": "Name: Bones\nGender: Male\nSpecies: Dog\nPersonality: Lazy, Leo\nClothing: Printed fleece sweater (Brown)\nUmbrella: Kiwi umbrella\nBirthday: August 4\nFavorite Saying: \"A snack a day keeps the vacuum away.\"\nCatchphrase: \"yip yip\"",
     "type": "character",
     "title": "Bones",
-    "description": "Source: https://nookipedia.com/wiki/Bones\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bones\nScreenshot rank: 46. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Flora",
+    "value": "Name: Flora\nGender: Female\nSpecies: Ostrich\nPersonality: Peppy, Aquarius\nClothing: Gumdrop dress (Pop)\nUmbrella: Hydrangea umbrella\nBirthday: February 9\nFavorite Saying: \"Pink is the new black.\"\nCatchphrase: \"pinky\"",
+    "type": "character",
+    "title": "Flora",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Flora\nScreenshot rank: 47. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -124,7 +380,143 @@
     "value": "Name: Henry\nGender: Male\nSpecies: Frog\nPersonality: Smug, Virgo\nClothing: Denim jacket (Blue)\nUmbrella: Vinyl umbrella\nBirthday: September 21\nFavorite Saying: \"The way to a frog's heart is through his stomach.\"\nCatchphrase: \"snoozit\"",
     "type": "character",
     "title": "Henry",
-    "description": "Source: https://nookipedia.com/wiki/Henry\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Henry\nScreenshot rank: 48. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Merry",
+    "value": "Name: Merry\nGender: Female\nSpecies: Cat\nPersonality: Peppy, Cancer\nClothing: Dreamy sweater (Pink)\nUmbrella: Fairy-tale umbrella\nBirthday: June 29\nFavorite Saying: \"A smile increases your face value.\"\nCatchphrase: \"mweee\"",
+    "type": "character",
+    "title": "Merry",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Merry\nScreenshot rank: 49. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Shep",
+    "value": "Name: Shep\nGender: Male\nSpecies: Dog\nPersonality: Smug, Sagittarius\nClothing: Denim vest (Washed out)\nUmbrella: Two-tone umbrella\nBirthday: November 24\nFavorite Saying: \"Even dogs won't get in the middle of true love.\"\nCatchphrase: \"baa baa baa\"",
+    "type": "character",
+    "title": "Shep",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Shep\nScreenshot rank: 50. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Punchy",
+    "value": "Name: Punchy\nGender: Male\nSpecies: Cat\nPersonality: Lazy, Aries\nClothing: Madras plaid shirt (Gray)\nUmbrella: Frog umbrella\nBirthday: April 11\nFavorite Saying: \"There's always more fish in the sea!\"\nCatchphrase: \"mrmpht\"",
+    "type": "character",
+    "title": "Punchy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Punchy\nScreenshot rank: 51. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Whitney",
+    "value": "Name: Whitney\nGender: Female\nSpecies: Wolf\nPersonality: Snooty, Virgo\nClothing: Sleeveless shirtdress (Blue)\nUmbrella: Purple chic umbrella\nBirthday: September 17\nFavorite Saying: \"Don't cry wolf unless you mean it.\"\nCatchphrase: \"snappy\"",
+    "type": "character",
+    "title": "Whitney",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Whitney\nScreenshot rank: 52. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Flurry",
+    "value": "Name: Flurry\nGender: Female\nSpecies: Hamster\nPersonality: Normal, Aquarius\nClothing: Flower sweater (Red)\nUmbrella: Snowflake umbrella\nBirthday: January 30\nFavorite Saying: \"Squeak your mind, even if your voice shakes.\"\nCatchphrase: \"powderpuff\"",
+    "type": "character",
+    "title": "Flurry",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Flurry\nScreenshot rank: 53. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Mitzi",
+    "value": "Name: Mitzi\nGender: Female\nSpecies: Cat\nPersonality: Normal, Libra\nClothing: Gumdrop dress (Pop)\nUmbrella: Raindrop umbrella\nBirthday: September 25\nFavorite Saying: \"Practice makes purrrfect!\"\nCatchphrase: \"mew\"",
+    "type": "character",
+    "title": "Mitzi",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Mitzi\nScreenshot rank: 54. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Pekoe",
+    "value": "Name: Pekoe\nGender: Female\nSpecies: Bear cub\nPersonality: Normal, Taurus\nClothing: Sleeveless silk dress (Red)\nUmbrella: Exquisite parasol\nBirthday: May 18\nFavorite Saying: \"Let bygones be bygones.\"\nCatchphrase: \"bud\"",
+    "type": "character",
+    "title": "Pekoe",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Pekoe\nScreenshot rank: 55. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Rudy",
+    "value": "Name: Rudy\nGender: Male\nSpecies: Cat\nPersonality: Jock, Sagittarius\nClothing: Simple parka (Yellow)\nUmbrella: Two-tone umbrella\nBirthday: December 20\nFavorite Saying: \"Always land on your feet!\"\nCatchphrase: \"mush\"",
+    "type": "character",
+    "title": "Rudy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Rudy\nScreenshot rank: 56. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Daisy",
+    "value": "Name: Daisy\nGender: Female\nSpecies: Dog\nPersonality: Normal, Scorpio\nClothing: Colorful striped sweater (Navy, light blue & pink)\nUmbrella: Peach umbrella\nBirthday: November 16\nFavorite Saying: \"It's not always a dog-eat-dog world.\"\nCatchphrase: \"bow-WOW\"",
+    "type": "character",
+    "title": "Daisy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Daisy\nScreenshot rank: 57. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Phoebe",
+    "value": "Name: Phoebe\nGender: Female\nSpecies: Ostrich\nPersonality: Big sister, Taurus\nClothing: Front-tie tee (Black)\nUmbrella: Spider umbrella\nBirthday: April 22\nFavorite Saying: \"You can't keep a good bird down.\"\nCatchphrase: \"sparky\"",
+    "type": "character",
+    "title": "Phoebe",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Phoebe\nScreenshot rank: 58. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "June",
+    "value": "Name: June\nGender: Female\nSpecies: Bear cub\nPersonality: Normal, Gemini\nClothing: Hibiscus muumuu (Red)\nUmbrella: Pineapple umbrella\nBirthday: May 21\nFavorite Saying: \"Dream big, expect little.\"\nCatchphrase: \"rainbow\"",
+    "type": "character",
+    "title": "June",
+    "description": "Nookipedia: https://nookipedia.com/wiki/June\nScreenshot rank: 59. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bluebear",
+    "value": "Name: Bluebear\nGender: Female\nSpecies: Bear cub\nPersonality: Peppy, Cancer\nClothing: Aran-knit sweater (White)\nUmbrella: Strawberry umbrella\nBirthday: June 24\nFavorite Saying: \"Candy makes the world go 'round.\"\nCatchphrase: \"peach\"",
+    "type": "character",
+    "title": "Bluebear",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bluebear\nScreenshot rank: 60. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Gala",
+    "value": "Name: Gala\nGender: Female\nSpecies: Pig\nPersonality: Normal, Pisces\nClothing: Flower-print dress (Pink)\nUmbrella: Mini-flower-print umbrella\nBirthday: March 5\nFavorite Saying: \"Still waters run deep.\"\nCatchphrase: \"snortie\"",
+    "type": "character",
+    "title": "Gala",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Gala\nScreenshot rank: 61. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Katt",
+    "value": "Name: Katt\nGender: Female\nSpecies: Cat\nPersonality: Big sister, Taurus\nClothing: Old-school jacket (Red)\nUmbrella: Spider umbrella\nBirthday: April 27\nFavorite Saying: \"MeowMEOWmeow!\"\nCatchphrase: \"purrty\"",
+    "type": "character",
+    "title": "Katt",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Katt\nScreenshot rank: 62. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Cephalobot",
+    "value": "Name: Cephalobot\nGender: Male\nSpecies: Octopus\nPersonality: Smug, Aries\nClothing: Retro sweater (White)\nUmbrella: Rainbow umbrella\nBirthday: April 1\nFavorite Saying: \"Take me to your pizza.\"\nCatchphrase: \"donk donk\"",
+    "type": "character",
+    "title": "Cephalobot",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Cephalobot\nScreenshot rank: 63. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Kid Cat",
+    "value": "Name: Kid Cat\nGender: Male\nSpecies: Cat\nPersonality: Jock, Leo\nClothing: No. 1 shirt\nUmbrella: Vinyl umbrella\nBirthday: August 1\nFavorite Saying: \"Crime doesn't pay!\"\nCatchphrase: \"psst\"",
+    "type": "character",
+    "title": "Kid Cat",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Kid_Cat\nScreenshot rank: 64. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Maggie",
+    "value": "Name: Maggie\nGender: Female\nSpecies: Pig\nPersonality: Normal, Virgo\nClothing: Pintuck-pleated dress (Green)\nUmbrella: Petal parasol\nBirthday: September 3\nFavorite Saying: \"All a plant needs is love...and sun and water and soil.\"\nCatchphrase: \"schep\"",
+    "type": "character",
+    "title": "Maggie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Maggie\nScreenshot rank: 65. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -132,7 +524,23 @@
     "value": "Name: Pietro\nGender: Male\nSpecies: Sheep\nPersonality: Smug, Aries\nClothing: Jester costume (Purple & yellow)\nUmbrella: Rainbow umbrella\nBirthday: April 19\nFavorite Saying: \"Be the class clown.\"\nCatchphrase: \"honk honk\"",
     "type": "character",
     "title": "Pietro",
-    "description": "Source: https://nookipedia.com/wiki/Pietro\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Pietro\nScreenshot rank: 66. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Teddy",
+    "value": "Name: Teddy\nGender: Male\nSpecies: Bear\nPersonality: Jock, Libra\nClothing: Energetic sweater (Yellow)\nUmbrella: Frog umbrella\nBirthday: September 26\nFavorite Saying: \"No pain, no gain!\"\nCatchphrase: \"grooof\"",
+    "type": "character",
+    "title": "Teddy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Teddy\nScreenshot rank: 67. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Goose",
+    "value": "Name: Goose\nGender: Male\nSpecies: Chicken\nPersonality: Jock, Libra\nClothing: Bold aloha shirt (Navy blue)\nUmbrella: Rainbow umbrella\nBirthday: October 4\nFavorite Saying: \"Birds of a feather crow together.\"\nCatchphrase: \"buh-kay\"",
+    "type": "character",
+    "title": "Goose",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Goose\nScreenshot rank: 68. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -140,7 +548,359 @@
     "value": "Name: Olivia\nGender: Female\nSpecies: Cat\nPersonality: Snooty, Aquarius\nClothing: Sweetheart dress (Navy blue)\nUmbrella: Black chic umbrella\nBirthday: February 3\nFavorite Saying: \"There's an exception to every rule.\"\nCatchphrase: \"purrr\"",
     "type": "character",
     "title": "Olivia",
-    "description": "Source: https://nookipedia.com/wiki/Olivia\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Olivia\nScreenshot rank: 69. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Sprinkle",
+    "value": "Name: Sprinkle\nGender: Female\nSpecies: Penguin\nPersonality: Peppy, Pisces\nClothing: Snowy sweater (Gray)\nUmbrella: Patterned vinyl umbrella\nBirthday: February 20\nFavorite Saying: \"Frosting is just the icing on the cake.\"\nCatchphrase: \"frappe\"",
+    "type": "character",
+    "title": "Sprinkle",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Sprinkle\nScreenshot rank: 70. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Butch",
+    "value": "Name: Butch\nGender: Male\nSpecies: Dog\nPersonality: Cranky, Scorpio\nClothing: Argyle vest (Blue)\nUmbrella: Bat umbrella\nBirthday: November 1\nFavorite Saying: \"A house without either a cat or a dog is a sad house indeed.\"\nCatchphrase: \"ROOOOOWF\"",
+    "type": "character",
+    "title": "Butch",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Butch\nScreenshot rank: 71. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Kyle",
+    "value": "Name: Kyle\nGender: Male\nSpecies: Wolf\nPersonality: Smug, Sagittarius\nClothing: Gilet and shirt (Black)\nUmbrella: Spider umbrella\nBirthday: December 6\nFavorite Saying: \"Never trust a sheep in wolf's clothing.\"\nCatchphrase: \"alpha\"",
+    "type": "character",
+    "title": "Kyle",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Kyle\nScreenshot rank: 72. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Savannah",
+    "value": "Name: Savannah\nGender: Female\nSpecies: Horse\nPersonality: Normal, Aquarius\nClothing: Top coat (Light blue)\nUmbrella: Hydrangea umbrella\nBirthday: January 25\nFavorite Saying: \"Keep your chin up!\"\nCatchphrase: \"y'all\"",
+    "type": "character",
+    "title": "Savannah",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Savannah\nScreenshot rank: 73. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Static",
+    "value": "Name: Static\nGender: Male\nSpecies: Squirrel\nPersonality: Cranky, Cancer\nClothing: Dragon jacket\nUmbrella: Logo umbrella\nBirthday: July 9\nFavorite Saying: \"Lightning never strikes twice.\"\nCatchphrase: \"krzzt\"",
+    "type": "character",
+    "title": "Static",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Static\nScreenshot rank: 74. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Wade",
+    "value": "Name: Wade\nGender: Male\nSpecies: Penguin\nPersonality: Lazy, Scorpio\nClothing: Frog tee\nUmbrella: Rainbow umbrella\nBirthday: October 30\nFavorite Saying: \"Which came first, the seeds or the sunflower?\"\nCatchphrase: \"so it goes\"",
+    "type": "character",
+    "title": "Wade",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Wade\nScreenshot rank: 75. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Yuka",
+    "value": "Name: Yuka\nGender: Female\nSpecies: Koala\nPersonality: Snooty, Cancer\nClothing: Aran-knit sweater (Orange)\nUmbrella: Raindrop umbrella\nBirthday: July 20\nFavorite Saying: \"Beauty is in the eye of the beholder.\"\nCatchphrase: \"tsk tsk\"",
+    "type": "character",
+    "title": "Yuka",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Yuka\nScreenshot rank: 76. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bea",
+    "value": "Name: Bea\nGender: Female\nSpecies: Dog\nPersonality: Normal, Libra\nClothing: Striped maxi dress (Orange)\nUmbrella: Mint umbrella\nBirthday: October 15\nFavorite Saying: \"The perfect pair complements each other.\"\nCatchphrase: \"bingo\"",
+    "type": "character",
+    "title": "Bea",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bea\nScreenshot rank: 77. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Cube",
+    "value": "Name: Cube\nGender: Male\nSpecies: Penguin\nPersonality: Lazy, Aquarius\nClothing: Simple-dots tee (Yellow)\nUmbrella: Blue dot parasol\nBirthday: January 29\nFavorite Saying: \"Sometimes you gotta learn to chill.\"\nCatchphrase: \"brainfreeze\"",
+    "type": "character",
+    "title": "Cube",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Cube\nScreenshot rank: 78. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Ellie",
+    "value": "Name: Ellie\nGender: Female\nSpecies: Elephant\nPersonality: Normal, Taurus\nClothing: Aran-knit sweater (Red)\nUmbrella: Pink shiny-bows parasol\nBirthday: May 12\nFavorite Saying: \"You need the sour to highlight the sweet.\"\nCatchphrase: \"li'l one\"",
+    "type": "character",
+    "title": "Ellie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ellie\nScreenshot rank: 79. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Julia",
+    "value": "Name: Julia\nGender: Female\nSpecies: Ostrich\nPersonality: Snooty, Leo\nClothing: Zigzag-print dress (Coral)\nUmbrella: Rainbow umbrella\nBirthday: July 31\nFavorite Saying: \"Cut once, measure twice... Wait— reverse that.\"\nCatchphrase: \"dahling\"",
+    "type": "character",
+    "title": "Julia",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Julia\nScreenshot rank: 80. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Lyman",
+    "value": "Name: Lyman\nGender: Male\nSpecies: Koala\nPersonality: Jock, Libra\nClothing: Vertical-stripes shirt (Blue)\nUmbrella: Tartan-check umbrella\nBirthday: October 12\nFavorite Saying: \"Eucalyptus is the spice of life.\"\nCatchphrase: \"chips\"",
+    "type": "character",
+    "title": "Lyman",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Lyman\nScreenshot rank: 81. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Scoot",
+    "value": "Name: Scoot\nGender: Male\nSpecies: Duck\nPersonality: Jock, Gemini\nClothing: Frog tee\nUmbrella: Blue umbrella\nBirthday: June 13\nFavorite Saying: \"Some birds avoid the water, ducks look for it.\"\nCatchphrase: \"zip zoom\"",
+    "type": "character",
+    "title": "Scoot",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Scoot\nScreenshot rank: 82. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Agnes",
+    "value": "Name: Agnes\nGender: Female\nSpecies: Pig\nPersonality: Big sister, Taurus\nClothing: Striped halter dress (Pink)\nUmbrella: Peach umbrella\nBirthday: April 21\nFavorite Saying: \"You reap what you sow.\"\nCatchphrase: \"snuffle\"",
+    "type": "character",
+    "title": "Agnes",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Agnes\nScreenshot rank: 83. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Dobie",
+    "value": "Name: Dobie\nGender: Male\nSpecies: Wolf\nPersonality: Cranky, Aquarius\nClothing: Fuzzy vest (Navy blue)\nUmbrella: Busted umbrella\nBirthday: February 17\nFavorite Saying: \"Old longings never truly fade.\"\nCatchphrase: \"ohmmm\"",
+    "type": "character",
+    "title": "Dobie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Dobie\nScreenshot rank: 84. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Fuchsia",
+    "value": "Name: Fuchsia\nGender: Female\nSpecies: Deer\nPersonality: Big sister, Virgo\nClothing: Zigzag-print dress (Purple)\nUmbrella: Toad parasol\nBirthday: September 19\nFavorite Saying: \"It takes one to know one.\"\nCatchphrase: \"precious\"",
+    "type": "character",
+    "title": "Fuchsia",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Fuchsia\nScreenshot rank: 85. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Nan",
+    "value": "Name: Nan\nGender: Female\nSpecies: Goat\nPersonality: Normal, Virgo\nClothing: Tweed dress (Yellow)\nUmbrella: Raindrop umbrella\nBirthday: August 24\nFavorite Saying: \"Nanny-nanny boo-boo!\"\nCatchphrase: \"kid\"",
+    "type": "character",
+    "title": "Nan",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Nan\nScreenshot rank: 86. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Sprocket",
+    "value": "Name: Sprocket\nGender: Male\nSpecies: Ostrich\nPersonality: Jock, Sagittarius\nClothing: Jumper work suit (Orange)\nUmbrella: Busted umbrella\nBirthday: December 1\nFavorite Saying: \"Strike while the iron is hot.\"\nCatchphrase: \"zort\"",
+    "type": "character",
+    "title": "Sprocket",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Sprocket\nScreenshot rank: 87. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tia",
+    "value": "Name: Tia\nGender: Female\nSpecies: Elephant\nPersonality: Normal, Scorpio\nClothing: Maid dress (Black)\nUmbrella: Blue shiny-bows parasol\nBirthday: November 18\nFavorite Saying: \"Tea is a cup of life.\"\nCatchphrase: \"teacup\"",
+    "type": "character",
+    "title": "Tia",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tia\nScreenshot rank: 88. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bangle",
+    "value": "Name: Bangle\nGender: Female\nSpecies: Tiger\nPersonality: Peppy, Virgo\nClothing: Tropical muumuu (Mint)\nUmbrella: Rainbow umbrella\nBirthday: August 27\nFavorite Saying: \"Don't blink or you'll miss it.\"\nCatchphrase: \"growf\"",
+    "type": "character",
+    "title": "Bangle",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bangle\nScreenshot rank: 89. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bianca",
+    "value": "Name: Bianca\nGender: Female\nSpecies: Tiger\nPersonality: Peppy, Sagittarius\nClothing: Front-tie button-down shirt (Pink)\nUmbrella: Mini-flower-print umbrella\nBirthday: December 13\nFavorite Saying: \"There is such a thing as love at first sight.\"\nCatchphrase: \"glimmer\"",
+    "type": "character",
+    "title": "Bianca",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bianca\nScreenshot rank: 90. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Chief",
+    "value": "Name: Chief\nGender: Male\nSpecies: Wolf\nPersonality: Cranky, Sagittarius\nClothing: Sweater on shirt (Pink)\nUmbrella: Vinyl umbrella\nBirthday: December 19\nFavorite Saying: \"Don't wish it were easier; wish you were better.\"\nCatchphrase: \"harrumph\"",
+    "type": "character",
+    "title": "Chief",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Chief\nScreenshot rank: 91. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Stella",
+    "value": "Name: Stella\nGender: Female\nSpecies: Sheep\nPersonality: Normal, Aries\nClothing: Flower sweater (Red)\nUmbrella: Petal parasol\nBirthday: April 9\nFavorite Saying: \"100% Natural Fiber.\"\nCatchphrase: \"baa-dabing\"",
+    "type": "character",
+    "title": "Stella",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Stella\nScreenshot rank: 92. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Willow",
+    "value": "Name: Willow\nGender: Female\nSpecies: Sheep\nPersonality: Snooty, Sagittarius\nClothing: Pom-pom sweater (Pink)\nUmbrella: Fairy-tale umbrella\nBirthday: November 26\nFavorite Saying: \"You can't fight your genes.\"\nCatchphrase: \"bo peep\"",
+    "type": "character",
+    "title": "Willow",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Willow\nScreenshot rank: 93. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Antonio",
+    "value": "Name: Antonio\nGender: Male\nSpecies: Anteater\nPersonality: Jock, Libra\nClothing: Bone tee\nUmbrella: Blue umbrella\nBirthday: October 20\nFavorite Saying: \"Always go for the burn!\"\nCatchphrase: \"honk\"",
+    "type": "character",
+    "title": "Antonio",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Antonio\nScreenshot rank: 94. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Apple",
+    "value": "Name: Apple\nGender: Female\nSpecies: Hamster\nPersonality: Peppy, Libra\nClothing: Marble-dots tee (White)\nUmbrella: Toad parasol\nBirthday: September 24\nFavorite Saying: \"One rotten apple spoils the barrel.\"\nCatchphrase: \"cheekers\"",
+    "type": "character",
+    "title": "Apple",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Apple\nScreenshot rank: 95. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bill",
+    "value": "Name: Bill\nGender: Male\nSpecies: Duck\nPersonality: Jock, Aquarius\nClothing: Basketball tank (Purple)\nUmbrella: Fairy-tale umbrella\nBirthday: February 1\nFavorite Saying: \"Even though there's no 'I' in team, there is a 'me'!\"\nCatchphrase: \"quacko\"",
+    "type": "character",
+    "title": "Bill",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bill\nScreenshot rank: 96. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Cleo",
+    "value": "Name: Cleo\nGender: Female\nSpecies: Horse\nPersonality: Snooty, Aquarius\nClothing: Floral lace dress (Light blue)\nUmbrella: Lacy parasol\nBirthday: February 9\nFavorite Saying: \"There's something lovable in all of us.\"\nCatchphrase: \"sugar\"",
+    "type": "character",
+    "title": "Cleo",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Cleo\nScreenshot rank: 97. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Drago",
+    "value": "Name: Drago\nGender: Male\nSpecies: Alligator\nPersonality: Lazy, Aquarius\nClothing: Dragon suit\nUmbrella: Panda umbrella\nBirthday: February 12\nFavorite Saying: \"There is no room for two dragons in one pond.\"\nCatchphrase: \"burrrn\"",
+    "type": "character",
+    "title": "Drago",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Drago\nScreenshot rank: 98. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Ed",
+    "value": "Name: Ed\nGender: Male\nSpecies: Horse\nPersonality: Smug, Virgo\nClothing: Collarless shirt (Black)\nUmbrella: Vinyl umbrella\nBirthday: September 16\nFavorite Saying: \"Beauty is pretty!\"\nCatchphrase: \"greenhorn\"",
+    "type": "character",
+    "title": "Ed",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ed\nScreenshot rank: 99. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Francine",
+    "value": "Name: Francine\nGender: Female\nSpecies: Rabbit\nPersonality: Snooty, Aquarius\nClothing: Marble-dots dress (Black)\nUmbrella: White shiny-bows parasol\nBirthday: January 22\nFavorite Saying: \"You can't have wise folks if you don't have fools too.\"\nCatchphrase: \"karat\"",
+    "type": "character",
+    "title": "Francine",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Francine\nScreenshot rank: 100. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Frett",
+    "value": "Name: Frett\nGender: Male\nSpecies: Dog\nPersonality: Cranky, Scorpio\nClothing: Gingham picnic shirt (Gray)\nUmbrella: Camo umbrella\nBirthday: October 30\nFavorite Saying: \"I'm in the prime of my life.\"\nCatchphrase: \"goshers\"",
+    "type": "character",
+    "title": "Frett",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Frett\nScreenshot rank: 101. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tex",
+    "value": "Name: Tex\nGender: Male\nSpecies: Penguin\nPersonality: Smug, Libra\nClothing: Letter jacket (Blue)\nUmbrella: Blue umbrella\nBirthday: October 6\nFavorite Saying: \"Rules were made to be broken.\"\nCatchphrase: \"picante\"",
+    "type": "character",
+    "title": "Tex",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tex\nScreenshot rank: 102. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Zell",
+    "value": "Name: Zell\nGender: Male\nSpecies: Deer\nPersonality: Smug, Gemini\nClothing: Gilet and shirt (Black)\nUmbrella: Camo umbrella\nBirthday: June 7\nFavorite Saying: \"Clothes totally make the mammal.\"\nCatchphrase: \"pronk\"",
+    "type": "character",
+    "title": "Zell",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Zell\nScreenshot rank: 103. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bam",
+    "value": "Name: Bam\nGender: Male\nSpecies: Deer\nPersonality: Jock, Scorpio\nClothing: Athletic jacket (Green)\nUmbrella: Green umbrella\nBirthday: November 7\nFavorite Saying: \"Get while the getting's good.\"\nCatchphrase: \"kablang\"",
+    "type": "character",
+    "title": "Bam",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bam\nScreenshot rank: 104. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bunnie",
+    "value": "Name: Bunnie\nGender: Female\nSpecies: Rabbit\nPersonality: Peppy, Taurus\nClothing: Lively plaid dress\nUmbrella: Toad parasol\nBirthday: May 9\nFavorite Saying: \"Hare today, gone tomorrow.\"\nCatchphrase: \"tee-hee\"",
+    "type": "character",
+    "title": "Bunnie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bunnie\nScreenshot rank: 105. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Chevre",
+    "value": "Name: Chevre\nGender: Female\nSpecies: Goat\nPersonality: Normal, Pisces\nClothing: Poncho coat (Red)\nUmbrella: Mini-flower-print umbrella\nBirthday: March 6\nFavorite Saying: \"If you're gonna dream, dream big.\"\nCatchphrase: \"la baa\"",
+    "type": "character",
+    "title": "Chevre",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Chevre\nScreenshot rank: 106. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Chrissy",
+    "value": "Name: Chrissy\nGender: Female\nSpecies: Rabbit\nPersonality: Peppy, Virgo\nClothing: Marble-dots dress (White)\nUmbrella: White shiny-bows parasol\nBirthday: August 28\nFavorite Saying: \"A fool and their Bells are soon parted.\"\nCatchphrase: \"sparkles\"",
+    "type": "character",
+    "title": "Chrissy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Chrissy\nScreenshot rank: 107. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Étoile",
+    "value": "Name: Étoile\nGender: Female\nSpecies: Sheep\nPersonality: Normal, Capricorn\nClothing: Kiki & Lala tee\nUmbrella: Purple shiny-bows parasol\nBirthday: December 25\nFavorite Saying: \"Who knows what the stars have in store for us?\"\nCatchphrase: \"fuzzy\"",
+    "type": "character",
+    "title": "Étoile",
+    "description": "Nookipedia: https://nookipedia.com/wiki/%C3%89toile\nScreenshot rank: 108. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Gabi",
+    "value": "Name: Gabi\nGender: Female\nSpecies: Rabbit\nPersonality: Peppy, Sagittarius\nClothing: Gingham picnic shirt (Red)\nUmbrella: Tartan-check umbrella\nBirthday: December 16\nFavorite Saying: \"The more the merrier.\"\nCatchphrase: \"honeybun\"",
+    "type": "character",
+    "title": "Gabi",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Gabi\nScreenshot rank: 109. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Papi",
+    "value": "Name: Papi\nGender: Male\nSpecies: Horse\nPersonality: Lazy, Capricorn\nClothing: Colorful striped sweater (Navy, light blue & pink)\nUmbrella: Green umbrella\nBirthday: January 10\nFavorite Saying: \"Never say neigh.\"\nCatchphrase: \"haaay\"",
+    "type": "character",
+    "title": "Papi",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Papi\nScreenshot rank: 110. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Snake",
+    "value": "Name: Snake\nGender: Male\nSpecies: Rabbit\nPersonality: Jock, Scorpio\nClothing: Ninja costume (Dark blue)\nUmbrella: Paper parasol\nBirthday: November 3\nFavorite Saying: \"A good ninja is neither seen nor heard.\"\nCatchphrase: \"bunyip\"",
+    "type": "character",
+    "title": "Snake",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Snake\nScreenshot rank: 111. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tipper",
+    "value": "Name: Tipper\nGender: Female\nSpecies: Cow\nPersonality: Snooty, Virgo\nClothing: Retro sweater (Purple)\nUmbrella: Rainbow umbrella\nBirthday: August 25\nFavorite Saying: \"It takes two to tango.\"\nCatchphrase: \"pushy\"",
+    "type": "character",
+    "title": "Tipper",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tipper\nScreenshot rank: 112. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Billy",
+    "value": "Name: Billy\nGender: Male\nSpecies: Goat\nPersonality: Jock, Aries\nClothing: Hanten jacket (Dark blue)\nUmbrella: Paper parasol\nBirthday: March 25\nFavorite Saying: \"Old dogs can learn new tricks.\"\nCatchphrase: \"dagnaabit\"",
+    "type": "character",
+    "title": "Billy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Billy\nScreenshot rank: 113. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -148,7 +908,39 @@
     "value": "Name: Skye\nGender: Female\nSpecies: Wolf\nPersonality: Normal, Aries\nClothing: Peasant blouse (White)\nUmbrella: Lacy parasol\nBirthday: March 24\nFavorite Saying: \"Love makes the world go 'round.\"\nCatchphrase: \"airmail\"",
     "type": "character",
     "title": "Skye",
-    "description": "Source: https://nookipedia.com/wiki/Skye\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Skye\nScreenshot rank: 114. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Filbert",
+    "value": "Name: Filbert\nGender: Male\nSpecies: Squirrel\nPersonality: Lazy, Gemini\nClothing: Tree sweater\nUmbrella: Pineapple umbrella\nBirthday: June 3\nFavorite Saying: \"Don't go nuts or anything.\"\nCatchphrase: \"bucko\"",
+    "type": "character",
+    "title": "Filbert",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Filbert\nScreenshot rank: 115. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Flo",
+    "value": "Name: Flo\nGender: Female\nSpecies: Penguin\nPersonality: Big sister, Virgo\nClothing: Folk shirt (Red)\nUmbrella: Lemon umbrella\nBirthday: September 2\nFavorite Saying: \"Always keep a straight face.\"\nCatchphrase: \"cha\"",
+    "type": "character",
+    "title": "Flo",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Flo\nScreenshot rank: 116. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Hazel",
+    "value": "Name: Hazel\nGender: Female\nSpecies: Squirrel\nPersonality: Big sister, Virgo\nClothing: Athletic jacket (Red)\nUmbrella: Apple umbrella\nBirthday: August 30\nFavorite Saying: \"Never say never!\"\nCatchphrase: \"uni-wow\"",
+    "type": "character",
+    "title": "Hazel",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Hazel\nScreenshot rank: 117. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Midge",
+    "value": "Name: Midge\nGender: Female\nSpecies: Bird\nPersonality: Normal, Pisces\nClothing: Silk shirt (Blue)\nUmbrella: Petal parasol\nBirthday: March 12\nFavorite Saying: \"When the world gets cold, just fly south.\"\nCatchphrase: \"tweedledee\"",
+    "type": "character",
+    "title": "Midge",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Midge\nScreenshot rank: 118. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -156,7 +948,455 @@
     "value": "Name: Peanut\nGender: Female\nSpecies: Squirrel\nPersonality: Peppy, Gemini\nClothing: Striped maxi dress (Orange)\nUmbrella: Cherry umbrella\nBirthday: June 8\nFavorite Saying: \"Never take a nibble when you can take a bite.\"\nCatchphrase: \"slacker\"",
     "type": "character",
     "title": "Peanut",
-    "description": "Source: https://nookipedia.com/wiki/Peanut\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Peanut\nScreenshot rank: 119. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Twiggy",
+    "value": "Name: Twiggy\nGender: Female\nSpecies: Bird\nPersonality: Peppy, Cancer\nClothing: Striped tank (Pink)\nUmbrella: Strawberry umbrella\nBirthday: July 13\nFavorite Saying: \"It's the early bird that catches the worm!\"\nCatchphrase: \"cheepers\"",
+    "type": "character",
+    "title": "Twiggy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Twiggy\nScreenshot rank: 120. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Azalea",
+    "value": "Name: Azalea\nGender: Female\nSpecies: Rhinoceros\nPersonality: Snooty, Sagittarius\nClothing: Sleeveless tunic (Purple)\nUmbrella: Petal parasol\nBirthday: December 18\nFavorite Saying: \"Colorful petals, deep roots.\"\nCatchphrase: \"merci\"",
+    "type": "character",
+    "title": "Azalea",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Azalea\nScreenshot rank: 121. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Boots",
+    "value": "Name: Boots\nGender: Male\nSpecies: Alligator\nPersonality: Jock, Leo\nClothing: Jester costume (Purple & yellow)\nUmbrella: Beach umbrella\nBirthday: August 7\nFavorite Saying: \"Strength lies in muscles.\"\nCatchphrase: \"munchie\"",
+    "type": "character",
+    "title": "Boots",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Boots\nScreenshot rank: 122. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Jeremiah",
+    "value": "Name: Jeremiah\nGender: Male\nSpecies: Frog\nPersonality: Lazy, Cancer\nClothing: Gingham picnic shirt (Orange)\nUmbrella: Pineapple umbrella\nBirthday: July 8\nFavorite Saying: \"Sleep before you leap.\"\nCatchphrase: \"nee-deep\"",
+    "type": "character",
+    "title": "Jeremiah",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Jeremiah\nScreenshot rank: 123. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Ribbot",
+    "value": "Name: Ribbot\nGender: Male\nSpecies: Frog\nPersonality: Jock, Aquarius\nClothing: Simple parka (Light blue)\nUmbrella: Bat umbrella\nBirthday: February 13\nFavorite Saying: \"Never rest, never rust.\"\nCatchphrase: \"zzrrbbitt\"",
+    "type": "character",
+    "title": "Ribbot",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ribbot\nScreenshot rank: 124. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Roscoe",
+    "value": "Name: Roscoe\nGender: Male\nSpecies: Horse\nPersonality: Cranky, Gemini\nClothing: Biker jacket (Black)\nUmbrella: Bat umbrella\nBirthday: June 16\nFavorite Saying: \"Trouble rides a fast horse.\"\nCatchphrase: \"nay\"",
+    "type": "character",
+    "title": "Roscoe",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Roscoe\nScreenshot rank: 125. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Biskit",
+    "value": "Name: Biskit\nGender: Male\nSpecies: Dog\nPersonality: Lazy, Taurus\nClothing: Meme shirt (Purple)\nUmbrella: Pineapple umbrella\nBirthday: May 13\nFavorite Saying: \"Let sleeping dogs lie.\"\nCatchphrase: \"dawg\"",
+    "type": "character",
+    "title": "Biskit",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Biskit\nScreenshot rank: 126. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Clay",
+    "value": "Name: Clay\nGender: Male\nSpecies: Hamster\nPersonality: Lazy, Libra\nClothing: Poncho-style sweater (Orange)\nUmbrella: Maple-leaf umbrella\nBirthday: October 19\nFavorite Saying: \"Life is just a bowl of cherries.\"\nCatchphrase: \"thump\"",
+    "type": "character",
+    "title": "Clay",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Clay\nScreenshot rank: 127. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Faith",
+    "value": "Name: Faith\nGender: Female\nSpecies: Koala\nPersonality: Big sister, Aries\nClothing: Hula top (Red)\nUmbrella: Pineapple umbrella\nBirthday: March 21\nFavorite Saying: \"Never let your mind be what holds you back.\"\nCatchphrase: \"aloha\"",
+    "type": "character",
+    "title": "Faith",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Faith\nScreenshot rank: 128. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Freya",
+    "value": "Name: Freya\nGender: Female\nSpecies: Wolf\nPersonality: Snooty, Sagittarius\nClothing: Reindeer sweater (Green)\nUmbrella: Lacy parasol\nBirthday: December 14\nFavorite Saying: \"Don't stray too far from the pack.\"\nCatchphrase: \"uff da\"",
+    "type": "character",
+    "title": "Freya",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Freya\nScreenshot rank: 129. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Petri",
+    "value": "Name: Petri\nGender: Female\nSpecies: Mouse\nPersonality: Snooty, Scorpio\nClothing: Doctor's coat (Black necktie)\nUmbrella: Hydrangea umbrella\nBirthday: October 23\nFavorite Saying: \"Our DNA is only the beginning of the story.\"\nCatchphrase: \"mmmhmm\"",
+    "type": "character",
+    "title": "Petri",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Petri\nScreenshot rank: 130. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Ace",
+    "value": "Name: Ace\nGender: Male\nSpecies: Bird\nPersonality: Jock, Leo\nClothing: Kung-fu tee (Light blue)\nUmbrella: Two-tone umbrella\nBirthday: August 11\nFavorite Saying: \"If you love something, let it go. Then chase it down. What were you thinking?\"\nCatchphrase: \"ace\"",
+    "type": "character",
+    "title": "Ace",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ace\nScreenshot rank: 131. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Blanche",
+    "value": "Name: Blanche\nGender: Female\nSpecies: Ostrich\nPersonality: Snooty, Sagittarius\nClothing: Butterfly visiting kimono (Black)\nUmbrella: Black lace umbrella\nBirthday: December 21\nFavorite Saying: \"Nothing beats personal experience.\"\nCatchphrase: \"quite so\"",
+    "type": "character",
+    "title": "Blanche",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Blanche\nScreenshot rank: 132. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Chabwick",
+    "value": "Name: Chabwick\nGender: Male\nSpecies: Penguin\nPersonality: Lazy, Capricorn\nClothing: Nine-ball tee\nUmbrella: Snowflake umbrella\nBirthday: December 24\nFavorite Saying: \"Live, laugh, lasagna.\"\nCatchphrase: \"blargh\"",
+    "type": "character",
+    "title": "Chabwick",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Chabwick\nScreenshot rank: 133. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Deirdre",
+    "value": "Name: Deirdre\nGender: Female\nSpecies: Deer\nPersonality: Big sister, Taurus\nClothing: Flower sweater (Yellow)\nUmbrella: Cherry umbrella\nBirthday: May 4\nFavorite Saying: \"Legs of an antelope, heart of an eagle.\"\nCatchphrase: \"whatevs\"",
+    "type": "character",
+    "title": "Deirdre",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Deirdre\nScreenshot rank: 134. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Dora",
+    "value": "Name: Dora\nGender: Female\nSpecies: Mouse\nPersonality: Normal, Aquarius\nClothing: Sea hanten shirt (Dark blue)\nUmbrella: Maple-leaf umbrella\nBirthday: February 18\nFavorite Saying: \"The squeaky wheel gets the cheese.\"\nCatchphrase: \"squeaky\"",
+    "type": "character",
+    "title": "Dora",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Dora\nScreenshot rank: 135. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Felicity",
+    "value": "Name: Felicity\nGender: Female\nSpecies: Cat\nPersonality: Peppy, Aries\nClothing: Tweed dress (Yellow)\nUmbrella: Mini-flower-print umbrella\nBirthday: March 30\nFavorite Saying: \"Love has no bounds.\"\nCatchphrase: \"mimimi\"",
+    "type": "character",
+    "title": "Felicity",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Felicity\nScreenshot rank: 136. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Iggly",
+    "value": "Name: Iggly\nGender: Male\nSpecies: Penguin\nPersonality: Jock, Scorpio\nClothing: Rugby uniform (Red & white)\nUmbrella: Kiwi umbrella\nBirthday: November 2\nFavorite Saying: \"Six of one, half dozen of the other.\"\nCatchphrase: \"waddler\"",
+    "type": "character",
+    "title": "Iggly",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Iggly\nScreenshot rank: 137. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Knox",
+    "value": "Name: Knox\nGender: Male\nSpecies: Chicken\nPersonality: Cranky, Sagittarius\nClothing: Cavalier shirt (Red)\nUmbrella: Two-tone umbrella\nBirthday: November 23\nFavorite Saying: \"A chicken's coop is its castle.\"\nCatchphrase: \"cluckling\"",
+    "type": "character",
+    "title": "Knox",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Knox\nScreenshot rank: 138. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Louie",
+    "value": "Name: Louie\nGender: Male\nSpecies: Gorilla\nPersonality: Jock, Aries\nClothing: Muscle tank (Gray)\nUmbrella: Vinyl umbrella\nBirthday: March 26\nFavorite Saying: \"It's all about the muscle.\"\nCatchphrase: \"hoo hoo ha\"",
+    "type": "character",
+    "title": "Louie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Louie\nScreenshot rank: 139. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Mint",
+    "value": "Name: Mint\nGender: Female\nSpecies: Squirrel\nPersonality: Snooty, Taurus\nClothing: Gumdrop dress (Pop)\nUmbrella: Peach umbrella\nBirthday: May 2\nFavorite Saying: \"Always lead by example.\"\nCatchphrase: \"ahhhhhh\"",
+    "type": "character",
+    "title": "Mint",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Mint\nScreenshot rank: 140. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Peggy",
+    "value": "Name: Peggy\nGender: Female\nSpecies: Pig\nPersonality: Peppy, Gemini\nClothing: Aran-knit sweater (Red)\nUmbrella: Apple umbrella\nBirthday: May 23\nFavorite Saying: \"We're all diamonds in the rough.\"\nCatchphrase: \"shweetie\"",
+    "type": "character",
+    "title": "Peggy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Peggy\nScreenshot rank: 141. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Queenie",
+    "value": "Name: Queenie\nGender: Female\nSpecies: Ostrich\nPersonality: Snooty, Scorpio\nClothing: Shirtdress (Navy blue)\nUmbrella: Black lace umbrella\nBirthday: November 13\nFavorite Saying: \"You never get a second chance to make a first impression.\"\nCatchphrase: \"chicken\"",
+    "type": "character",
+    "title": "Queenie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Queenie\nScreenshot rank: 142. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Rod",
+    "value": "Name: Rod\nGender: Male\nSpecies: Mouse\nPersonality: Jock, Leo\nClothing: Striped tank (Blue)\nUmbrella: Two-tone umbrella\nBirthday: August 14\nFavorite Saying: \"If you can't beat 'em, work harder.\"\nCatchphrase: \"ace\"",
+    "type": "character",
+    "title": "Rod",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Rod\nScreenshot rank: 143. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Simon",
+    "value": "Name: Simon\nGender: Male\nSpecies: Monkey\nPersonality: Lazy, Capricorn\nClothing: Striped tank (Pink)\nUmbrella: Frog umbrella\nBirthday: January 19\nFavorite Saying: \"Friends go together like peanut butter and bananas.\"\nCatchphrase: \"zzzook\"",
+    "type": "character",
+    "title": "Simon",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Simon\nScreenshot rank: 144. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Sly",
+    "value": "Name: Sly\nGender: Male\nSpecies: Alligator\nPersonality: Jock, Scorpio\nClothing: Camo tee (Brown)\nUmbrella: Camo umbrella\nBirthday: November 15\nFavorite Saying: \"Don't bite off more than you can chew.\"\nCatchphrase: \"hoo-rah\"",
+    "type": "character",
+    "title": "Sly",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Sly\nScreenshot rank: 145. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tammy",
+    "value": "Name: Tammy\nGender: Female\nSpecies: Bear cub\nPersonality: Big sister, Cancer\nClothing: Hawk jacket\nUmbrella: Two-tone umbrella\nBirthday: June 23\nFavorite Saying: \"If a job is worth doing, do it right!\"\nCatchphrase: \"ya heard\"",
+    "type": "character",
+    "title": "Tammy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tammy\nScreenshot rank: 146. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tasha",
+    "value": "Name: Tasha\nGender: Female\nSpecies: Squirrel\nPersonality: Snooty, Sagittarius\nClothing: Collarless coat (Beige)\nUmbrella: Spider umbrella\nBirthday: November 30\nFavorite Saying: \"There's no such thing as a safe secret.\"\nCatchphrase: \"nice nice\"",
+    "type": "character",
+    "title": "Tasha",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tasha\nScreenshot rank: 147. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Ursala",
+    "value": "Name: Ursala\nGender: Female\nSpecies: Bear\nPersonality: Big sister, Capricorn\nClothing: Striped maxi dress (Red)\nUmbrella: Hydrangea umbrella\nBirthday: January 16\nFavorite Saying: \"Surround yourself with things you love.\"\nCatchphrase: \"grooomph\"",
+    "type": "character",
+    "title": "Ursala",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ursala\nScreenshot rank: 148. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Walker",
+    "value": "Name: Walker\nGender: Male\nSpecies: Dog\nPersonality: Lazy, Gemini\nClothing: Five-ball tee\nUmbrella: Watermelon umbrella\nBirthday: June 10\nFavorite Saying: \"The dog wags his tail, not for you, but for your bread.\"\nCatchphrase: \"wuh\"",
+    "type": "character",
+    "title": "Walker",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Walker\nScreenshot rank: 149. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Poncho",
+    "value": "Name: Poncho\nGender: Male\nSpecies: Bear cub\nPersonality: Jock, Capricorn\nClothing: Energetic sweater (Yellow)\nUmbrella: Kiwi umbrella\nBirthday: January 2\nFavorite Saying: \"Fortune favors the brave!\"\nCatchphrase: \"li'l bear\"",
+    "type": "character",
+    "title": "Poncho",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Poncho\nScreenshot rank: 150. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Portia",
+    "value": "Name: Portia\nGender: Female\nSpecies: Dog\nPersonality: Snooty, Scorpio\nClothing: Rad power skirt suit (Purple)\nUmbrella: Red chic umbrella\nBirthday: October 25\nFavorite Saying: \"Charity begins at home.\"\nCatchphrase: \"ruffian\"",
+    "type": "character",
+    "title": "Portia",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Portia\nScreenshot rank: 151. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Quinn",
+    "value": "Name: Quinn\nGender: Female\nSpecies: Eagle\nPersonality: Big sister, Aquarius\nClothing: Collarless shirt (Black)\nUmbrella: Black chic umbrella\nBirthday: January 20\nFavorite Saying: \"Step on a violet, and you'll smell forgiveness.\"\nCatchphrase: \"proper\"",
+    "type": "character",
+    "title": "Quinn",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Quinn\nScreenshot rank: 152. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tutu",
+    "value": "Name: Tutu\nGender: Female\nSpecies: Bear\nPersonality: Peppy, Virgo\nClothing: Heart sweater (Pink)\nUmbrella: Toad parasol\nBirthday: September 15\nFavorite Saying: \"Even the best of friends start out as strangers.\"\nCatchphrase: \"twinkles\"",
+    "type": "character",
+    "title": "Tutu",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tutu\nScreenshot rank: 153. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bud",
+    "value": "Name: Bud\nGender: Male\nSpecies: Lion\nPersonality: Jock, Leo\nClothing: Pineapple aloha shirt (Green)\nUmbrella: Rainbow umbrella\nBirthday: August 8\nFavorite Saying: \"You're not living unless you're sweating!\"\nCatchphrase: \"shredded\"",
+    "type": "character",
+    "title": "Bud",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bud\nScreenshot rank: 154. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Chai",
+    "value": "Name: Chai\nGender: Female\nSpecies: Elephant\nPersonality: Peppy, Pisces\nClothing: Cinnamoroll puffy blouse\nUmbrella: Raindrop umbrella\nBirthday: March 6\nFavorite Saying: \"He who chases two rabbits catches none.\"\nCatchphrase: \"flap flap\"",
+    "type": "character",
+    "title": "Chai",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Chai\nScreenshot rank: 155. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Julian",
+    "value": "Name: Julian\nGender: Male\nSpecies: Horse\nPersonality: Smug, Pisces\nClothing: Space parka (Blue)\nUmbrella: Rainbow umbrella\nBirthday: March 15\nFavorite Saying: \"Never trot when you can prance.\"\nCatchphrase: \"glitter\"",
+    "type": "character",
+    "title": "Julian",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Julian\nScreenshot rank: 156. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Mathilda",
+    "value": "Name: Mathilda\nGender: Female\nSpecies: Kangaroo\nPersonality: Snooty, Scorpio\nClothing: Sleeveless sweater dress (Gray)\nUmbrella: Patterned vinyl umbrella\nBirthday: November 12\nFavorite Saying: \"Nail polish is thicker than water.\"\nCatchphrase: \"wee baby\"",
+    "type": "character",
+    "title": "Mathilda",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Mathilda\nScreenshot rank: 157. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Muffy",
+    "value": "Name: Muffy\nGender: Female\nSpecies: Sheep\nPersonality: Big sister, Aquarius\nClothing: Ruffled dress (Purple)\nUmbrella: Black chic umbrella\nBirthday: February 14\nFavorite Saying: \"There's a black sheep in every family.\"\nCatchphrase: \"nightshade\"",
+    "type": "character",
+    "title": "Muffy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Muffy\nScreenshot rank: 158. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Pecan",
+    "value": "Name: Pecan\nGender: Female\nSpecies: Squirrel\nPersonality: Snooty, Virgo\nClothing: Milkmaid dress (Red)\nUmbrella: Lacy parasol\nBirthday: September 10\nFavorite Saying: \"Promises are like pie crusts— they're made to be broken.\"\nCatchphrase: \"chipmunk\"",
+    "type": "character",
+    "title": "Pecan",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Pecan\nScreenshot rank: 159. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Raddle",
+    "value": "Name: Raddle\nGender: Male\nSpecies: Frog\nPersonality: Lazy, Gemini\nClothing: Doctor's coat (Black necktie)\nUmbrella: Busted umbrella\nBirthday: June 6\nFavorite Saying: \"A healthy mind makes for a healthy body.\"\nCatchphrase: \"aaach—\"",
+    "type": "character",
+    "title": "Raddle",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Raddle\nScreenshot rank: 160. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Rhonda",
+    "value": "Name: Rhonda\nGender: Female\nSpecies: Rhinoceros\nPersonality: Normal, Aquarius\nClothing: Ruffled dress (Purple)\nUmbrella: Black lace umbrella\nBirthday: January 24\nFavorite Saying: \"Don't look down your nose at people!\"\nCatchphrase: \"bigfoot\"",
+    "type": "character",
+    "title": "Rhonda",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Rhonda\nScreenshot rank: 161. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Shari",
+    "value": "Name: Shari\nGender: Female\nSpecies: Monkey\nPersonality: Big sister, Aries\nClothing: Garden tank (Blue)\nUmbrella: Exquisite parasol\nBirthday: April 10\nFavorite Saying: \"A good start leads to a good end.\"\nCatchphrase: \"cheeky\"",
+    "type": "character",
+    "title": "Shari",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Shari\nScreenshot rank: 162. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Sheldon",
+    "value": "Name: Sheldon\nGender: Male\nSpecies: Squirrel\nPersonality: Jock, Pisces\nClothing: Tiger jacket\nUmbrella: Two-tone umbrella\nBirthday: February 26\nFavorite Saying: \"Winners don't quit, and quitters never win.\"\nCatchphrase: \"cardio\"",
+    "type": "character",
+    "title": "Sheldon",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Sheldon\nScreenshot rank: 163. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tammi",
+    "value": "Name: Tammi\nGender: Female\nSpecies: Monkey\nPersonality: Peppy, Aries\nClothing: Silk floral-print shirt (Purple)\nUmbrella: Grape umbrella\nBirthday: April 2\nFavorite Saying: \"Always be down to monkey around!\"\nCatchphrase: \"chimpy\"",
+    "type": "character",
+    "title": "Tammi",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tammi\nScreenshot rank: 164. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Walt",
+    "value": "Name: Walt\nGender: Male\nSpecies: Kangaroo\nPersonality: Cranky, Taurus\nClothing: Casual kimono (Dark blue)\nUmbrella: Paper parasol\nBirthday: April 24\nFavorite Saying: \"Take the good with the bad.\"\nCatchphrase: \"pockets\"",
+    "type": "character",
+    "title": "Walt",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Walt\nScreenshot rank: 165. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Axel",
+    "value": "Name: Axel\nGender: Male\nSpecies: Elephant\nPersonality: Jock, Aries\nClothing: Kanji tee (Green)\nUmbrella: Two-tone umbrella\nBirthday: March 23\nFavorite Saying: \"Do not compare a fly with an elephant.\"\nCatchphrase: \"WHONK\"",
+    "type": "character",
+    "title": "Axel",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Axel\nScreenshot rank: 166. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Blaire",
+    "value": "Name: Blaire\nGender: Female\nSpecies: Squirrel\nPersonality: Snooty, Cancer\nClothing: Layered tank dress (Berry red)\nUmbrella: Hydrangea umbrella\nBirthday: July 3\nFavorite Saying: \"Practice makes perfect.\"\nCatchphrase: \"nutlet\"",
+    "type": "character",
+    "title": "Blaire",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Blaire\nScreenshot rank: 167. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bree",
+    "value": "Name: Bree\nGender: Female\nSpecies: Mouse\nPersonality: Snooty, Cancer\nClothing: Sweetheart dress (Navy blue)\nUmbrella: Lacy parasol\nBirthday: July 7\nFavorite Saying: \"The gift says more about the giver.\"\nCatchphrase: \"cheeseball\"",
+    "type": "character",
+    "title": "Bree",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bree\nScreenshot rank: 168. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Hornsby",
+    "value": "Name: Hornsby\nGender: Male\nSpecies: Rhinoceros\nPersonality: Lazy, Pisces\nClothing: Argyle sweater (Green)\nUmbrella: Green umbrella\nBirthday: March 20\nFavorite Saying: \"You can't hit a mosquito with a horseshoe.\"\nCatchphrase: \"schnozzle\"",
+    "type": "character",
+    "title": "Hornsby",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Hornsby\nScreenshot rank: 169. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Hugh",
+    "value": "Name: Hugh\nGender: Male\nSpecies: Pig\nPersonality: Lazy, Capricorn\nClothing: Camo tee (Brown)\nUmbrella: Vinyl umbrella\nBirthday: December 30\nFavorite Saying: \"Keep it real. Real chill.\"\nCatchphrase: \"snortle\"",
+    "type": "character",
+    "title": "Hugh",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Hugh\nScreenshot rank: 170. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Joey",
+    "value": "Name: Joey\nGender: Male\nSpecies: Duck\nPersonality: Lazy, Capricorn\nClothing: Bear tee\nUmbrella: Bear umbrella\nBirthday: January 3\nFavorite Saying: \"Don't get your feathers all ruffled. Just chill.\"\nCatchphrase: \"bleeeeeck\"",
+    "type": "character",
+    "title": "Joey",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Joey\nScreenshot rank: 171. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Kabuki",
+    "value": "Name: Kabuki\nGender: Male\nSpecies: Cat\nPersonality: Cranky, Sagittarius\nClothing: Kabuki-actor yukata (Fuchsia)\nUmbrella: Paper parasol\nBirthday: November 29\nFavorite Saying: \"If you make your opponent flinch, you have already won.\"\nCatchphrase: \"meooo-OH\"",
+    "type": "character",
+    "title": "Kabuki",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Kabuki\nScreenshot rank: 172. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Ozzie",
+    "value": "Name: Ozzie\nGender: Male\nSpecies: Koala\nPersonality: Lazy, Taurus\nClothing: Energetic sweater (Yellow)\nUmbrella: Mint umbrella\nBirthday: May 7\nFavorite Saying: \"Half a loaf is better than none.\"\nCatchphrase: \"ol' bear\"",
+    "type": "character",
+    "title": "Ozzie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ozzie\nScreenshot rank: 173. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Plucky",
+    "value": "Name: Plucky\nGender: Female\nSpecies: Chicken\nPersonality: Big sister, Libra\nClothing: Bold muumuu (Pink)\nUmbrella: Orange umbrella\nBirthday: October 12\nFavorite Saying: \"Keep your crumbs out of the bed.\"\nCatchphrase: \"chicky-poo\"",
+    "type": "character",
+    "title": "Plucky",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Plucky\nScreenshot rank: 174. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Roswell",
+    "value": "Name: Roswell\nGender: Male\nSpecies: Alligator\nPersonality: Smug, Taurus\nClothing: Pineapple aloha shirt (Blue)\nUmbrella: Beach umbrella\nBirthday: May 2\nFavorite Saying: \"Keep your eyes on the skies.\"\nCatchphrase: \"spaaace\"",
+    "type": "character",
+    "title": "Roswell",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Roswell\nScreenshot rank: 175. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
@@ -164,7 +1404,599 @@
     "value": "Name: Stinky\nGender: Male\nSpecies: Cat\nPersonality: Jock, Leo\nClothing: Athletic jacket (Red)\nUmbrella: Busted umbrella\nBirthday: August 17\nFavorite Saying: \"If the mask fits, wear it!\"\nCatchphrase: \"GAAHHH\"",
     "type": "character",
     "title": "Stinky",
-    "description": "Source: https://nookipedia.com/wiki/Stinky\nClothing and umbrella: Animal Crossing: New Horizons defaults.",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Stinky\nScreenshot rank: 176. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Biff",
+    "value": "Name: Biff\nGender: Male\nSpecies: Hippo\nPersonality: Jock, Aries\nClothing: Gold-print tee (Black)\nUmbrella: Bat umbrella\nBirthday: March 29\nFavorite Saying: \"Eighth place is just the seventh loser.\"\nCatchphrase: \"squirt\"",
+    "type": "character",
+    "title": "Biff",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Biff\nScreenshot rank: 177. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Bruce",
+    "value": "Name: Bruce\nGender: Male\nSpecies: Deer\nPersonality: Cranky, Gemini\nClothing: After-school jacket (Black)\nUmbrella: Bat umbrella\nBirthday: May 26\nFavorite Saying: \"Nobody's perfect.\"\nCatchphrase: \"gruff\"",
+    "type": "character",
+    "title": "Bruce",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Bruce\nScreenshot rank: 178. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Carmen",
+    "value": "Name: Carmen\nGender: Female\nSpecies: Rabbit\nPersonality: Peppy, Capricorn\nClothing: Plaid-print dress (Sweet plaid)\nUmbrella: Orange umbrella\nBirthday: January 6\nFavorite Saying: \"Absence makes the heart grow fonder.\"\nCatchphrase: \"nougat\"",
+    "type": "character",
+    "title": "Carmen",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Carmen\nScreenshot rank: 179. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Caroline",
+    "value": "Name: Caroline\nGender: Female\nSpecies: Squirrel\nPersonality: Normal, Cancer\nClothing: Striped maxi dress (Red)\nUmbrella: Petal parasol\nBirthday: July 15\nFavorite Saying: \"New brooms sweep clean.\"\nCatchphrase: \"hulaaaa\"",
+    "type": "character",
+    "title": "Caroline",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Caroline\nScreenshot rank: 180. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Chelsea",
+    "value": "Name: Chelsea\nGender: Female\nSpecies: Deer\nPersonality: Normal, Capricorn\nClothing: My Melody shirt\nUmbrella: Candy umbrella\nBirthday: January 18\nFavorite Saying: \"Always look a gift horse in the mouth.\"\nCatchphrase: \"pound cake\"",
+    "type": "character",
+    "title": "Chelsea",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Chelsea\nScreenshot rank: 181. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Cheri",
+    "value": "Name: Cheri\nGender: Female\nSpecies: Bear cub\nPersonality: Peppy, Pisces\nClothing: Zigzag-print dress (Lime)\nUmbrella: Kiwi umbrella\nBirthday: March 17\nFavorite Saying: \"Good things come in small packages.\"\nCatchphrase: \"tralala\"",
+    "type": "character",
+    "title": "Cheri",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Cheri\nScreenshot rank: 182. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Cranston",
+    "value": "Name: Cranston\nGender: Male\nSpecies: Ostrich\nPersonality: Lazy, Libra\nClothing: Oversized shawl overshirt (Brown)\nUmbrella: Camo umbrella\nBirthday: September 23\nFavorite Saying: \"Hard work beats talent.\"\nCatchphrase: \"sweatband\"",
+    "type": "character",
+    "title": "Cranston",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Cranston\nScreenshot rank: 183. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Derwin",
+    "value": "Name: Derwin\nGender: Male\nSpecies: Duck\nPersonality: Lazy, Gemini\nClothing: Striped tank (Yellow)\nUmbrella: Green umbrella\nBirthday: May 25\nFavorite Saying: \"Everything in moderation. Except for snacks.\"\nCatchphrase: \"derrrr\"",
+    "type": "character",
+    "title": "Derwin",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Derwin\nScreenshot rank: 184. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Friga",
+    "value": "Name: Friga\nGender: Female\nSpecies: Penguin\nPersonality: Snooty, Libra\nClothing: Simple checkered dress (Pink)\nUmbrella: Candy umbrella\nBirthday: October 16\nFavorite Saying: \"You can't learn a life lesson from a fortune cookie.\"\nCatchphrase: \"brrrmph\"",
+    "type": "character",
+    "title": "Friga",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Friga\nScreenshot rank: 185. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Gonzo",
+    "value": "Name: Gonzo\nGender: Male\nSpecies: Koala\nPersonality: Cranky, Libra\nClothing: Reindeer sweater (Green)\nUmbrella: Green umbrella\nBirthday: October 13\nFavorite Saying: \"Brothers are brothers, cheese is cheese.\"\nCatchphrase: \"mate\"",
+    "type": "character",
+    "title": "Gonzo",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Gonzo\nScreenshot rank: 186. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Grizzly",
+    "value": "Name: Grizzly\nGender: Male\nSpecies: Bear\nPersonality: Cranky, Leo\nClothing: Flannel shirt (Red)\nUmbrella: Logo umbrella\nBirthday: July 31\nFavorite Saying: \"Those who live in glass houses shouldn't throw stones.\"\nCatchphrase: \"grrr\"",
+    "type": "character",
+    "title": "Grizzly",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Grizzly\nScreenshot rank: 187. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Gwen",
+    "value": "Name: Gwen\nGender: Female\nSpecies: Penguin\nPersonality: Snooty, Aquarius\nClothing: Retro dress (Green)\nUmbrella: Fairy-tale umbrella\nBirthday: January 23\nFavorite Saying: \"Mind your manners, or someone else will.\"\nCatchphrase: \"h-h-h-hon\"",
+    "type": "character",
+    "title": "Gwen",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Gwen\nScreenshot rank: 188. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Hopkins",
+    "value": "Name: Hopkins\nGender: Male\nSpecies: Rabbit\nPersonality: Lazy, Pisces\nClothing: Striped shirt (Blue)\nUmbrella: Vinyl umbrella\nBirthday: March 11\nFavorite Saying: \"A wise mammal gives danger a wide berth.\"\nCatchphrase: \"thumper\"",
+    "type": "character",
+    "title": "Hopkins",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Hopkins\nScreenshot rank: 189. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Maddie",
+    "value": "Name: Maddie\nGender: Female\nSpecies: Dog\nPersonality: Peppy, Capricorn\nClothing: Layered sleeveless dress (Pink)\nUmbrella: Picnic umbrella\nBirthday: January 11\nFavorite Saying: \"The IT revolution is under way.\"\nCatchphrase: \"yippee\"",
+    "type": "character",
+    "title": "Maddie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Maddie\nScreenshot rank: 190. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Marcel",
+    "value": "Name: Marcel\nGender: Male\nSpecies: Dog\nPersonality: Lazy, Capricorn\nClothing: Sea hanten shirt (Dark blue)\nUmbrella: Paper parasol\nBirthday: December 31\nFavorite Saying: \"There's not a dog so bad that he won't wag his tail.\"\nCatchphrase: \"non\"",
+    "type": "character",
+    "title": "Marcel",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Marcel\nScreenshot rank: 191. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Murphy",
+    "value": "Name: Murphy\nGender: Male\nSpecies: Bear cub\nPersonality: Cranky, Capricorn\nClothing: Puffy vest (Blue)\nUmbrella: Maple-leaf umbrella\nBirthday: December 29\nFavorite Saying: \"More money, more problems.\"\nCatchphrase: \"malarkey\"",
+    "type": "character",
+    "title": "Murphy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Murphy\nScreenshot rank: 192. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Pompom",
+    "value": "Name: Pompom\nGender: Female\nSpecies: Duck\nPersonality: Peppy, Aquarius\nClothing: Parka dress (Pink)\nUmbrella: Peach umbrella\nBirthday: February 11\nFavorite Saying: \"Happiness is a rainy day!\"\nCatchphrase: \"rah rah\"",
+    "type": "character",
+    "title": "Pompom",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Pompom\nScreenshot rank: 193. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Rolf",
+    "value": "Name: Rolf\nGender: Male\nSpecies: Tiger\nPersonality: Cranky, Leo\nClothing: Down jacket (Blue)\nUmbrella: Snowflake umbrella\nBirthday: August 22\nFavorite Saying: \"Don't skip lunch. Ever.\"\nCatchphrase: \"grrrolf\"",
+    "type": "character",
+    "title": "Rolf",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Rolf\nScreenshot rank: 194. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tad",
+    "value": "Name: Tad\nGender: Male\nSpecies: Frog\nPersonality: Jock, Leo\nClothing: One-ball tee\nUmbrella: Watermelon umbrella\nBirthday: August 3\nFavorite Saying: \"Take a leap!\"\nCatchphrase: \"sluuuurp\"",
+    "type": "character",
+    "title": "Tad",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tad\nScreenshot rank: 195. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Vesta",
+    "value": "Name: Vesta\nGender: Female\nSpecies: Sheep\nPersonality: Normal, Aries\nClothing: Hand-knit tank (Camel)\nUmbrella: Toad parasol\nBirthday: April 16\nFavorite Saying: \"No sweater off my back.\"\nCatchphrase: \"baaaffo\"",
+    "type": "character",
+    "title": "Vesta",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Vesta\nScreenshot rank: 196. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Vivian",
+    "value": "Name: Vivian\nGender: Female\nSpecies: Wolf\nPersonality: Snooty, Aquarius\nClothing: Peacoat-and-skirt combo (Blue)\nUmbrella: Raindrop umbrella\nBirthday: January 26\nFavorite Saying: \"Onwards and upwards!\"\nCatchphrase: \"piffle\"",
+    "type": "character",
+    "title": "Vivian",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Vivian\nScreenshot rank: 197. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Agent S",
+    "value": "Name: Agent S\nGender: Female\nSpecies: Squirrel\nPersonality: Peppy, Cancer\nClothing: No. 2 shirt\nUmbrella: Beach umbrella\nBirthday: July 2\nFavorite Saying: \"You gotta put the pedal to the metal!\"\nCatchphrase: \"sidekick\"",
+    "type": "character",
+    "title": "Agent S",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Agent_S\nScreenshot rank: 198. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Alfonso",
+    "value": "Name: Alfonso\nGender: Male\nSpecies: Alligator\nPersonality: Lazy, Gemini\nClothing: Simple parka (Red)\nUmbrella: Pear umbrella\nBirthday: June 9\nFavorite Saying: \"Slow and steady wins the race.\"\nCatchphrase: \"it'sa me\"",
+    "type": "character",
+    "title": "Alfonso",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Alfonso\nScreenshot rank: 199. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Alice",
+    "value": "Name: Alice\nGender: Female\nSpecies: Koala\nPersonality: Normal, Leo\nClothing: Striped maxi dress (Red)\nUmbrella: Hydrangea umbrella\nBirthday: August 19\nFavorite Saying: \"Treat others as you would like to be treated.\"\nCatchphrase: \"guvnor\"",
+    "type": "character",
+    "title": "Alice",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Alice\nScreenshot rank: 200. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Anabelle",
+    "value": "Name: Anabelle\nGender: Female\nSpecies: Anteater\nPersonality: Peppy, Aquarius\nClothing: Bold muumuu (Navy blue)\nUmbrella: Fairy-tale umbrella\nBirthday: February 16\nFavorite Saying: \"Dance like no one's watching!\"\nCatchphrase: \"snorty\"",
+    "type": "character",
+    "title": "Anabelle",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Anabelle\nScreenshot rank: 201. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Anicotti",
+    "value": "Name: Anicotti\nGender: Female\nSpecies: Mouse\nPersonality: Peppy, Pisces\nClothing: Colorful striped sweater (Black, coral & pink)\nUmbrella: Apple umbrella\nBirthday: February 24\nFavorite Saying: \"The walls have ears.\"\nCatchphrase: \"cannoli\"",
+    "type": "character",
+    "title": "Anicotti",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Anicotti\nScreenshot rank: 202. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Ava",
+    "value": "Name: Ava\nGender: Female\nSpecies: Chicken\nPersonality: Normal, Taurus\nClothing: Checkered jumper dress (Red)\nUmbrella: Toad parasol\nBirthday: April 28\nFavorite Saying: \"Early to bed, early to rise.\"\nCatchphrase: \"beaker\"",
+    "type": "character",
+    "title": "Ava",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Ava\nScreenshot rank: 203. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Beardo",
+    "value": "Name: Beardo\nGender: Male\nSpecies: Bear\nPersonality: Smug, Libra\nClothing: Tweed jacket (Brown)\nUmbrella: Tartan-check umbrella\nBirthday: September 27\nFavorite Saying: \"Fashion first!\"\nCatchphrase: \"whiskers\"",
+    "type": "character",
+    "title": "Beardo",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Beardo\nScreenshot rank: 204. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Boone",
+    "value": "Name: Boone\nGender: Male\nSpecies: Gorilla\nPersonality: Jock, Virgo\nClothing: Cycling shirt (Blue & white)\nUmbrella: Camo umbrella\nBirthday: September 12\nFavorite Saying: \"Never settle for second best.\"\nCatchphrase: \"baboom\"",
+    "type": "character",
+    "title": "Boone",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Boone\nScreenshot rank: 205. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Broccolo",
+    "value": "Name: Broccolo\nGender: Male\nSpecies: Mouse\nPersonality: Lazy, Cancer\nClothing: Raglan shirt (Red)\nUmbrella: Frog umbrella\nBirthday: June 30\nFavorite Saying: \"One nap leads to another.\"\nCatchphrase: \"eat it\"",
+    "type": "character",
+    "title": "Broccolo",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Broccolo\nScreenshot rank: 206. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Buck",
+    "value": "Name: Buck\nGender: Male\nSpecies: Horse\nPersonality: Jock, Aries\nClothing: Sweatshirt (Gray)\nUmbrella: Vinyl umbrella\nBirthday: April 4\nFavorite Saying: \"Keep your eyes on the prize.\"\nCatchphrase: \"pardner\"",
+    "type": "character",
+    "title": "Buck",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Buck\nScreenshot rank: 207. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Carrie",
+    "value": "Name: Carrie\nGender: Female\nSpecies: Kangaroo\nPersonality: Normal, Sagittarius\nClothing: Simple-dots dress (Red)\nUmbrella: Toad parasol\nBirthday: December 5\nFavorite Saying: \"A mother's work is never done.\"\nCatchphrase: \"little one\"",
+    "type": "character",
+    "title": "Carrie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Carrie\nScreenshot rank: 208. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Celia",
+    "value": "Name: Celia\nGender: Female\nSpecies: Eagle\nPersonality: Normal, Aries\nClothing: Alpinist dress (Green)\nUmbrella: Lacy parasol\nBirthday: March 25\nFavorite Saying: \"It's the thought that counts.\"\nCatchphrase: \"feathers\"",
+    "type": "character",
+    "title": "Celia",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Celia\nScreenshot rank: 209. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Chadder",
+    "value": "Name: Chadder\nGender: Male\nSpecies: Mouse\nPersonality: Smug, Sagittarius\nClothing: Tailcoat (Black)\nUmbrella: Mint umbrella\nBirthday: December 15\nFavorite Saying: \"Meeting is just the start of us saying goodbye.\"\nCatchphrase: \"fromage\"",
+    "type": "character",
+    "title": "Chadder",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Chadder\nScreenshot rank: 210. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Chester",
+    "value": "Name: Chester\nGender: Male\nSpecies: Bear cub\nPersonality: Lazy, Leo\nClothing: Dragon suit\nUmbrella: Rainbow umbrella\nBirthday: August 6\nFavorite Saying: \"Sleep early. Wake late.\"\nCatchphrase: \"rookie\"",
+    "type": "character",
+    "title": "Chester",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Chester\nScreenshot rank: 211. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Cole",
+    "value": "Name: Cole\nGender: Male\nSpecies: Rabbit\nPersonality: Lazy, Leo\nClothing: Orange dress\nUmbrella: Orange umbrella\nBirthday: August 10\nFavorite Saying: \"Little pitchers have big ears.\"\nCatchphrase: \"coooooool\"",
+    "type": "character",
+    "title": "Cole",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Cole\nScreenshot rank: 212. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Cousteau",
+    "value": "Name: Cousteau\nGender: Male\nSpecies: Frog\nPersonality: Jock, Sagittarius\nClothing: Silk shirt (Green)\nUmbrella: Kabuki umbrella\nBirthday: December 17\nFavorite Saying: \"Jump first, ask questions later.\"\nCatchphrase: \"oui oui\"",
+    "type": "character",
+    "title": "Cousteau",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Cousteau\nScreenshot rank: 213. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Cyd",
+    "value": "Name: Cyd\nGender: Male\nSpecies: Elephant\nPersonality: Cranky, Gemini\nClothing: Dragon jacket\nUmbrella: Bat umbrella\nBirthday: June 9\nFavorite Saying: \"Do what you want, but do it loud!\"\nCatchphrase: \"rockin'\"",
+    "type": "character",
+    "title": "Cyd",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Cyd\nScreenshot rank: 214. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Deena",
+    "value": "Name: Deena\nGender: Female\nSpecies: Duck\nPersonality: Normal, Cancer\nClothing: Overall dress (Denim)\nUmbrella: Strawberry umbrella\nBirthday: June 27\nFavorite Saying: \"Duck...duck...GOOSE!\"\nCatchphrase: \"woowoo\"",
+    "type": "character",
+    "title": "Deena",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Deena\nScreenshot rank: 215. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Deli",
+    "value": "Name: Deli\nGender: Male\nSpecies: Monkey\nPersonality: Lazy, Gemini\nClothing: Argyle vest (Blue)\nUmbrella: Pear umbrella\nBirthday: May 24\nFavorite Saying: \"Righty tighty, lefty loosey.\"\nCatchphrase: \"monch\"",
+    "type": "character",
+    "title": "Deli",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Deli\nScreenshot rank: 216. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Doc",
+    "value": "Name: Doc\nGender: Male\nSpecies: Rabbit\nPersonality: Lazy, Pisces\nClothing: Flannel shirt (Red)\nUmbrella: Green umbrella\nBirthday: March 16\nFavorite Saying: \"One cannot live on carrots alone.\"\nCatchphrase: \"old bunny\"",
+    "type": "character",
+    "title": "Doc",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Doc\nScreenshot rank: 217. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Egbert",
+    "value": "Name: Egbert\nGender: Male\nSpecies: Chicken\nPersonality: Lazy, Libra\nClothing: Folk shirt (Red)\nUmbrella: Leaf umbrella\nBirthday: October 14\nFavorite Saying: \"You gotta break a few eggs to make an omelet.\"\nCatchphrase: \"doodle-duh\"",
+    "type": "character",
+    "title": "Egbert",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Egbert\nScreenshot rank: 218. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Gaston",
+    "value": "Name: Gaston\nGender: Male\nSpecies: Rabbit\nPersonality: Cranky, Scorpio\nClothing: Color-block dress shirt (Red)\nUmbrella: Bat umbrella\nBirthday: October 28\nFavorite Saying: \"An ear for an ear makes it hard to hear.\"\nCatchphrase: \"mon chou\"",
+    "type": "character",
+    "title": "Gaston",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Gaston\nScreenshot rank: 219. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Jacob",
+    "value": "Name: Jacob\nGender: Male\nSpecies: Bird\nPersonality: Lazy, Virgo\nClothing: Camo bomber-style jacket (Green)\nUmbrella: Gelato umbrella\nBirthday: August 24\nFavorite Saying: \"Your greatest strength can be your greatest weakness.\"\nCatchphrase: \"ya feel\"",
+    "type": "character",
+    "title": "Jacob",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Jacob\nScreenshot rank: 220. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Kevin",
+    "value": "Name: Kevin\nGender: Male\nSpecies: Pig\nPersonality: Jock, Taurus\nClothing: After-school jacket (Black)\nUmbrella: Busted umbrella\nBirthday: April 26\nFavorite Saying: \"Sometimes it's OK to get dirty.\"\nCatchphrase: \"weeweewee\"",
+    "type": "character",
+    "title": "Kevin",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Kevin\nScreenshot rank: 221. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Kitty",
+    "value": "Name: Kitty\nGender: Female\nSpecies: Cat\nPersonality: Snooty, Aquarius\nClothing: Loose fall dress (Peacock blue)\nUmbrella: Striped umbrella\nBirthday: February 15\nFavorite Saying: \"If you want something done well, do it yourself.\"\nCatchphrase: \"mrowrr\"",
+    "type": "character",
+    "title": "Kitty",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Kitty\nScreenshot rank: 222. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Kody",
+    "value": "Name: Kody\nGender: Male\nSpecies: Bear cub\nPersonality: Jock, Libra\nClothing: Western shirt (Pink)\nUmbrella: Orange umbrella\nBirthday: September 28\nFavorite Saying: \"The sky's the limit!\"\nCatchphrase: \"grah grah\"",
+    "type": "character",
+    "title": "Kody",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Kody\nScreenshot rank: 223. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Leonardo",
+    "value": "Name: Leonardo\nGender: Male\nSpecies: Tiger\nPersonality: Jock, Taurus\nClothing: Hawk jacket\nUmbrella: Red umbrella\nBirthday: May 15\nFavorite Saying: \"That's the way the energy bar crumbles.\"\nCatchphrase: \"flexin'\"",
+    "type": "character",
+    "title": "Leonardo",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Leonardo\nScreenshot rank: 224. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Lobo",
+    "value": "Name: Lobo\nGender: Male\nSpecies: Wolf\nPersonality: Cranky, Scorpio\nClothing: Bomber-style jacket (Avocado)\nUmbrella: Paper parasol\nBirthday: November 5\nFavorite Saying: \"If it's not one thing, it's another.\"\nCatchphrase: \"ah-rooooo\"",
+    "type": "character",
+    "title": "Lobo",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Lobo\nScreenshot rank: 225. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Margie",
+    "value": "Name: Margie\nGender: Female\nSpecies: Elephant\nPersonality: Normal, Aquarius\nClothing: Silk floral-print shirt (Pink)\nUmbrella: Hydrangea umbrella\nBirthday: January 28\nFavorite Saying: \"Keep your feet on the ground.\"\nCatchphrase: \"tootie\"",
+    "type": "character",
+    "title": "Margie",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Margie\nScreenshot rank: 226. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Megan",
+    "value": "Name: Megan\nGender: Female\nSpecies: Bear\nPersonality: Normal, Pisces\nClothing: Dollhouse dress (Yellow)\nUmbrella: Raindrop umbrella\nBirthday: March 13\nFavorite Saying: \"Take a page out of someone else's book, if it's a good book.\"\nCatchphrase: \"sundae\"",
+    "type": "character",
+    "title": "Megan",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Megan\nScreenshot rank: 227. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Mira",
+    "value": "Name: Mira\nGender: Female\nSpecies: Rabbit\nPersonality: Big sister, Cancer\nClothing: Noble zap suit (Red)\nUmbrella: Rainbow umbrella\nBirthday: July 6\nFavorite Saying: \"Always help a friend in need.\"\nCatchphrase: \"cottontail\"",
+    "type": "character",
+    "title": "Mira",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Mira\nScreenshot rank: 228. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Monique",
+    "value": "Name: Monique\nGender: Female\nSpecies: Cat\nPersonality: Snooty, Libra\nClothing: Flapper dress (Black)\nUmbrella: Purple chic umbrella\nBirthday: September 30\nFavorite Saying: \"All publicity is good publicity!\"\nCatchphrase: \"pffffft\"",
+    "type": "character",
+    "title": "Monique",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Monique\nScreenshot rank: 229. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Nibbles",
+    "value": "Name: Nibbles\nGender: Female\nSpecies: Squirrel\nPersonality: Peppy, Cancer\nClothing: Watermelon dress\nUmbrella: Watermelon umbrella\nBirthday: July 19\nFavorite Saying: \"Appearances are, like, totally deceiving.\"\nCatchphrase: \"niblet\"",
+    "type": "character",
+    "title": "Nibbles",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Nibbles\nScreenshot rank: 230. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Norma",
+    "value": "Name: Norma\nGender: Female\nSpecies: Cow\nPersonality: Normal, Virgo\nClothing: Plaid-print dress (Fancy plaid)\nUmbrella: Cherry umbrella\nBirthday: September 20\nFavorite Saying: \"If you want what you have, then you'll have what you want.\"\nCatchphrase: \"hoof hoo\"",
+    "type": "character",
+    "title": "Norma",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Norma\nScreenshot rank: 231. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Octavian",
+    "value": "Name: Octavian\nGender: Male\nSpecies: Octopus\nPersonality: Cranky, Virgo\nClothing: Gold-print tee (Black)\nUmbrella: Vinyl umbrella\nBirthday: September 20\nFavorite Saying: \"Don't be a sucker!\"\nCatchphrase: \"sucker\"",
+    "type": "character",
+    "title": "Octavian",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Octavian\nScreenshot rank: 232. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "O'Hare",
+    "value": "Name: O'Hare\nGender: Male\nSpecies: Rabbit\nPersonality: Smug, Leo\nClothing: Pineapple aloha shirt (Blue)\nUmbrella: Gelato umbrella\nBirthday: July 24\nFavorite Saying: \"It's not old; it's vintage.\"\nCatchphrase: \"amigo\"",
+    "type": "character",
+    "title": "O'Hare",
+    "description": "Nookipedia: https://nookipedia.com/wiki/O'Hare\nScreenshot rank: 233. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Phil",
+    "value": "Name: Phil\nGender: Male\nSpecies: Ostrich\nPersonality: Smug, Sagittarius\nClothing: Fischerhemd\nUmbrella: Red umbrella\nBirthday: November 27\nFavorite Saying: \"Best not to say too much.\"\nCatchphrase: \"hurk\"",
+    "type": "character",
+    "title": "Phil",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Phil\nScreenshot rank: 234. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Pippy",
+    "value": "Name: Pippy\nGender: Female\nSpecies: Rabbit\nPersonality: Peppy, Gemini\nClothing: Overall dress (Green)\nUmbrella: Mint umbrella\nBirthday: June 14\nFavorite Saying: \"Fake it till you make it.\"\nCatchphrase: \"li'l hare\"",
+    "type": "character",
+    "title": "Pippy",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Pippy\nScreenshot rank: 235. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Puddles",
+    "value": "Name: Puddles\nGender: Female\nSpecies: Frog\nPersonality: Peppy, Capricorn\nClothing: Retro dress (Green)\nUmbrella: Candy umbrella\nBirthday: January 13\nFavorite Saying: \"Look before you leap.\"\nCatchphrase: \"splish\"",
+    "type": "character",
+    "title": "Puddles",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Puddles\nScreenshot rank: 236. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Pudge",
+    "value": "Name: Pudge\nGender: Male\nSpecies: Bear cub\nPersonality: Lazy, Gemini\nClothing: Letter jacket (Green)\nUmbrella: Frog umbrella\nBirthday: June 11\nFavorite Saying: \"There's no such thing as a free lunch.\"\nCatchphrase: \"golly\"",
+    "type": "character",
+    "title": "Pudge",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Pudge\nScreenshot rank: 237. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Rooney",
+    "value": "Name: Rooney\nGender: Male\nSpecies: Kangaroo\nPersonality: Cranky, Sagittarius\nClothing: Sleeveless parka (Black)\nUmbrella: Vinyl umbrella\nBirthday: December 1\nFavorite Saying: \"Bob and weave! Bob and weave!\"\nCatchphrase: \"punches\"",
+    "type": "character",
+    "title": "Rooney",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Rooney\nScreenshot rank: 238. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Rory",
+    "value": "Name: Rory\nGender: Male\nSpecies: Lion\nPersonality: Jock, Leo\nClothing: Sea hanten shirt (Blue)\nUmbrella: Blue umbrella\nBirthday: August 7\nFavorite Saying: \"Set 'em up and knock 'em down.\"\nCatchphrase: \"capital\"",
+    "type": "character",
+    "title": "Rory",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Rory\nScreenshot rank: 239. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Sally",
+    "value": "Name: Sally\nGender: Female\nSpecies: Squirrel\nPersonality: Normal, Gemini\nClothing: Snowy sweater (Gray)\nUmbrella: Raindrop umbrella\nBirthday: June 19\nFavorite Saying: \"Even the smallest acorn may grow into the tallest tree.\"\nCatchphrase: \"nutmeg\"",
+    "type": "character",
+    "title": "Sally",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Sally\nScreenshot rank: 240. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Soleil",
+    "value": "Name: Soleil\nGender: Female\nSpecies: Hamster\nPersonality: Snooty, Leo\nClothing: Sari (Garnet)\nUmbrella: Exquisite parasol\nBirthday: August 9\nFavorite Saying: \"Sometimes dreams are merely dreams.\"\nCatchphrase: \"tarnation\"",
+    "type": "character",
+    "title": "Soleil",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Soleil\nScreenshot rank: 241. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Stu",
+    "value": "Name: Stu\nGender: Male\nSpecies: Bull\nPersonality: Lazy, Taurus\nClothing: Yodel sweater (Light gray)\nUmbrella: Grape umbrella\nBirthday: April 20\nFavorite Saying: \"As a cow grows, so do its nostrils.\"\nCatchphrase: \"mrooooo\"",
+    "type": "character",
+    "title": "Stu",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Stu\nScreenshot rank: 242. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Sydney",
+    "value": "Name: Sydney\nGender: Female\nSpecies: Koala\nPersonality: Normal, Cancer\nClothing: Overall dress (Beige)\nUmbrella: Eggy parasol\nBirthday: June 21\nFavorite Saying: \"Sail wherever the wind takes you.\"\nCatchphrase: \"sunshine\"",
+    "type": "character",
+    "title": "Sydney",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Sydney\nScreenshot rank: 243. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Toby",
+    "value": "Name: Toby\nGender: Male\nSpecies: Rabbit\nPersonality: Smug, Cancer\nClothing: Kerokerokeroppi tank top\nUmbrella: Gelato umbrella\nBirthday: July 10\nFavorite Saying: \"Toby or not Toby? I don't know, I'm asking you.\"\nCatchphrase: \"ribbit\"",
+    "type": "character",
+    "title": "Toby",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Toby\nScreenshot rank: 244. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tom",
+    "value": "Name: Tom\nGender: Male\nSpecies: Cat\nPersonality: Cranky, Sagittarius\nClothing: Bulldog jacket (Black)\nUmbrella: Bat umbrella\nBirthday: December 10\nFavorite Saying: \"There's no use crying over spilled milk.\"\nCatchphrase: \"me-YOWZA\"",
+    "type": "character",
+    "title": "Tom",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tom\nScreenshot rank: 245. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tucker",
+    "value": "Name: Tucker\nGender: Male\nSpecies: Elephant\nPersonality: Lazy, Virgo\nClothing: Caveman tank (Yellow)\nUmbrella: Leaf umbrella\nBirthday: September 7\nFavorite Saying: \"Time makes fossils of us all.\"\nCatchphrase: \"fuzzers\"",
+    "type": "character",
+    "title": "Tucker",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tucker\nScreenshot rank: 246. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Tybalt",
+    "value": "Name: Tybalt\nGender: Male\nSpecies: Tiger\nPersonality: Jock, Leo\nClothing: Simple parka (Gray)\nUmbrella: Blue umbrella\nBirthday: August 19\nFavorite Saying: \"There's no excuse for half-baked potatoes.\"\nCatchphrase: \"grrrRAH\"",
+    "type": "character",
+    "title": "Tybalt",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Tybalt\nScreenshot rank: 247. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Victoria",
+    "value": "Name: Victoria\nGender: Female\nSpecies: Horse\nPersonality: Peppy, Cancer\nClothing: One-ball tee\nUmbrella: Lemon umbrella\nBirthday: July 11\nFavorite Saying: \"Don't put the cart before the horse.\"\nCatchphrase: \"sugar cube\"",
+    "type": "character",
+    "title": "Victoria",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Victoria\nScreenshot rank: 248. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Weber",
+    "value": "Name: Weber\nGender: Male\nSpecies: Duck\nPersonality: Lazy, Cancer\nClothing: Striped shirt (Navy blue)\nUmbrella: Blue umbrella\nBirthday: June 30\nFavorite Saying: \"Today's adults are yesterday's children.\"\nCatchphrase: \"quaa\"",
+    "type": "character",
+    "title": "Weber",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Weber\nScreenshot rank: 249. Clothing, umbrella, personality and catchphrase: New Horizons.",
+    "useForCharacterCreation": false
+  },
+  {
+    "keys": "Zoe",
+    "value": "Name: Zoe\nGender: Female\nSpecies: Anteater\nPersonality: Normal, Aquarius\nClothing: Silk floral-print shirt (Pink)\nUmbrella: Strawberry umbrella\nBirthday: February 10\nFavorite Saying: \"Don't sign until you've read the whole thing.\"\nCatchphrase: \"zoozooroo\"",
+    "type": "character",
+    "title": "Zoe",
+    "description": "Nookipedia: https://nookipedia.com/wiki/Zoe\nScreenshot rank: 250. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   }
 ]
