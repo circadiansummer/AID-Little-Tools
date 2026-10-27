@@ -136,14 +136,6 @@
     "useForCharacterCreation": false
   },
   {
-    "keys": "Cherry",
-    "value": "Name: Cherry\nGender: Female\nSpecies: Dog\nPersonality: Big sister, Taurus\nClothing: Spider-web tee\nUmbrella: Spider umbrella\nBirthday: May 11\nFavorite Saying: \"One dog barks at something, the rest bark at him.\"\nCatchphrase: \"what what\"",
-    "type": "character",
-    "title": "Cherry",
-    "description": "Nookipedia: https://nookipedia.com/wiki/Cherry\nScreenshot rank: 18. Clothing, umbrella, personality and catchphrase: New Horizons.",
-    "useForCharacterCreation": false
-  },
-  {
     "keys": "Fang",
     "value": "Name: Fang\nGender: Male\nSpecies: Wolf\nPersonality: Cranky, Sagittarius\nClothing: Snowy sweater (Blue)\nUmbrella: Snowflake umbrella\nBirthday: December 18\nFavorite Saying: \"You mess with the wolf, you get the fangs.\"\nCatchphrase: \"cha-chomp\"",
     "type": "character",
@@ -1109,14 +1101,6 @@
     "type": "character",
     "title": "Louie",
     "description": "Nookipedia: https://nookipedia.com/wiki/Louie\nScreenshot rank: 139. Clothing, umbrella, personality and catchphrase: New Horizons.",
-    "useForCharacterCreation": false
-  },
-  {
-    "keys": "Mint",
-    "value": "Name: Mint\nGender: Female\nSpecies: Squirrel\nPersonality: Snooty, Taurus\nClothing: Gumdrop dress (Pop)\nUmbrella: Peach umbrella\nBirthday: May 2\nFavorite Saying: \"Always lead by example.\"\nCatchphrase: \"ahhhhhh\"",
-    "type": "character",
-    "title": "Mint",
-    "description": "Nookipedia: https://nookipedia.com/wiki/Mint\nScreenshot rank: 140. Clothing, umbrella, personality and catchphrase: New Horizons.",
     "useForCharacterCreation": false
   },
   {
