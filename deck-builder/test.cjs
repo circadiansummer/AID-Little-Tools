@@ -44,10 +44,10 @@ assert.equal(JSON.stringify(context.api.castCounts(cards.slice(0,3),'gender')),J
 console.log('PASS: entry metadata, catchphrases, unknown fields, and cast counts');const base=JSON.parse(fs.readFileSync(`${__dirname}/data/open-roads-core-story-cards.json`,'utf8'));
 assert.equal(parseCards(base).length,66);
 const combined=context.api.combinedCards(base,[{card:cards[0]},{card:cards[1]}]);
-assert.equal(combined.length,68);
+assert.equal(combined.length,69);
 assert.equal(JSON.stringify(combined.slice(0,66)),JSON.stringify(base));
-assert.equal(JSON.stringify(combined.slice(66)),JSON.stringify(cards.slice(0,2)));
-assert.equal(context.api.combinedCards(base,[]).length,66);
+assert.equal(JSON.stringify(combined.slice(66,-1)),JSON.stringify(cards.slice(0,2)));
+assert.equal(context.api.combinedCards(base,[]).length,67);
 assert.ok(!html.includes('__BASE__'));
 console.log('PASS: all 66 core cards preserved in base-only and combined exports');const samplePool=Array.from({length:20},(_,index)=>({index}));
 for(const n of [3,6,12]){const picks=context.api.randomSample(samplePool,n);assert.equal(picks.length,n);assert.equal(new Set(picks.map(p=>p.index)).size,n)}
@@ -58,3 +58,13 @@ const reroll=context.api.randomSample(samplePool,3,initial.map(x=>x.index),()=>0
 assert.notEqual(JSON.stringify(initial.map(x=>x.index).sort()),JSON.stringify(reroll.map(x=>x.index).sort()));
 console.log('PASS: random sample sizes, uniqueness, limited pools, and different rerolls');
 assert.ok(!cards.some(c=>['cherry','mint'].includes(c.title.trim().toLowerCase())));
+
+const rosterCard=combined[combined.length-1];
+assert.equal(rosterCard.title,'Villager Roster');
+assert.equal(rosterCard.keys,'villager,resident,neighbor,someone');
+assert.equal(rosterCard.value,'The following are villager residents of the town:\n'+cards.slice(0,2).map(c=>c.title).join('\n'));
+assert.equal(context.api.combinedCards(base,[{card:cards[0]}]).filter(c=>c.title==='Villager Roster').length,1);
+assert.equal(context.api.combinedCards(base,[{card:cards[0]}]).length,68);
+assert.equal(base.length,66);
+assert.equal(context.api.combinedCards(base,[]).at(-1).value,'The following are villager residents of the town:\n');
+console.log('PASS: generated roster title, literal town placeholder, triggers, selected names, empty deck and repeat export');
