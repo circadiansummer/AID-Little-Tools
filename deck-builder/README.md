@@ -34,3 +34,6 @@ Clicking elsewhere, changing a control, or focusing another element returns the 
 Targeted Chromium checks: six filtered random picks plus manual Raymond retained seven selections across reroll; the batch changed, Undo restored the first exact assortment, and Redo restored the second. Clicking the filename restored Random appearance. A single eligible female octopus was selected when requesting twelve; a new manual selection after Undo disabled Redo. Node tests cover sizes 3/6/12, uniqueness, empty/limited pools, and alternative assortments.
 
 The selected-villager panel stretches to the roster height and assigns remaining space to its list. Chromium verified no core-deck section, a closed-by-default breakdown that opens to correct tallies, a 518px list at the checked desktop viewport, and 67 total cards after selecting Raymond. No browser errors.
+
+The filename, JSON export button and preservation note now sit in the page-title row above the selected-deck column, aligned to its right edge. On narrow screens they stack below the title. Chromium verified matching desktop right edges, export controls above the panel, a 679px selected list at the checked viewport, and no overflow at 390px.
+
