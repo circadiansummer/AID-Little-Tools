@@ -39,3 +39,6 @@ The filename, JSON export button and preservation note now sit in the page-title
 
 
 The left panel starts at search and filters. Removed header space is assigned to the portrait scroller (620px at the checked desktop viewport). Chromium verified no upload inputs, no console errors, and intact header export/collapsed statistics.
+
+Community-focused display: the main number counts 19 Town NPCs plus selected villagers; the full 66-card base still exports. Intro reads A New Adventure / Choose your villagers & build your community. Roster catchphrases carry a speech-bubble emoji. Chromium verified six random selections display 25 and 19 Town NPCs + 6 Selected Villagers, with a speech bubble before crisp.
+
