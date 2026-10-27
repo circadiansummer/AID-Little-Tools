@@ -1,6 +1,6 @@
 # Story Card Deck Builder
 
-Open `Story-Card-Deck-Builder.html` in a modern browser. The complete HTML contains the supplied 21-character Animal Crossing example roster and Better Dungeons images; no server or install is required. The full 200-character roster is pending.
+Open `Story-Card-Deck-Builder.html` in a modern browser. The complete HTML contains the supplied 250-character Open Roads roster and Better Dungeons images; no server or install is required.
 
 - Left: searchable portrait roster, type filter, replacement story-card and Better Dungeons JSON uploads.
 - Center: selected cards in click order, removal, undo, editing of deck copies, filename, JSON download. Ten characters is a guide, not a limit.
@@ -13,4 +13,4 @@ To replace the bundled roster later, replace `data/roster.json`, then run `node 
 
 This addition leaves the canonical Studio v5.0 intact. The proposed Pages workflow checks that the generated HTML matches its sources, runs the fixture tests, and packages it at `deck-builder/Story-Card-Deck-Builder.html` beside Studio. Publication happens only after this change lands on main and the existing Pages deployment succeeds. No third-party hosting is used.
 
-Verification: `node test.cjs` covers syntax, real fixtures, ID/name/trigger matching, ambiguity, full backups, unsafe image URL rejection, invalid card rejection, and nested-field preservation. Local Chromium browser checks verified selection from both sources, JSON download with exact object parity, deck-only editing and undo, search, and a 390px layout. Physical mobile browsers and live AI Dungeon import were not tested. The supplied roster and extension file have no overlapping character names; their zero portrait matches are intentional, not invented substitutions.
+Verification: `node test.cjs` covers syntax, real fixtures, ID/name/trigger matching, ambiguity, full backups, unsafe image URL rejection, invalid card rejection, and nested-field preservation. Local Chromium browser checks verified selection from both sources, JSON download with exact object parity, deck-only editing and undo, search, and a 390px layout. Physical mobile browsers and live AI Dungeon import were not tested. All 250 roster characters match portraits in the bundled Open Roads extension file. Roster image frames use a responsive 2:3 portrait ratio with centered, contained images.
