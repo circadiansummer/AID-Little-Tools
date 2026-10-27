@@ -1,6 +1,6 @@
 # Open Roads Story Card Deck Builder
 
-Open Story-Card-Deck-Builder.html in a modern browser, or use the repository's GitHub Pages /deck-builder/ address. The complete HTML embeds the 250-villager roster, Better Dungeons portraits, and fixed 66-card core deck. No server or install is required for the downloaded HTML.
+Open Story-Card-Deck-Builder.html in a modern browser, or use the repository's GitHub Pages /deck-builder/ address. The complete HTML embeds the 248-villager roster, Better Dungeons portraits, and fixed 66-card core deck. No server or install is required for the downloaded HTML.
 
 ## Choose villagers and export
 
@@ -14,7 +14,7 @@ Open Story-Card-Deck-Builder.html in a modern browser, or use the repository's G
 ## Bundled sources
 
 - data/roster.json: supplied open_roads_250_story_cards.json.
-- data/better-dungeons.json: supplied Animal_Crossing__Open_Roads_adventure.json; all 250 villagers match portraits.
+- data/better-dungeons.json: supplied Animal_Crossing__Open_Roads_adventure.json; all 248 remaining villagers match portraits.
 - data/open-roads-core-story-cards.json: supplied merged-story-cards-AID (7).json, renamed descriptively. Contains 9 Lore, 8 Location, 19 Town NPCs, 29 encounter cards, and one RE Config card.
 
 Edit template.html and rebuild with node deck-builder/build.cjs from the repository root. The generated HTML is the standalone download. Run node deck-builder/test.cjs for syntax, image matching, metadata, preservation, and fixed-base merge checks. GitHub Pages checks generated-file parity and packages the tool alongside unchanged Studio v5.0 after approved changes reach main.
@@ -42,3 +42,5 @@ The left panel starts at search and filters. Removed header space is assigned to
 
 Community-focused display: the main number counts 19 Town NPCs plus selected villagers; the full 66-card base still exports. Intro reads A New Adventure / Choose your villagers & build your community. Roster catchphrases carry a speech-bubble emoji. Chromium verified six random selections display 25 and 19 Town NPCs + 6 Selected Villagers, with a speech bubble before crisp.
 
+
+Cherry and Mint are excluded from the selectable roster because their names are too generic. The original extension image configuration is retained; only 248 villagers are selectable.
