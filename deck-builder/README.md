@@ -1,20 +1,26 @@
-# Story Card Deck Builder
+# Open Roads Story Card Deck Builder
 
-Open `Story-Card-Deck-Builder.html` in a modern browser. The complete HTML contains the supplied 250-character Open Roads roster and Better Dungeons images; no server or install is required.
+Open Story-Card-Deck-Builder.html in a modern browser, or use the repository's GitHub Pages /deck-builder/ address. The complete HTML embeds the 250-villager roster, Better Dungeons portraits, and fixed 66-card core deck. No server or install is required for the downloaded HTML.
 
-- Left: searchable portrait roster, type filter, replacement story-card and Better Dungeons JSON uploads.
-- Center: selected cards in click order, removal, undo, editing of deck copies, filename, JSON download. Ten characters is a guide, not a limit.
-- Right: upload or drop your own card array or Story Card Studio project, search, select individually or add visible cards.
-- Images match on `id`/`aidId`, then case-insensitive title/name, then shared comma-separated keys/triggers. Ambiguous matches are skipped; missing/broken images show initials. Supports `adventure.storyCards`, `adventures[]` backups, a direct `storyCards` map, and legacy card arrays. Active icons take precedence over active graphics; embedded raster images and HTTP(S) links are supported.
-- Story-card JSON export contains only selected AI Dungeon cards. Images/configuration are used for browsing; they are not inserted into AI Dungeon JSON. Arbitrary fields and nested data survive unchanged unless the user edits a supported field. Repeated trigger sets require confirmation; records are never silently deduplicated.
-- Replacing a source removes its selections. Reset/unload clears undo history; clear-deck and individual changes can be undone. Import data stays in memory; reload starts fresh. External image hosts may receive requests for their image URLs.
+## Choose villagers and export
 
-To replace the bundled roster later, replace `data/roster.json`, then run `node build.cjs`. Replace `data/better-dungeons.json` to update the default extension images. `template.html` is the editable source; the generated HTML is the downloadable/offline artifact.
+- The wider character-only roster offers search and combined gender, species, personality and star-sign filters. Portrait frames are 2:3 with centered, uncropped images; catchphrases appear below names. Hover or keyboard-focus a card for its full Entry tooltip; Escape dismisses it.
+- The Open Roads deck panel always includes all 66 core cards. Expand its core-deck section to browse their titles and entry text. These fixed cards cannot be deselected or edited here.
+- Select villagers to add them after the core cards in click order. Selected copies can be edited or removed, and selection/edits can be undone. Clear villagers removes only the selections; the 66-card base remains.
+- Personality, gender and species tallies describe selected villagers. Unknown metadata is counted as Unknown. About ten villagers is a guide, not a limit.
+- Export defaults to open-roads-custom-villager-deck.json. Every download contains all core cards followed by selected villagers, preserving all original fields unless a selected copy was explicitly edited. Repeated trigger sets prompt for confirmation; no records are silently deduplicated.
+- The former right-hand upload column is removed. The visible roster and Better Dungeons upload controls can still replace browsing sources; neither replaces the fixed base deck. Reload resets selections.
 
-This addition leaves the canonical Studio v5.0 intact. The proposed Pages workflow checks that the generated HTML matches its sources, runs the fixture tests, and packages it at `deck-builder/Story-Card-Deck-Builder.html` beside Studio. Publication happens only after this change lands on main and the existing Pages deployment succeeds. No third-party hosting is used.
+## Bundled sources
 
-Verification: `node test.cjs` covers syntax, real fixtures, ID/name/trigger matching, ambiguity, full backups, unsafe image URL rejection, invalid card rejection, and nested-field preservation. Local Chromium browser checks verified selection from both sources, JSON download with exact object parity, deck-only editing and undo, search, and a 390px layout. Physical mobile browsers and live AI Dungeon import were not tested. All 250 roster characters match portraits in the bundled Open Roads extension file. Roster image frames use a responsive 2:3 portrait ratio with centered, contained images.
+- data/roster.json: supplied open_roads_250_story_cards.json.
+- data/better-dungeons.json: supplied Animal_Crossing__Open_Roads_adventure.json; all 250 villagers match portraits.
+- data/open-roads-core-story-cards.json: supplied merged-story-cards-AID (7).json, renamed descriptively. Contains 9 Lore, 8 Location, 19 Town NPCs, 29 encounter cards, and one RE Config card.
 
-Roster browsing: the left column includes characters only, with combinable gender, species, personality, and star-sign filters plus text search. Metadata comes from labeled lines in the Entry (`value`) text; missing values appear as Unknown. Catchphrases appear beneath names. Hover or keyboard-focus a roster card to read its full entry in a floating, scrollable tooltip; Escape dismisses it. The merged deck tallies personality, gender, and species for selected characters from either source, including edits; other card types are excluded from those tallies.
+Edit template.html and rebuild with node deck-builder/build.cjs from the repository root. The generated HTML is the standalone download. Run node deck-builder/test.cjs for syntax, image matching, metadata, preservation, and fixed-base merge checks. GitHub Pages checks generated-file parity and packages the tool alongside unchanged Studio v5.0 after approved changes reach main.
 
-Targeted verification: combined Female + Cat + Normal + Aries filters returned Lolly; selecting Raymond and Shino showed one Male/one Female, one Smug/one Peppy, and one Cat/one Deer. Tooltip entry content and keyboard dismissal were verified in Chromium. Node checks cover metadata parsing and summary counts.
+Image matching uses linked ID, then exact normalized title/name, then shared trigger; ambiguous matches are skipped. Supports extension adventure exports and backups, embedded raster images and HTTP(S) image URLs. External image hosts may receive image requests. Images are for browsing and are not inserted into the AI Dungeon card export.
+
+## Verification
+
+Node checks cover exact core-card ordering/preservation with zero or two selected villagers, 250 portrait matches, metadata parsing, tallies, unsafe image URL rejection, and nested fields. Local Chromium downloaded a 68-card JSON that exactly equaled the complete attached base plus Raymond and Shino. Clearing villagers retained 66 exportable core cards. Two-panel layout at 390px showed no horizontal overflow. Earlier targeted checks covered combined filters and tooltip dismissal. Physical mobile browsers and live AI Dungeon import were not tested.
