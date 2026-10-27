@@ -5,7 +5,7 @@ const html = fs.readFileSync(`${__dirname}/Story-Card-Deck-Builder.html`, 'utf8'
 const script = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)][0][1];
 new vm.Script(script);
 const context = vm.createContext({ URL });
-vm.runInContext(script.split('const baseCards=')[0] + '\nthis.api={parseCards,parseImages,matchCard,safeImage,characterMeta,castCounts,combinedCards};', context);
+vm.runInContext(script.split('const baseCards=')[0] + '\nthis.api={parseCards,parseImages,matchCard,safeImage,characterMeta,castCounts,combinedCards,randomSample};', context);
 const {parseCards, parseImages, matchCard, safeImage} = context.api;
 const roster=JSON.parse(fs.readFileSync(`${__dirname}/data/roster.json`, 'utf8'));
 const config=JSON.parse(fs.readFileSync(`${__dirname}/data/better-dungeons.json`, 'utf8'));
@@ -49,4 +49,11 @@ assert.equal(JSON.stringify(combined.slice(0,66)),JSON.stringify(base));
 assert.equal(JSON.stringify(combined.slice(66)),JSON.stringify(cards.slice(0,2)));
 assert.equal(context.api.combinedCards(base,[]).length,66);
 assert.ok(!html.includes('__BASE__'));
-console.log('PASS: all 66 core cards preserved in base-only and combined exports');
+console.log('PASS: all 66 core cards preserved in base-only and combined exports');const samplePool=Array.from({length:20},(_,index)=>({index}));
+for(const n of [3,6,12]){const picks=context.api.randomSample(samplePool,n);assert.equal(picks.length,n);assert.equal(new Set(picks.map(p=>p.index)).size,n)}
+assert.equal(context.api.randomSample(samplePool.slice(0,2),12).length,2);
+assert.equal(context.api.randomSample([],3).length,0);
+const initial=context.api.randomSample(samplePool,3,[],()=>0.5);
+const reroll=context.api.randomSample(samplePool,3,initial.map(x=>x.index),()=>0.5);
+assert.notEqual(JSON.stringify(initial.map(x=>x.index).sort()),JSON.stringify(reroll.map(x=>x.index).sort()));
+console.log('PASS: random sample sizes, uniqueness, limited pools, and different rerolls');
