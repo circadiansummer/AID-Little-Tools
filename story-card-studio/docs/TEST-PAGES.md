@@ -7,6 +7,10 @@
 **Workflow:** [story-card-studio-pages.yml](../../.github/workflows/story-card-studio-pages.yml)  
 **Current verification:** [V5.1-TESTING.md](V5.1-TESTING.md)
 
+## Current deployment evidence
+
+**PASS — GitHub Pages:** [Workflow run 40817679641](https://github.com/circadiansummer/AID-Little-Tools/actions/runs/40817679641) completed successfully after the v5.1 promotion and preview path fix. It packaged `Story-Card-Studio-v5.1.html` at the root, `test-pages/Story-Card-Studio-v5.1.html`, and the test-pages redirect, verified SHA-256 checksums for both copies, and executed 45/45 focused tests. The deploy job reported success. Direct live-site HTTP verification from ChatGPT was blocked; a successful workflow is deployment evidence rather than an independent remote browser test.
+
 ## Isolation and checksum gates
 
 The Pages workflow checks out **main**, verifies the standalone `Story-Card-Studio-v5.1.html` SHA-256 against [V5.1-BASELINE.md](V5.1-BASELINE.md), runs the [45-check v5.1 focused suite](tests/editor-ux-v5.1.cjs), and packages the verified root app and Deck Builder. A separate `test-pages/` copy derives from the **same** source, with only the following intentional differences:
