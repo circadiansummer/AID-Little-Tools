@@ -74,6 +74,9 @@ jobs:
         run: |
           node story-card-studio/docs/tests/editor-ux-v5.1.cjs
           node story-card-studio/docs/tests/prepare-test-pages.cjs
+          test -f pages-site/test-pages/Story-Card-Studio-v5.1.html
+          grep -Fq 'Story-Card-Studio-v5.1.html' pages-site/test-pages/index.html
+          test ! -e pages-site/test-pages/Story-Card-Studio-v5.0.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
