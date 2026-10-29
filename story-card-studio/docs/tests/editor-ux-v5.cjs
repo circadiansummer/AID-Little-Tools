@@ -7,9 +7,9 @@ function run(html){
  check(Boolean(m),"Standalone inline JavaScript exists");
  const js=m[1];new Function(js);check(true,"Inline JavaScript parses");
  for(const label of [
- "↓ Add JSON to Editor","↑ Download JSON for AID",
+ "Upload JSON to Studio","↑ Download JSON for AID",
  "↓ Add JSON for First Set","↓ Add JSON for Second Set",
- "↓ Import from Editor","→ Send to Editor Tab"
+ "↓ Add Cards from Editor","→ Send to Editor Tab"
  ])check(html.includes(label),"Button label: "+label);
  check(html.includes("id=\"cardsPage\""),"Editor tab present");
  check(html.includes('class="library-controls"'),"Fixed controls wrapper exists");
@@ -46,6 +46,30 @@ function run(html){
  check(js.includes("collapsedEditorTypes.delete(editorCollapseKey(cat.dataset.category))"),"Dropping into collapsed type reopens it");
  check(js.includes("collapsedEditorTypes.delete(editorCollapseKey(a.dataset.add))"),"Adding to collapsed type reopens it");
  check(js.includes("for(const target of ['mergeLeftList','mergeRightList','mergeCenterList'])"),"Merge click handling covers all three columns");
+
+ for(const id of ['mergeLeftClear','mergeRightClear','mergeCenterClear'])check(html.includes('id="'+id+'"'),"Clear control "+id);
+ for(const id of ['mergeLeftNone','mergeRightNone'])check(html.includes('id="'+id+'" disabled>Deselect'),"Deselect control "+id);
+ check(js.includes("el('mergeCenterClear').disabled=selected.length===0"),"Center Clear disabled when empty");
+ check(js.includes("el(name+'Clear').addEventListener('click',()=>clearMergeSource(side))"),"Source Clear click binding");
+ check(js.includes("el('mergeCenterClear').addEventListener('click',clearMergedColumn)"),"Center Clear click binding");
+ const stateForClear={left:{cards:[{title:'First'}],filename:'first.json',selected:new Set([0])},right:{cards:[{title:'Second'}],filename:'second.json',selected:new Set([0])},order:[{side:'left',index:0},{side:'right',index:0}]};
+ const collapseForClear={left:new Set(['Character']),right:new Set(),center:new Set(['Location'])};
+ let accepted=false,asked=[],rerenders=0;const clearNodes={mergeLeftFile:{value:'first.json'},mergeRightFile:{value:'second.json'}};
+ const clearContext={merger:stateForClear,collapsedMergeGroups:collapseForClear,el:id=>clearNodes[id],renderMerger:()=>rerenders++,notify:()=>{},confirm:text=>{asked.push(text);return accepted},mergeChosen:()=>stateForClear.order.map(o=>stateForClear[o.side].cards[o.index]).filter(Boolean)};
+ const clearSourceCode=js.slice(js.indexOf('// Clear is destructive to the Merge workspace'),js.indexOf('function parseMergeSource(data){'));
+ const clear=new Function(...Object.keys(clearContext),clearSourceCode+';return {clearMergeSource,clearMergedColumn}')(...Object.values(clearContext));
+ clear.clearMergeSource('left');
+ check(asked.length===1&&asked[0].includes('Are you sure')&&stateForClear.left.cards.length===1,"Source clear rejects cancellation");
+ accepted=true;clear.clearMergeSource('left');
+ check(stateForClear.left.cards.length===0&&stateForClear.right.cards.length===1,"Confirmed source clear preserves other side");
+ check(stateForClear.order.length===1&&stateForClear.order[0].side==='right'&&clearNodes.mergeLeftFile.value==='', "Confirmed source clear prunes selected cards and file input");
+ check(collapseForClear.left.size===0&&rerenders===1,"Confirmed source clear resets group and redraws");
+ accepted=false;clear.clearMergedColumn();
+ check(stateForClear.order.length===1&&asked.at(-1).includes('Merged Story Cards'),"Center clear asks confirmation");
+ accepted=true;clear.clearMergedColumn();
+ check(stateForClear.order.length===0&&stateForClear.right.cards.length===1,"Confirmed center clear empties selection, not source");
+ check(stateForClear.right.selected.size===0&&collapseForClear.center.size===0,"Center clear resets selected and collapse");
+
  return passed;
 }
 if(typeof module!=='undefined'&&module&&module.exports){
