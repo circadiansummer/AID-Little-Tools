@@ -1,11 +1,12 @@
 # GitHub Pages deployment — Story Card Studio v5.0
 
-The Pages site serves the **canonical v5.0** editor. It does **not** publish historical v4.12 builds, development prototypes, or example JSON as separate website files. The source repository itself is public.
+The Pages site serves the **canonical v5.0** editor at the root plus the Deck Builder. A separately packaged, pinned **test preview** is also available at `/test-pages/` once the Pages Actions workflow succeeds. The active root HTML is unchanged; see [Test Pages](TEST-PAGES.md) for the preview's source checksum and browser-storage isolation. Historical v4.12 builds and private creator examples are not published. The source repository and the preview URL are public.
 
 ## Addresses
 
 - **Intended website:** https://circadiansummer.github.io/AID-Little-Tools/
 - **Direct versioned HTML:** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.0.html
+- **Preview URL:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/
 - **Source of truth:** [Story-Card-Studio-v5.0.html](../Story-Card-Studio-v5.0.html)
 - **Deployment workflow:** [story-card-studio-pages.yml](../../.github/workflows/story-card-studio-pages.yml)
 - **GitHub Actions:** https://github.com/circadiansummer/AID-Little-Tools/actions
@@ -25,7 +26,7 @@ The workflow runs automatically when the v5.0 HTML, its root redirect, the basel
 
 The deployed application must exactly match the canonical SHA-256 documented in [V5.0-BASELINE.md](V5.0-BASELINE.md). If the HTML changes without an approved, documented baseline update, the workflow **fails instead of silently publishing a new application version**. Record new testing results and an updated checksum before intentionally publishing subsequent revisions.
 
-Only `index.html`, `Story-Card-Studio-v5.0.html`, and a `.nojekyll` marker are uploaded to the Pages artifact. The HTML files are copied, not rewritten. A deployment is distinct from a GitHub Release or tag; neither is created by this workflow.
+The workflow uploads the verified root editor and redirect, the standalone Deck Builder, `.nojekyll`, and the separate `/test-pages/` preview. The **production HTML is copied without alteration**. The preview is generated from the pinned development commit with two isolated storage keys and a browser-title suffix; checksum gates verify both the exact source and the exact preview bytes. A deployment is distinct from a GitHub Release or tag; neither is created by this workflow.
 
 ## Hosted verification checklist
 

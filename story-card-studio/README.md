@@ -47,6 +47,7 @@ Editing uses browser-side code. Save important work with **Export JSON**; local 
 
 - **Website:** https://circadiansummer.github.io/AID-Little-Tools/ (once Pages is enabled and deployment has succeeded).
 - **Versioned URL:** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.0.html
+- **UX test preview:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/ (public; availability depends on a successful Actions deployment)
 - **Deployment:** [GitHub Pages setup and testing guide](docs/GITHUB-PAGES.md).
 
-The GitHub Actions workflow publishes only the active `Story-Card-Studio-v5.0.html` and the v5.0 redirect `index.html` as static site assets. It checks the HTML against the documented canonical v5.0 SHA-256. Historical builds and development prototypes are **not** copied into the Pages artifact. Site publication does not constitute a tagged GitHub Release, full iOS testing, or live AI Dungeon validation.
+The GitHub Actions workflow publishes the checksum-verified active `Story-Card-Studio-v5.0.html` and its redirect at the site root, plus the standalone Deck Builder. It also serves an **isolated, explicitly reviewed UX development preview** under `/test-pages/`, documented at [Test Pages setup](docs/TEST-PAGES.md). The test app uses separate browser storage keys, while the production HTML and its required SHA-256 remain unchanged. Historical v4.12 builds and other development prototypes are **not** copied into the Pages artifact. Site publication does not constitute a tagged GitHub Release, full iOS testing, or live AI Dungeon validation.

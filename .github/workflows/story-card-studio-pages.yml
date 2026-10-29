@@ -8,6 +8,7 @@ on:
       - "story-card-studio/Story-Card-Studio-v5.0.html"
       - "story-card-studio/index.html"
       - "story-card-studio/docs/V5.0-BASELINE.md"
+      - "story-card-studio/docs/tests/prepare-test-pages.cjs"
       - "deck-builder/**"
   workflow_dispatch:
 
@@ -25,6 +26,14 @@ jobs:
     steps:
       - name: Check out main
         uses: actions/checkout@v6
+
+      # Pin the approved development candidate. It is never used for the live root page.
+      - name: Check out reviewed editor UX candidate for test-pages
+        uses: actions/checkout@v6
+        with:
+          ref: c172d2a92282adb24224ff36be1fa9eaebf4e4dc
+          path: test-pages-source
+          persist-credentials: false
 
       - name: Set up Node for Deck Builder validation
         uses: actions/setup-node@v4
@@ -66,8 +75,13 @@ jobs:
           cp deck-builder/Story-Card-Deck-Builder.html pages-site/deck-builder/Story-Card-Deck-Builder.html
           cp deck-builder/index.html pages-site/deck-builder/index.html
           touch pages-site/.nojekyll
-          echo "Pages artifact contains v5.0 and the standalone Deck Builder."
+          echo "Pages artifact contains production v5.0 and Deck Builder. The preview will be added under test-pages/."
           find pages-site -maxdepth 1 -type f -printf '%f\n' | sort
+
+      - name: Verify editor UX preview source and package isolated test-pages
+        run: |
+          node test-pages-source/story-card-studio/docs/tests/editor-ux-v5.cjs
+          node story-card-studio/docs/tests/prepare-test-pages.cjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
