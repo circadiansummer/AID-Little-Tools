@@ -7,7 +7,7 @@ function run(html){
  check(Boolean(m),"Standalone inline JavaScript exists");
  const js=m[1];new Function(js);check(true,"Inline JavaScript parses");
  for(const label of [
- "Upload JSON to Studio","↑ Download JSON for AID",
+ "Upload JSON to Studio","Download JSON for AID",
  "↓ Add JSON for First Set","↓ Add JSON for Second Set",
  "↓ Add Cards from Editor","→ Send to Editor Tab"
  ])check(html.includes(label),"Button label: "+label);
