@@ -16,7 +16,9 @@
 
 GitHub Pages supports one site for a repository. Rather than replacing the production application or selecting a preview branch as the entire Pages source, the workflow deploys a dedicated **`/test-pages/` path** within the same site artifact.
 
-The workflow checks out the UX candidate at the pinned commit `c172d2a92282adb24224ff36be1fa9eaebf4e4dc`, checks the candidate's SHA-256 before use, and runs its 29 focused checks. The workflow then copies the candidate into `test-pages/Story-Card-Studio-v5.0.html` with only these deliberate changes:
+**Latest test candidate (October 28, 2026):** Updated **Upload JSON to Studio**, **↓ Add Cards from Editor**, **Deselect**, and three confirmation-gated **Clear** controls. The development suite passed 44/44 focused checks and 81/81 new Chromium browser checks; 92/92 prior editor/merge regression checks also passed. The same preview URL continues to serve the pinned build; production stays unchanged.
+
+The workflow checks out the UX candidate at the pinned commit `460d9551ee360b1d7241fdf38c7e615f20d3962a`, checks the candidate's SHA-256 before use, and runs its 29 focused checks. The workflow then copies the candidate into `test-pages/Story-Card-Studio-v5.0.html` with only these deliberate changes:
 
 1. Workspace `STORAGE_KEY` becomes `story-card-studio-project-v1-test-pages` instead of the production browser storage key.
 2. Undo `UNDO_STORAGE_KEY` becomes `story-card-studio-deleted-card-v1-test-pages`; Find & Replace presets already derive from the workspace key.
@@ -26,8 +28,8 @@ The test redirect is marked `noindex,nofollow`. The root production editor and i
 
 ## Pinned hashes
 
-- Reviewed UX candidate SHA-256: `adec93ddcdaefa905a30b173b1da5c7b7c24fa66c5aa460255b9ea0879a36fd2`.
-- Isolated test preview (three deterministic changes above) SHA-256: `7499323c95b27cffca6378f491cbcb1fcb135e45a86b1fce597d14dee18ec62c`.
+- Reviewed UX candidate SHA-256: `e8fdaa69d9e3004905b23145414a960f14791bfa65bc4ba73ab5e663a73097cd`.
+- Isolated test preview (three deterministic changes above) SHA-256: `743940ee2c20b8711df7b70ba2dcca57ea69593add26692765c0316e73873888`.
 - Production editor SHA-256 in [V5.0-BASELINE.md](V5.0-BASELINE.md) remains `d6f4685d32a2b897819afcf5d0a173869005e65c7e5e162cec956c3cf4dc8e4b`.
 
 The script [prepare-test-pages.cjs](tests/prepare-test-pages.cjs) fails rather than publishing if either preview checksum changes or expected storage key markers are absent.

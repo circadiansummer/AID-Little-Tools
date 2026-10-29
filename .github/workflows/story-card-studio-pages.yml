@@ -31,7 +31,7 @@ jobs:
       - name: Check out reviewed editor UX candidate for test-pages
         uses: actions/checkout@v6
         with:
-          ref: c172d2a92282adb24224ff36be1fa9eaebf4e4dc
+          ref: 460d9551ee360b1d7241fdf38c7e615f20d3962a
           path: test-pages-source
           persist-credentials: false
 

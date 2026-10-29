@@ -6,8 +6,8 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const assert = require('node:assert/strict');
 
-const verifiedSourceSHA = 'adec93ddcdaefa905a30b173b1da5c7b7c24fa66c5aa460255b9ea0879a36fd2';
-const expectedPreviewSHA = '7499323c95b27cffca6378f491cbcb1fcb135e45a86b1fce597d14dee18ec62c';
+const verifiedSourceSHA = 'e8fdaa69d9e3004905b23145414a960f14791bfa65bc4ba73ab5e663a73097cd';
+const expectedPreviewSHA = '743940ee2c20b8711df7b70ba2dcca57ea69593add26692765c0316e73873888';
 const sha256 = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const repo = path.resolve(__dirname, '../../..');
 const source = path.resolve(process.argv[2] || path.join(repo, 'test-pages-source/story-card-studio/Story-Card-Studio-v5.0.html'));
