@@ -2,7 +2,7 @@ const {test} = require('node:test');
 const assert = require('node:assert/strict');
 const {readFileSync} = require('node:fs');
 const {JSDOM} = require('jsdom');
-const source = readFileSync(require('node:path').join(__dirname, '../content.js'), 'utf8');
+const source = readFileSync(require('node:path').join(__dirname, '../extension/content.js'), 'utf8');
 const actualContext = readFileSync(require('node:path').join(__dirname, 'fixtures/aid-context.html'), 'utf8');
 const actualResponse = readFileSync(require('node:path').join(__dirname, 'fixtures/aid-latest-response.html'), 'utf8');
 const pause = ms => new Promise(resolve => setTimeout(resolve, ms));

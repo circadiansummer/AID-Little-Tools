@@ -13,7 +13,7 @@ The extension runs only on `play.aidungeon.com`. It does not send or store memor
 
 ## Development
 
-No build is needed. The extension uses `manifest.json`, `content.js`, and `styles.css`. The version is kept in the manifest, package metadata, and source, with no visible badge.
+No build is needed. The `extension/` folder contains only the three required extension files: `manifest.json`, `content.js`, and `styles.css`. Load this folder in Chrome, or select its `manifest.json` in Firefox. Guides, tests, and development metadata stay outside it. The version is kept in the manifest, package metadata, and source, with no visible badge.
 
 Install test dependencies with `npm install`, then run `npm test`. The 12 local DOM tests cover opening, notices, explicit search, wrapping, virtualized rows, and the Show unused lifecycle. Live opening was confirmed by the user for v0.1.4; later UI/search changes have local test coverage and await further live confirmation. DOM fixtures are sanitized and run without AID scripts or network access.
 

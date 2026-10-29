@@ -7,7 +7,7 @@
 3. In Chrome, open `chrome://extensions`.
 4. Turn on **Developer mode**.
 5. Click **Load unpacked**.
-6. Select the **quick-memory-menu** folder inside the extracted `AID-Little-Tools-main` folder.
+6. Select the **extension** folder inside `AID-Little-Tools-main → quick-memory-menu`.
 7. Open or refresh your AI Dungeon adventure.
 
 ## Use
