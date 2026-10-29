@@ -27,3 +27,9 @@
 - Preserve exact Merge **Deselect All** behavior (selection only) versus confirmation-gated **Clear** (source destruction or center-selection clearing); ensure cancellation makes no changes and other source collections survive.
 - Maintain pinned/sticky editor controls, mobile scrolling, keyboard-accessible Type accordions, and independently collapsible Merge Types. Source card types and fields never change merely because a group collapsed.
 - Source and browser test suite: `docs/tests/editor-ux-v5.1.cjs`, current `docs/V5.1-TESTING.md`; execute the checksum-gated GitHub Pages Actions workflow on approved code changes. Release history/docs for v5.0 remain historical.
+
+## GitHub Pages compatibility guarantee
+
+- Public Pages URL `/Story-Card-Studio-v5.0.html` is a **permanent compatibility alias** for the current checksum-verified application. Do not remove or redirect it to a nonexistent page when publishing later versions. The Pages root should keep its stable legacy URL while the actual app's internal version reflects the newest approved source.
+- The repo's historical `story-card-studio/Story-Card-Studio-v5.0.html` file is **not** the Pages alias source: do not change those historical bytes. Copy the active canonical HTML into the Pages artifact under both the old and current public filenames, verify their checksums/byte equality, and keep the test-pages compatibility alias alongside it.
+- `story-card-studio/index.html` in GitHub can still point to the canonical versioned file; only the Pages-packaged redirect points to the stable legacy filename. Test full Pages builds before concluding old links remain functional.

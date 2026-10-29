@@ -13,6 +13,8 @@ Utilities for AI Dungeon creators.
 
 The current development and hosting workflow uses **GitHub only**: repository changes are reviewed on `main`, and the checksum-gated GitHub Pages Actions workflow manages any website deployment. Third-party hosting is no longer part of the process. A public GitHub Release or tag remains a separate approval.
 
-## GitHub Pages website — v5.1
+## GitHub Pages website — v5.1 (stable v5.0 URL)
+
+**Existing public links are preserved:** [Story-Card-Studio-v5.0.html](https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.0.html) continues to serve the **current v5.1 application** on GitHub Pages. The root website directs there; the explicit [v5.1 URL](https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.1.html) remains available. This compatibility alias affects Pages only; the original v5.0 source in GitHub remains unchanged.
 
 [Open Story Card Studio v5.1](https://circadiansummer.github.io/AID-Little-Tools/) (available after the Pages deployment succeeds). GitHub Actions publishes the checksum-verified canonical v5.1 app at the site root, the Deck Builder, and a browser-storage-isolated v5.1 test-pages copy; v5.0 remains in GitHub history/source only. See the [GitHub Pages setup and verification guide](story-card-studio/docs/GITHUB-PAGES.md). The website is not a GitHub Release.

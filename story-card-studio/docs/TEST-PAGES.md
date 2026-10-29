@@ -2,7 +2,8 @@
 
 **Active version:** Story Card Studio v5.1, owner-promoted October 28, 2026 (America/Chicago).  
 **Preview URL:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/  
-**Direct preview file:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/Story-Card-Studio-v5.1.html  
+**Stable preview URL (loads current v5.1):** https://circadiansummer.github.io/AID-Little-Tools/test-pages/Story-Card-Studio-v5.0.html  
+**Direct v5.1 preview file:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/Story-Card-Studio-v5.1.html  
 **Production:** https://circadiansummer.github.io/AID-Little-Tools/  
 **Workflow:** [story-card-studio-pages.yml](../../.github/workflows/story-card-studio-pages.yml)  
 **Current verification:** [V5.1-TESTING.md](V5.1-TESTING.md)
@@ -24,7 +25,7 @@ The script [prepare-test-pages.cjs](tests/prepare-test-pages.cjs) rejects unexpe
 - v5.1 canonical source SHA-256: `8b7b1c110e30d83ed304fd99b8c7be0cbc7f105b2dc8370ebc3261ad4ad712a4`.
 - v5.1 isolated preview SHA-256: `2c91087a75827f75263cd01f6feb37adaa7132537bb646f2911ba53bead98d6c`.
 
-The live editor retains the existing v5.0 production browser storage key to preserve current workspaces on upgrade. `/test-pages/` does **not** share autosaved editor state with the root production app. This is a publicly reachable GitHub Pages site; do not embed private user data in HTML/source artifacts.
+The preview now ships byte-identical copies under **both** `test-pages/Story-Card-Studio-v5.0.html` and `test-pages/Story-Card-Studio-v5.1.html`, while its index opens the older filename for incoming links. The live editor retains the existing v5.0 production browser storage key to preserve current workspaces on upgrade. `/test-pages/` does **not** share autosaved editor state with the root production app. This is a publicly reachable GitHub Pages site; do not embed private user data in HTML/source artifacts.
 
 ## How to verify publication
 

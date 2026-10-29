@@ -61,13 +61,20 @@ jobs:
           printf '%s  %s\n' "$expected_sha" "$source_file" | sha256sum --check
 
           mkdir -p pages-site
+          # Keep the public v5.0 URL stable while serving the v5.1 implementation.
+          # The repository's index.html still targets the canonical v5.1 source.
           cp "$entry_file" pages-site/index.html
+          sed -i 's/Story-Card-Studio-v5\.1\.html/Story-Card-Studio-v5.0.html/g' pages-site/index.html
+          grep -Fq 'Story-Card-Studio-v5.0.html' pages-site/index.html
           cp "$source_file" pages-site/Story-Card-Studio-v5.1.html
+          cp "$source_file" pages-site/Story-Card-Studio-v5.0.html
+          cmp -s pages-site/Story-Card-Studio-v5.0.html pages-site/Story-Card-Studio-v5.1.html
+          printf '%s  %s\n' "$expected_sha" pages-site/Story-Card-Studio-v5.0.html | sha256sum --check
           mkdir -p pages-site/deck-builder
           cp deck-builder/Story-Card-Deck-Builder.html pages-site/deck-builder/Story-Card-Deck-Builder.html
           cp deck-builder/index.html pages-site/deck-builder/index.html
           touch pages-site/.nojekyll
-          echo "Pages artifact contains production v5.1 and Deck Builder. The isolated preview will be added under test-pages/."
+          echo "Pages artifact contains the v5.1 editor at stable v5.0 and v5.1 URLs, plus Deck Builder."
           find pages-site -maxdepth 1 -type f -printf '%f\n' | sort
 
       - name: Verify editor UX preview source and package isolated test-pages
@@ -75,8 +82,10 @@ jobs:
           node story-card-studio/docs/tests/editor-ux-v5.1.cjs
           node story-card-studio/docs/tests/prepare-test-pages.cjs
           test -f pages-site/test-pages/Story-Card-Studio-v5.1.html
-          grep -Fq 'Story-Card-Studio-v5.1.html' pages-site/test-pages/index.html
-          test ! -e pages-site/test-pages/Story-Card-Studio-v5.0.html
+          grep -Fq 'Story-Card-Studio-v5.0.html' pages-site/test-pages/index.html
+          test -f pages-site/test-pages/Story-Card-Studio-v5.0.html
+          cmp -s pages-site/test-pages/Story-Card-Studio-v5.0.html pages-site/test-pages/Story-Card-Studio-v5.1.html
+          grep -Fq 'data-app-version="5.1"' pages-site/test-pages/Story-Card-Studio-v5.0.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

@@ -53,11 +53,12 @@ Editing uses browser-side code. Save important work with **Export JSON**; local 
 
 **Current v5.1 HTML SHA-256:** `8b7b1c110e30d83ed304fd99b8c7be0cbc7f105b2dc8370ebc3261ad4ad712a4`.
 
-## GitHub Pages (v5.1)
+## GitHub Pages (v5.1, with legacy URL compatibility)
 
-- **Website:** https://circadiansummer.github.io/AID-Little-Tools/ (once Pages is enabled and deployment has succeeded).
+- **Website:** https://circadiansummer.github.io/AID-Little-Tools/
+- **Stable existing URL (serves v5.1):** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.0.html
 - **Versioned URL:** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.1.html
 - **UX test preview:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/ (public; availability depends on a successful Actions deployment)
 - **Deployment:** [GitHub Pages setup and testing guide](docs/GITHUB-PAGES.md).
 
-The GitHub Actions workflow publishes the checksum-verified active `Story-Card-Studio-v5.1.html` and its redirect at the site root, plus the standalone Deck Builder. The `/test-pages/` preview now uses the same v5.1 source with separate browser storage keys, so test autosaves cannot overwrite production autosaves. Historical v5.0/v4.12 builds are preserved in the repository, but are not copied to the Pages artifact. Site publication does not constitute a tagged GitHub Release, full iOS testing, or live AI Dungeon validation.
+The GitHub Actions workflow publishes the checksum-verified current v5.1 HTML at **both** `Story-Card-Studio-v5.0.html` (long-lived compatibility address) and `Story-Card-Studio-v5.1.html` (versioned address). The **hosted** root redirect points to the long-lived v5.0 filename, without downgrading the application. The repository's source `index.html` still points to canonical v5.1, and the original `Story-Card-Studio-v5.0.html` source file remains byte-preserved. The Deck Builder remains available. The `/test-pages/` preview now uses the same v5.1 source with separate browser storage keys, so test autosaves cannot overwrite production autosaves. Historical v5.0/v4.12 builds are preserved in the repository, but are not copied to the Pages artifact. Site publication does not constitute a tagged GitHub Release, full iOS testing, or live AI Dungeon validation.

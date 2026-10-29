@@ -1,11 +1,12 @@
 # GitHub Pages deployment — Story Card Studio v5.1
 
-The Pages site serves the **canonical v5.1** editor at the root plus the Deck Builder. A separate **test preview** of that same v5.1 source is also available at `/test-pages/` once the Pages Actions workflow succeeds. The preview uses isolated browser storage keys; see [Test Pages](TEST-PAGES.md). The original v5.0 source remains historical in GitHub. Historical v4.12 builds and private creator examples are not published. The source repository and the preview URL are public.
+The Pages site serves the **canonical v5.1 application** at the root plus the Deck Builder. Existing links to `/Story-Card-Studio-v5.0.html` continue to load **v5.1** via an exact-copy Pages compatibility alias; they are not redirected to a broken path or an obsolete editor. A separate **test preview** of that same v5.1 source is also available at `/test-pages/` once the Pages Actions workflow succeeds. The preview uses isolated browser storage keys; see [Test Pages](TEST-PAGES.md). The original v5.0 source remains historical in GitHub. Historical v4.12 builds and private creator examples are not published. The source repository and the preview URL are public.
 
 ## Addresses
 
 - **Intended website:** https://circadiansummer.github.io/AID-Little-Tools/
-- **Direct versioned HTML:** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.1.html
+- **Stable original v5.0 URL (now loads v5.1):** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.0.html
+- **Direct v5.1 HTML:** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.1.html
 - **Preview URL:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/
 - **Source of truth:** [Story-Card-Studio-v5.1.html](../Story-Card-Studio-v5.1.html)
 - **Deployment workflow:** [story-card-studio-pages.yml](../../.github/workflows/story-card-studio-pages.yml)
@@ -26,7 +27,7 @@ The workflow runs automatically when the v5.1 HTML, its root redirect, the basel
 
 The deployed application must exactly match the canonical SHA-256 documented in [V5.1-BASELINE.md](V5.1-BASELINE.md). If the HTML changes without an approved, documented baseline update, the workflow **fails instead of silently publishing a new application version**. Record new testing results and an updated checksum before intentionally publishing subsequent revisions.
 
-The workflow uploads the verified root editor and redirect, the standalone Deck Builder, `.nojekyll`, and the separate `/test-pages/` preview. The **production HTML is copied without alteration**. The preview is generated from the same checksum-verified v5.1 production HTML, changing only two browser storage keys and appending a browser-title suffix. Checksum gates verify both the exact source and exact preview bytes. A deployment is distinct from a GitHub Release or tag; neither is created by this workflow.
+The workflow uploads the verified v5.1 editor **twice under the v5.0 and v5.1 public filenames**, a Pages-specific root redirect to the stable v5.0 filename, the standalone Deck Builder, `.nojekyll`, and the separate `/test-pages/` preview (also carrying both public filenames). Both editor copies must be byte-identical to the checksum-verified v5.1 source, or deployment fails. The historical GitHub v5.0 source file is left untouched. The **v5.1 production HTML is copied without alteration** under both filenames; only the hosted redirect is adjusted. The preview is generated from the same checksum-verified v5.1 production HTML, changing only two browser storage keys and appending a browser-title suffix. Checksum gates verify both the exact source and exact preview bytes. A deployment is distinct from a GitHub Release or tag; neither is created by this workflow.
 
 ## Hosted verification checklist
 

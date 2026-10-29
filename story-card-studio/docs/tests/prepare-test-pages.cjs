@@ -30,15 +30,17 @@ assert(!html.includes("const UNDO_STORAGE_KEY='story-card-studio-deleted-card-v1
 assert.equal(sha256(Buffer.from(html,'utf8')), expectedPreviewSHA, 'Generated preview changed unexpectedly');
 
 fs.mkdirSync(outputDir, {recursive:true});
+// Publish the current preview under both the new and historically linked URLs.
 fs.writeFileSync(path.join(outputDir,'Story-Card-Studio-v5.1.html'), html);
+fs.writeFileSync(path.join(outputDir,'Story-Card-Studio-v5.0.html'), html);
 fs.writeFileSync(path.join(outputDir,'index.html'),[
   '<!doctype html>',
   '<html lang="en">',
   '<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">',
   '<meta name="robots" content="noindex,nofollow">',
   '<title>Story Card Studio — Test Preview</title>',
-  '<meta http-equiv="refresh" content="0;url=Story-Card-Studio-v5.1.html"></head>',
-  '<body><p>Opening the <a href="Story-Card-Studio-v5.1.html">Story Card Studio development preview</a>.</p></body></html>',
+  '<meta http-equiv="refresh" content="0;url=Story-Card-Studio-v5.0.html"></head>',
+  '<body><p>Opening the <a href="Story-Card-Studio-v5.0.html">Story Card Studio development preview</a>.</p></body></html>',
   ''
 ].join('\n'));
 console.log('Verified source SHA256 '+verifiedSourceSHA);
