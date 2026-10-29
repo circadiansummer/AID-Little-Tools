@@ -1,6 +1,8 @@
 # Story Card Studio — GitHub Pages test preview
 
-**Status:** Configured by the repository's GitHub Pages workflow. **A publicly served preview is available only after the Actions deployment succeeds**; the presence of these files in GitHub alone does not prove a working public URL.
+**Status:** GitHub Actions deployment **succeeded** on October 29, 2026. The workflow confirmed the isolated preview package and deployed the site artifact. This is GitHub-side delivery verification; a separate direct HTTP/interactive test of the public URL was not possible in the current ChatGPT environment.
+
+**Deployment evidence:** [GitHub Actions run 40814040969](https://github.com/circadiansummer/AID-Little-Tools/actions/runs/40814040969) on commit [e03d9b9](https://github.com/circadiansummer/AID-Little-Tools/commit/e03d9b9cbc588a7bfeb5a7038be7f562a48d456f): **Package approved v5.0 static files: success; Deploy v5.0: success.** Build logs confirm **29/29** focused source checks passed, both expected preview SHA-256 values matched, and `test-pages/index.html` plus `test-pages/Story-Card-Studio-v5.0.html` were included in the uploaded Pages artifact. GitHub reported the deployed environment URL as `https://circadiansummer.github.io/AID-Little-Tools/`.
 
 ## Open the test editor
 
