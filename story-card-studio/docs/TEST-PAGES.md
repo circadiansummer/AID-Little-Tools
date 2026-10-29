@@ -4,6 +4,14 @@
 
 **Deployment evidence:** [GitHub Actions run 40814040969](https://github.com/circadiansummer/AID-Little-Tools/actions/runs/40814040969) on commit [e03d9b9](https://github.com/circadiansummer/AID-Little-Tools/commit/e03d9b9cbc588a7bfeb5a7038be7f562a48d456f): **Package approved v5.0 static files: success; Deploy v5.0: success.** Build logs confirm **29/29** focused source checks passed, both expected preview SHA-256 values matched, and `test-pages/index.html` plus `test-pages/Story-Card-Studio-v5.0.html` were included in the uploaded Pages artifact. GitHub reported the deployed environment URL as `https://circadiansummer.github.io/AID-Little-Tools/`.
 
+## October 28, 2026 — Updated preview deployment
+
+**PASS:** [GitHub Actions run 40816165604](https://github.com/circadiansummer/AID-Little-Tools/actions/runs/40816165604) deployed commit [4c78834](https://github.com/circadiansummer/AID-Little-Tools/commit/4c78834bda9d1d40a714b988afe11b80d7a6556e). Both **Package approved v5.0 static files** and **Deploy v5.0** jobs completed successfully, including checksum validation of the pinned `develop/v5.0-editor-ux` candidate at `460d9551ee360b1d7241fdf38c7e615f20d3962a`.
+
+The updated preview includes **Upload JSON to Studio**, **↓ Add Cards from Editor**, **Deselect** plus confirmation-gated **Clear** on the left/right sources, and a confirmation-gated **Clear** in the center. Build-time checks passed **44/44**; local Chromium checks passed **81/81** for this iteration, plus **92/92** pre-existing editor UX checks. The reviewed source/preview SHA-256 values are documented below. The live editor's source blob is unchanged.
+
+**NOT RUN:** Independent HTTP/browser verification of the GitHub Pages URL from this environment (web access blocked); a successful Actions deployment confirms packaging and deployment but not physical-device behavior.
+
 ## Open the test editor
 
 - **Test preview:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/
