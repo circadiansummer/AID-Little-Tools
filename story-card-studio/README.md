@@ -1,6 +1,6 @@
-# Story Card Studio v5.0
+# Story Card Studio v5.1
 
-**Active build on `main`: [Story-Card-Studio-v5.0.html](Story-Card-Studio-v5.0.html)**  
+**Active build on `main`: [Story-Card-Studio-v5.1.html](Story-Card-Studio-v5.1.html)**  
 **Architecture:** One responsive, standalone HTML application, suitable for desktop and mobile browsers.  
 **Status:** Owner-designated canonical development build. GitHub Pages publication is handled by the repository's separate checksum-gated Actions workflow. A GitHub commit is not a public Release or tag. **GitHub is the sole ongoing source and hosting workflow.**
 
@@ -8,7 +8,7 @@ Story Card Studio lets AI Dungeon creators edit, organize, merge, and analyze St
 
 ## Quick start
 
-1. Download the **[v5.0 HTML file](Story-Card-Studio-v5.0.html)** using GitHub's *Download raw file* action, not the code-preview webpage.
+1. Download the **[v5.1 HTML file](Story-Card-Studio-v5.1.html)** using GitHub's *Download raw file* action, not the code-preview webpage.
 2. Open in a modern desktop browser; import your AI Dungeon Story Card JSON or choose **Demo Cards**.
 3. Edit and export JSON. The exported JSON can be imported into AI Dungeon.
 
@@ -26,6 +26,16 @@ For mobile Safari, hosting over HTTPS is more reliable than opening the file thr
 
 The four RE/Inner Self/Auto-Cards tabs ending in `*` indicate that their corresponding custom AI Dungeon scripts must be installed in a scenario to operate *in game*. Those scripts are not required for using the local editor.
 
+## What's new in v5.1 (owner-approved)
+
+- **Blank-field exports:** Download JSON with empty Entry and/or Triggers; the 5,000-card safety limit remains.
+- **Clearer buttons:** **Upload JSON to Studio**, **Download JSON for AID** (no arrow), Merge **↓ Add Cards from Editor**, and the First/Second Set/Center controls documented below.
+- **Fixed card-editor controls:** On desktop, the Story Cards heading, count, toolbar, Find & Replace controls and help text stay visible while the cards beneath them scroll independently. The mobile document-scrolling layout remains.
+- **Collapsible Types:** Expand or collapse card Types in Editor and all three Merge columns without affecting exported data or selections.
+- **Merge selection versus removal:** First/Second Set **Deselect All** only unchecks cards. The separate **Clear** button prompts before removing an entire source set and its center contributions; center **Clear** prompts before deselecting the merged collection, leaving the source sets intact. Cancel does nothing.
+
+**Verification:** [v5.1 testing and acceptance](docs/V5.1-TESTING.md) documents 45 focused source checks, 95 editor/merge browser checks, 81 destructive-control browser checks, and the RE chart-count regression on the exact v5.1 HTML. v5.0 remains preserved in GitHub as historical.
+
 ## Mode-specific demo cards
 
 - **RE Support OFF:** The established **7-card** fictional-town example, emphasizing ordinary characters, locations, faction, plot, and trigger references.
@@ -35,19 +45,19 @@ Loading a demo replaces the current workspace; export real work beforehand.
 
 ## Storage, compatibility and limitations
 
-Editing uses browser-side code. Save important work with **Export JSON**; local browser storage is not a reliable cross-device backup and may not persist indefinitely. v5.0 uses the established desktop storage key; older mobile prototypes used a separate key, so export/import is necessary to transfer those workspaces. Custom Find & Replace presets live in browser storage, not in Story Card JSON.
+Editing uses browser-side code. Save important work with **Export JSON**; local browser storage is not a reliable cross-device backup and may not persist indefinitely. v5.1 retains the established v5.0 desktop storage key; older mobile prototypes used a separate key, so export/import is necessary to transfer those workspaces. Custom Find & Replace presets live in browser storage, not in Story Card JSON.
 
 **Original v5.0 baseline verification (2026-10-21):** RE ON loads 24 records/18 encounters; RE OFF loads 7 cards. RE ON export has exactly the same 24 Story Card objects as the supplied JSON. Summary metrics and responsive Chromium smoke checks at 390px/768px/1440px passed, with no page errors. Physical iOS Safari, live AI Dungeon integration, the complete current-version regression suite, and a true installable PWA were **not** verified. See [v5.0 baseline](docs/V5.0-BASELINE.md) and [test checklist](docs/V5.0-TESTING.md).
 
 **Encounter chart-scale fix (2026-10-21):** Verified with 18 encounters plus 120 additional ordinary Story Cards at Chromium widths 1440, 768 and 390px; both card-count chart SVGs remained identical, and a peak of 12 encounters produced an axis maximum of 12 rather than 40. Inline JavaScript passed `node --check`. Other full-suite and physical-device checks remain separate, as described below.
 
-**Current HTML SHA-256:** `d6f4685d32a2b897819afcf5d0a173869005e65c7e5e162cec956c3cf4dc8e4b`.
+**Current v5.1 HTML SHA-256:** `8b7b1c110e30d83ed304fd99b8c7be0cbc7f105b2dc8370ebc3261ad4ad712a4`.
 
-## GitHub Pages (v5.0)
+## GitHub Pages (v5.1)
 
 - **Website:** https://circadiansummer.github.io/AID-Little-Tools/ (once Pages is enabled and deployment has succeeded).
-- **Versioned URL:** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.0.html
+- **Versioned URL:** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.1.html
 - **UX test preview:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/ (public; availability depends on a successful Actions deployment)
 - **Deployment:** [GitHub Pages setup and testing guide](docs/GITHUB-PAGES.md).
 
-The GitHub Actions workflow publishes the checksum-verified active `Story-Card-Studio-v5.0.html` and its redirect at the site root, plus the standalone Deck Builder. It also serves an **isolated, explicitly reviewed UX development preview** under `/test-pages/`, documented at [Test Pages setup](docs/TEST-PAGES.md). The test app uses separate browser storage keys, while the production HTML and its required SHA-256 remain unchanged. Historical v4.12 builds and other development prototypes are **not** copied into the Pages artifact. Site publication does not constitute a tagged GitHub Release, full iOS testing, or live AI Dungeon validation.
+The GitHub Actions workflow publishes the checksum-verified active `Story-Card-Studio-v5.1.html` and its redirect at the site root, plus the standalone Deck Builder. The `/test-pages/` preview now uses the same v5.1 source with separate browser storage keys, so test autosaves cannot overwrite production autosaves. Historical v5.0/v4.12 builds are preserved in the repository, but are not copied to the Pages artifact. Site publication does not constitute a tagged GitHub Release, full iOS testing, or live AI Dungeon validation.

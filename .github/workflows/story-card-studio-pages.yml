@@ -1,13 +1,13 @@
-name: Publish Story Card Studio v5.0 to GitHub Pages
+name: Publish Story Card Studio v5.1 to GitHub Pages
 
 on:
   push:
     branches: [main]
     paths:
       - ".github/workflows/story-card-studio-pages.yml"
-      - "story-card-studio/Story-Card-Studio-v5.0.html"
+      - "story-card-studio/Story-Card-Studio-v5.1.html"
       - "story-card-studio/index.html"
-      - "story-card-studio/docs/V5.0-BASELINE.md"
+      - "story-card-studio/docs/V5.1-BASELINE.md"
       - "story-card-studio/docs/tests/prepare-test-pages.cjs"
       - "deck-builder/**"
   workflow_dispatch:
@@ -21,19 +21,11 @@ concurrency:
 
 jobs:
   build:
-    name: Package approved v5.0 static files
+    name: Package approved v5.1 static files
     runs-on: ubuntu-latest
     steps:
       - name: Check out main
         uses: actions/checkout@v6
-
-      # Pin the approved development candidate. It is never used for the live root page.
-      - name: Check out reviewed editor UX candidate for test-pages
-        uses: actions/checkout@v6
-        with:
-          ref: 460d9551ee360b1d7241fdf38c7e615f20d3962a
-          path: test-pages-source
-          persist-credentials: false
 
       - name: Set up Node for Deck Builder validation
         uses: actions/setup-node@v4
@@ -46,41 +38,41 @@ jobs:
           git diff --exit-code -- deck-builder/Story-Card-Deck-Builder.html
           node deck-builder/test.cjs
 
-      - name: Verify v5.0 and prepare isolated website artifact
+      - name: Verify v5.1 and prepare isolated website artifact
         shell: bash
         run: |
           set -euo pipefail
-          source_file="story-card-studio/Story-Card-Studio-v5.0.html"
+          source_file="story-card-studio/Story-Card-Studio-v5.1.html"
           entry_file="story-card-studio/index.html"
-          baseline="story-card-studio/docs/V5.0-BASELINE.md"
+          baseline="story-card-studio/docs/V5.1-BASELINE.md"
 
           test -f "$source_file"
           test -f "$entry_file"
-          grep -Fq 'data-app-version="5.0"' "$source_file"
-          grep -Fq '<title>Story Card Studio v5.0</title>' "$source_file"
-          grep -Fq 'Story-Card-Studio-v5.0.html' "$entry_file"
+          grep -Fq 'data-app-version="5.1"' "$source_file"
+          grep -Fq '<title>Story Card Studio v5.1</title>' "$source_file"
+          grep -Fq 'Story-Card-Studio-v5.1.html' "$entry_file"
 
           # Require the published HTML to match the documented, reviewed baseline.
           expected_sha="$(sed -nE 's/^-[[:space:]]Canonical.*SHA-256: `([0-9a-f]{64})`.*/\1/p' "$baseline")"
           if [ -z "$expected_sha" ]; then
-            echo "No canonical v5.0 SHA-256 found in $baseline" >&2
+            echo "No canonical v5.1 SHA-256 found in $baseline" >&2
             exit 1
           fi
           printf '%s  %s\n' "$expected_sha" "$source_file" | sha256sum --check
 
           mkdir -p pages-site
           cp "$entry_file" pages-site/index.html
-          cp "$source_file" pages-site/Story-Card-Studio-v5.0.html
+          cp "$source_file" pages-site/Story-Card-Studio-v5.1.html
           mkdir -p pages-site/deck-builder
           cp deck-builder/Story-Card-Deck-Builder.html pages-site/deck-builder/Story-Card-Deck-Builder.html
           cp deck-builder/index.html pages-site/deck-builder/index.html
           touch pages-site/.nojekyll
-          echo "Pages artifact contains production v5.0 and Deck Builder. The preview will be added under test-pages/."
+          echo "Pages artifact contains production v5.1 and Deck Builder. The isolated preview will be added under test-pages/."
           find pages-site -maxdepth 1 -type f -printf '%f\n' | sort
 
       - name: Verify editor UX preview source and package isolated test-pages
         run: |
-          node test-pages-source/story-card-studio/docs/tests/editor-ux-v5.cjs
+          node story-card-studio/docs/tests/editor-ux-v5.1.cjs
           node story-card-studio/docs/tests/prepare-test-pages.cjs
 
       - name: Configure GitHub Pages
@@ -92,7 +84,7 @@ jobs:
           path: pages-site
 
   deploy:
-    name: Deploy v5.0
+    name: Deploy v5.1
     needs: build
     runs-on: ubuntu-latest
     permissions:

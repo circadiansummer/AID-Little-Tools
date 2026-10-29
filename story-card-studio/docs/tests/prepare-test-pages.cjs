@@ -1,16 +1,16 @@
 'use strict';
 // Build the public GitHub Pages test-pages preview without changing the live app.
-// The reviewed candidate is pinned in story-card-studio-pages.yml; fail closed on drift.
+// The active v5.1 main source is checksum-gated; fail closed on drift.
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const assert = require('node:assert/strict');
 
-const verifiedSourceSHA = 'e8fdaa69d9e3004905b23145414a960f14791bfa65bc4ba73ab5e663a73097cd';
-const expectedPreviewSHA = '743940ee2c20b8711df7b70ba2dcca57ea69593add26692765c0316e73873888';
+const verifiedSourceSHA = '8b7b1c110e30d83ed304fd99b8c7be0cbc7f105b2dc8370ebc3261ad4ad712a4';
+const expectedPreviewSHA = '2c91087a75827f75263cd01f6feb37adaa7132537bb646f2911ba53bead98d6c';
 const sha256 = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const repo = path.resolve(__dirname, '../../..');
-const source = path.resolve(process.argv[2] || path.join(repo, 'test-pages-source/story-card-studio/Story-Card-Studio-v5.0.html'));
+const source = path.resolve(process.argv[2] || path.join(repo, 'story-card-studio/Story-Card-Studio-v5.1.html'));
 const outputDir = path.resolve(process.argv[3] || path.join(repo, 'pages-site/test-pages'));
 const raw = fs.readFileSync(source);
 assert.equal(sha256(raw), verifiedSourceSHA, 'Candidate source changed without review; abort preview publication');
@@ -19,7 +19,7 @@ let html = raw.toString('utf8');
 const substitutions = [
   ["const STORAGE_KEY='story-card-studio-project-v1';", "const STORAGE_KEY='story-card-studio-project-v1-test-pages';"],
   ["const UNDO_STORAGE_KEY='story-card-studio-deleted-card-v1';", "const UNDO_STORAGE_KEY='story-card-studio-deleted-card-v1-test-pages';"],
-  ['<title>Story Card Studio v5.0</title>', '<title>Story Card Studio v5.0 — TEST PREVIEW</title>']
+  ['<title>Story Card Studio v5.1</title>', '<title>Story Card Studio v5.1 — TEST PREVIEW</title>']
 ];
 for (const [oldText,newText] of substitutions){
   assert.equal(html.split(oldText).length-1, 1, 'Expected exactly one occurrence of '+oldText);

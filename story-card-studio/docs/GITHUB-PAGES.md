@@ -1,13 +1,13 @@
-# GitHub Pages deployment — Story Card Studio v5.0
+# GitHub Pages deployment — Story Card Studio v5.1
 
-The Pages site serves the **canonical v5.0** editor at the root plus the Deck Builder. A separately packaged, pinned **test preview** is also available at `/test-pages/` once the Pages Actions workflow succeeds. The active root HTML is unchanged; see [Test Pages](TEST-PAGES.md) for the preview's source checksum and browser-storage isolation. Historical v4.12 builds and private creator examples are not published. The source repository and the preview URL are public.
+The Pages site serves the **canonical v5.1** editor at the root plus the Deck Builder. A separate **test preview** of that same v5.1 source is also available at `/test-pages/` once the Pages Actions workflow succeeds. The preview uses isolated browser storage keys; see [Test Pages](TEST-PAGES.md). The original v5.0 source remains historical in GitHub. Historical v4.12 builds and private creator examples are not published. The source repository and the preview URL are public.
 
 ## Addresses
 
 - **Intended website:** https://circadiansummer.github.io/AID-Little-Tools/
-- **Direct versioned HTML:** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.0.html
+- **Direct versioned HTML:** https://circadiansummer.github.io/AID-Little-Tools/Story-Card-Studio-v5.1.html
 - **Preview URL:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/
-- **Source of truth:** [Story-Card-Studio-v5.0.html](../Story-Card-Studio-v5.0.html)
+- **Source of truth:** [Story-Card-Studio-v5.1.html](../Story-Card-Studio-v5.1.html)
 - **Deployment workflow:** [story-card-studio-pages.yml](../../.github/workflows/story-card-studio-pages.yml)
 - **GitHub Actions:** https://github.com/circadiansummer/AID-Little-Tools/actions
 - **Pages settings:** https://github.com/circadiansummer/AID-Little-Tools/settings/pages
@@ -15,22 +15,22 @@ The Pages site serves the **canonical v5.0** editor at the root plus the Deck Bu
 ## Enable publication (repository administrator)
 
 1. Open **Settings → Pages → Build and deployment** in the repository.
-2. Change **Source** to **GitHub Actions**. Do not select “Deploy from a branch”; the v5.0 website requires an isolated artifact from a subfolder.
-3. Open **Actions → Publish Story Card Studio v5.0 to GitHub Pages**. If a prior run failed before Pages was enabled, select **Run workflow** on branch `main`, or use **Re-run jobs** on the failed run.
-4. Check that the **Package approved v5.0 static files** and **Deploy v5.0** jobs both complete successfully.
-5. Open the site URL above. The root `index.html` redirects to the versioned v5.0 page.
+2. Change **Source** to **GitHub Actions**. Do not select “Deploy from a branch”; the v5.1 website requires an isolated artifact from a subfolder.
+3. Open **Actions → Publish Story Card Studio v5.1 to GitHub Pages**. If a prior run failed before Pages was enabled, select **Run workflow** on branch `main`, or use **Re-run jobs** on the failed run.
+4. Check that the **Package approved v5.1 static files** and **Deploy v5.1** jobs both complete successfully.
+5. Open the site URL above. The root `index.html` redirects to the versioned v5.1 page.
 
-The workflow runs automatically when the v5.0 HTML, its root redirect, the baseline checksum document, or this workflow changes on `main`. It can also run manually through `workflow_dispatch`. **This is the sole supported hosted deployment process for Story Card Studio going forward.** Whenever v5.0 HTML changes, update its SHA-256 in the baseline document in the same commit so the workflow can verify the exact new bytes.
+The workflow runs automatically when the v5.1 HTML, its root redirect, the baseline checksum document, or this workflow changes on `main`. It can also run manually through `workflow_dispatch`. **This is the sole supported hosted deployment process for Story Card Studio going forward.** Whenever v5.1 HTML changes, update its SHA-256 in the baseline document in the same commit so the workflow can verify the exact new bytes.
 
 ## Why the workflow verifies a checksum
 
-The deployed application must exactly match the canonical SHA-256 documented in [V5.0-BASELINE.md](V5.0-BASELINE.md). If the HTML changes without an approved, documented baseline update, the workflow **fails instead of silently publishing a new application version**. Record new testing results and an updated checksum before intentionally publishing subsequent revisions.
+The deployed application must exactly match the canonical SHA-256 documented in [V5.1-BASELINE.md](V5.1-BASELINE.md). If the HTML changes without an approved, documented baseline update, the workflow **fails instead of silently publishing a new application version**. Record new testing results and an updated checksum before intentionally publishing subsequent revisions.
 
-The workflow uploads the verified root editor and redirect, the standalone Deck Builder, `.nojekyll`, and the separate `/test-pages/` preview. The **production HTML is copied without alteration**. The preview is generated from the pinned development commit with two isolated storage keys and a browser-title suffix; checksum gates verify both the exact source and the exact preview bytes. A deployment is distinct from a GitHub Release or tag; neither is created by this workflow.
+The workflow uploads the verified root editor and redirect, the standalone Deck Builder, `.nojekyll`, and the separate `/test-pages/` preview. The **production HTML is copied without alteration**. The preview is generated from the same checksum-verified v5.1 production HTML, changing only two browser storage keys and appending a browser-title suffix. Checksum gates verify both the exact source and exact preview bytes. A deployment is distinct from a GitHub Release or tag; neither is created by this workflow.
 
 ## Hosted verification checklist
 
-1. Open both the root URL and the direct versioned URL in a modern browser. Confirm the page says **Story Card Studio v5.0** rather than v4.12 and that navigation works.
+1. Open both the root URL and the direct versioned URL in a modern browser. Confirm the page says **Story Card Studio v5.1** rather than v4.12 and that navigation works.
 2. Confirm RE Support OFF loads the established seven-card demo. Confirm RE Support ON loads 24 total cards, including 18 encounters across three Acts.
 3. Import a non-sensitive sample Story Card JSON file, make a change, export it, and verify that creator metadata and all unedited fields are preserved.
 4. Check desktop layout and mobile Safari navigation, editing, touch-drag cancellation, and file export. Browser emulation is **not** a substitute for testing on a physical iPhone.
