@@ -100,7 +100,7 @@ test('supplied live context markup: finds the icon-bearing Explore Memories butt
   let clicks = 0; explore.onclick = () => { clicks++; d.querySelector('[role="dialog"]').remove(); d.body.insertAdjacentHTML('beforeend',memories); };
   d.querySelector('#aid-mb-launcher button').click(); await pause(300);
   assert.equal(clicks, 1); assert.ok(d.querySelector('.aid-mb-tools'));
-  assert.equal(d.querySelector('#aid-mb-launcher').dataset.version, '0.1.6');
+  assert.equal(d.querySelector('#aid-mb-launcher').dataset.version, '0.1.7');
   assert.equal(d.querySelector('#aid-mb-launcher button').textContent, '◈ Memories');
 });
 test('supplied response structure: clicks the latest AI prose and traverses the real context markup', async t => {
@@ -172,8 +172,8 @@ test('native Show Unused remains in its original header through off/on and searc
   const markup = memories.replace('<div class="list">', '<button role="switch" aria-checked="true">Show unused</button><div class="list">');
   const dom = fixture(markup); t.after(() => dom.window.close()); const d = dom.window.document;
   const root = d.querySelector('section'); const toggle = d.querySelector('[role="switch"]');
-  assert.equal(root.querySelector('.aid-mb-tools'), null);
-  assert.equal(d.querySelector('.aid-mb-tools').parentElement, d.body);
+  assert.equal(d.querySelector('.aid-mb-tools').parentElement, root);
+  assert.equal(root.lastElementChild, d.querySelector('.aid-mb-tools'));
   const originalChildren = [...root.children];
   toggle.onclick = () => {
     const enabled = toggle.getAttribute('aria-checked') !== 'true'; toggle.setAttribute('aria-checked',String(enabled));
@@ -191,4 +191,19 @@ test('native Show Unused remains in its original header through off/on and searc
   assert.match(d.querySelector('output').textContent, /^1 of 2/);
   assert.deepEqual([...root.children], originalChildren);
   assert.equal(root.querySelector('[data-scrolled]'),null);
+});
+test('search field and buttons stay inside the native dialog for outside-click and focus handling', async t => {
+  const dom = fixture('<div role="dialog" style="display:flex;flex-direction:column">'+memories+'</div>');
+  t.after(() => dom.window.close()); const d = dom.window.document; const dialog = d.querySelector('[role="dialog"]');
+  d.addEventListener('pointerdown', event => { if (!dialog.contains(event.target)) dialog.remove(); });
+  d.addEventListener('focusin', event => { if (!dialog.contains(event.target)) dialog.remove(); });
+  const tools = d.querySelector('.aid-mb-tools'); assert.equal(tools.parentElement, dialog);
+  const input = tools.querySelector('input');
+  input.dispatchEvent(new dom.window.MouseEvent('pointerdown', {bubbles:true})); input.focus();
+  assert.equal(d.activeElement, input); assert.equal(dialog.isConnected,true);
+  input.value='David'; input.dispatchEvent(new dom.window.Event('input')); await pause(300);
+  assert.equal(d.querySelectorAll('.aid-mb-match').length,0);
+  const buttons = [...tools.querySelectorAll('button')]; assert.deepEqual(buttons.map(el=>el.textContent),['Search','Previous','Next']);
+  for(const button of buttons) { button.dispatchEvent(new dom.window.MouseEvent('pointerdown',{bubbles:true})); button.focus(); button.click(); await pause(10); assert.equal(dialog.isConnected,true); }
+  assert.match(tools.querySelector('output').textContent,/matching memories/);
 });

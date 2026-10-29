@@ -84,7 +84,7 @@
     while (Date.now() < deadline) { const result = fn(); if (result) return result; await wait(80); }
     return null;
   }
-  const VERSION = '0.1.6';
+  const VERSION = '0.1.7';
   const launcher = document.createElement('div'); launcher.id = 'aid-mb-launcher'; launcher.dataset.version = VERSION;
   const open = document.createElement('button'); open.type = 'button'; open.textContent = '◈ Memories'; open.setAttribute('aria-label', 'Open AI Dungeon memories');
   const message = document.createElement('div'); message.setAttribute('role', 'status');
@@ -182,9 +182,11 @@
     const prev = document.createElement('button'); prev.type = 'button'; prev.textContent = 'Previous';
     const next = document.createElement('button'); next.type = 'button'; next.textContent = 'Next';
     const status = document.createElement('output'); status.setAttribute('aria-live', 'polite');
-    // Keep extension elements outside AID's React-managed children. Inserting
-    // into its dialog can interfere with reconciliation when a filter changes.
-    bar.append(input, searchButton, prev, next); tools.append(bar, status); document.body.append(tools);
+    // Append inside the native dialog so Radix treats focus/pointer events as
+    // inside interactions. CSS order puts the toolbar at the top without
+    // prepending to or reparenting AID's existing header/filter children.
+    const host = root.closest('[role="dialog"]') || root;
+    bar.append(input, searchButton, prev, next); tools.append(bar, status); host.append(tools);
     const s = {root, tools, input, query: '', hits: [], index: -1, generation: 0, scanning: false, timer: null, pane: null};
     const textKey = row => rowText(row).toLocaleLowerCase();
     function paint() {
@@ -270,17 +272,7 @@
       if (event.target.closest('[role="tab"], [role="switch"]')) invalidate();
     };
     root.addEventListener('click', nativeChange);
-    s.position = () => {
-      const rect = root.getBoundingClientRect(); const height = tools.getBoundingClientRect().height || 94;
-      const width = Math.min(Math.max(280, rect.width), Math.max(0, window.innerWidth - 16));
-      tools.style.width = `${width}px`;
-      tools.style.left = `${Math.max(8, Math.min(rect.left, window.innerWidth - width - 8))}px`;
-      const top = rect.top >= height + 16 ? rect.top - height - 8 : rect.bottom + height + 16 <= window.innerHeight ? rect.bottom + 8 : window.innerHeight - height - 8;
-      tools.style.top = `${Math.max(8, top)}px`;
-    };
-    s.destroy = () => { ++s.generation; clearTimeout(s.timer); root.removeEventListener('click', nativeChange); window.removeEventListener('resize', s.position); window.removeEventListener('scroll', s.position, true); tools.remove(); clearHighlights(root); };
-    window.addEventListener('resize', s.position); window.addEventListener('scroll', s.position, true);
-    s.position();
+    s.destroy = () => { ++s.generation; clearTimeout(s.timer); root.removeEventListener('click', nativeChange); tools.remove(); clearHighlights(root); };
     s.paint = paint; paint(); return s;
   }
   function sync() {
@@ -290,7 +282,6 @@
     const root = adventure && memoryRoot();
     if (session && (session.root !== root || !session.tools.isConnected)) { session.destroy(); session = null; }
     if (root && !session) session = attach(root);
-    session?.position();
   }
   let scheduled = false;
   new MutationObserver(records => {
