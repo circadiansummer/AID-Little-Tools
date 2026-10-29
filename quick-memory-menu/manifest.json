@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "AID Memory Browser",
+  "version": "0.1.6",
+  "description": "Open AI Dungeon memories with one button and search the native memory list.",
+  "content_scripts": [{
+    "matches": ["https://play.aidungeon.com/*"],
+    "js": ["content.js"],
+    "css": ["styles.css"],
+    "run_at": "document_idle"
+  }],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "aid-memory-browser@local.extension",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  }
+}

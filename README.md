@@ -2,6 +2,8 @@
 
 Utilities for AI Dungeon creators.
 
+**[Quick Memory Menu](quick-memory-menu/README.md)** — a browser extension that opens AI Dungeon memories with one button and adds keyword search. [Firefox instructions](quick-memory-menu/FIREFOX.md) · [Chrome instructions](quick-memory-menu/CHROME.md).
+
 **New: [Story Card Deck Builder](deck-builder/Story-Card-Deck-Builder.html)** — choose from a bundled character roster, match Better Dungeons portraits, and merge selected cards with your own JSON. [Usage and build instructions](deck-builder/README.md).
 
 **Current active application: [Story Card Studio v5.1](story-card-studio/Story-Card-Studio-v5.1.html)** — one responsive, self-contained HTML tool for desktop and mobile.

@@ -1,0 +1,18 @@
+#aid-mb-launcher, .aid-mb-tools { color-scheme: dark; font: 14px/1.4 system-ui, sans-serif; }
+#aid-mb-launcher { position: fixed; bottom: max(20px, env(safe-area-inset-bottom)); left: max(20px, env(safe-area-inset-left)); z-index: 2147483646; display: grid; gap: 8px; max-width: min(350px, calc(100vw - 40px)); }
+#aid-mb-launcher button, .aid-mb-tools button { border: 1px solid #686071; border-radius: 8px; padding: 8px 12px; background: #30243e; color: #fff; cursor: pointer; font: inherit; }
+#aid-mb-launcher button { justify-self: start; box-shadow: 0 3px 15px #0006; }
+#aid-mb-launcher button:hover, .aid-mb-tools button:hover { background: #49305e; }
+#aid-mb-launcher button:disabled, .aid-mb-tools button:disabled { opacity: .55; cursor: default; }
+#aid-mb-launcher .aid-mb-notice { position: relative; background: #222; border: 1px solid #666; border-radius: 8px; padding: 12px 32px 12px 12px; color: #eee; opacity: 1; transition: opacity 300ms ease; }
+#aid-mb-launcher .aid-mb-notice[hidden] { display: none; }
+#aid-mb-launcher .aid-mb-notice.aid-mb-fading { opacity: 0; pointer-events: none; }
+#aid-mb-launcher .aid-mb-dismiss { position: absolute; top: 3px; right: 4px; padding: 0 5px; border: 0; background: transparent; box-shadow: none; color: white; font-size: 20px; line-height: 24px; }
+@media (prefers-reduced-motion: reduce) { #aid-mb-launcher .aid-mb-notice { transition: none; } }
+.aid-mb-tools { position: fixed; box-sizing: border-box; z-index: 2147483646; background: #222; padding: 10px 12px; border: 1px solid #555; border-radius: 8px; pointer-events: auto; }
+.aid-mb-controls { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.aid-mb-tools input { min-width: 90px; flex: 1 1 140px; width: 140px; padding: 8px; border: 1px solid #888; border-radius: 6px; background: #151515; color: #fff; font: inherit; }
+.aid-mb-tools output { display: block; margin-top: 6px; font-size: 12px; color: #ccc; }
+.aid-mb-tools :focus-visible, #aid-mb-launcher :focus-visible { outline: 3px solid #e2bcff; outline-offset: 2px; }
+.aid-mb-match { outline: 1px solid #bca143 !important; outline-offset: -2px; }
+.aid-mb-current { outline: 3px solid #ffc857 !important; outline-offset: -3px; background-color: #67501e !important; scroll-margin: 110px 0 20px; }
