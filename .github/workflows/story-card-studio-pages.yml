@@ -27,6 +27,13 @@ jobs:
       - name: Check out main
         uses: actions/checkout@v6
 
+      - name: Check out approved editor UX preview candidate
+        uses: actions/checkout@v6
+        with:
+          ref: 07dd7176ca6189e63db448ff8dd6426ab00bdff2
+          path: test-pages-source
+          persist-credentials: false
+
       - name: Set up Node for Deck Builder validation
         uses: actions/setup-node@v4
         with:
@@ -80,6 +87,7 @@ jobs:
       - name: Verify editor UX preview source and package isolated test-pages
         run: |
           node story-card-studio/docs/tests/editor-ux-v5.1.cjs
+          node test-pages-source/story-card-studio/docs/tests/editor-ux-v5.1.cjs
           node story-card-studio/docs/tests/prepare-test-pages.cjs
           test -f pages-site/test-pages/Story-Card-Studio-v5.1.html
           grep -Fq 'Story-Card-Studio-v5.0.html' pages-site/test-pages/index.html
