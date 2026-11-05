@@ -10,7 +10,7 @@
 
 ## November 5, 2026 — Frozen controls and Color Key preview candidate
 
-**Deployment status at preparation:** PENDING a successful new GitHub Pages Actions run. The older successful run below covers an earlier build and does **not** verify this candidate.
+**Deployment verified (GitHub Actions): PASS.** [Run 41995693077](https://github.com/circadiansummer/AID-Little-Tools/actions/runs/41995693077) on commit [edb4611](https://github.com/circadiansummer/AID-Little-Tools/commit/edb46111e373a37881b3434bc630893b41d02720) completed both packaging and Pages deployment jobs successfully. The build logs verified the unchanged production HTML checksum, 45/45 production source tests, 49/49 pinned candidate source tests, the candidate source and isolated preview hashes, and both stable v5.0 and versioned v5.1 filenames under `/test-pages/`. Direct external HTTP browser verification of the hosted URL remains NOT RUN.
 
 - **Development commit:** [07dd717](https://github.com/circadiansummer/AID-Little-Tools/commit/07dd7176ca6189e63db448ff8dd6426ab00bdff2) on `develop/v5.1-frozen-header-color-key`.
 - **Candidate source SHA-256:** `6a44d86f0a9a7518ca19984cc95dc782e7ea710d824b8189ee87e3fb45e817b4`.
