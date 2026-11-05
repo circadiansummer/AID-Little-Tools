@@ -482,8 +482,8 @@ a:hover{color:#e1d7ff}
 
 /* v5.1 Editor UX release: fixed left-pane controls, independent card-list scroll. */
 #cardsPage .library{display:flex;flex-direction:column;min-height:0;overflow:hidden;padding:0}
-#cardsPage .library-controls{flex:0 0 auto;min-height:0;max-height:65%;overflow-y:auto;padding:24px 26px 0;scrollbar-color:#555464 transparent}
-#cardsPage .library-scroll{flex:1 1 auto;min-height:0;min-width:0;overflow-y:auto;overflow-x:hidden;padding:0 26px 72px;scrollbar-color:#555464 transparent}
+#cardsPage .library-controls{flex:0 0 auto;min-height:0;max-height:none;overflow:visible;position:relative;z-index:25;padding:24px 26px 0}
+#cardsPage .library-scroll{position:relative;z-index:0;flex:1 1 auto;min-height:0;min-width:0;overflow-y:auto;overflow-x:hidden;padding:0 26px 72px;scrollbar-color:#555464 transparent}
 #cardsPage .cat-collapse{flex:none;display:inline-flex;align-items:center;justify-content:center;border:1px solid #565b72;border-radius:6px;background:#303342;color:#d9dbef;width:27px;height:27px;padding:0;cursor:pointer;font-size:14px;line-height:1}
 #cardsPage .cat-collapse:hover,#cardsPage .cat-collapse:focus-visible{background:#45405f;border-color:#a794e8;outline-offset:2px}
 #cardsPage .category.is-collapsed .cat-header{border-bottom:0}
@@ -497,6 +497,10 @@ a:hover{color:#e1d7ff}
 .merge-group-toggle .merge-group-left{display:flex;align-items:center;gap:8px;min-width:0}
 .merge-group-toggle .merge-chevron{font-size:12px;color:#c4b2ef;min-width:12px}
 .merge-group-items[hidden]{display:none!important}
+/* Unscrollable editor controls overlay the independently scrolling board. */
+#cardsPage .color-key{z-index:30}
+#cardsPage .color-key-tooltip{z-index:1000}
+@media(max-width:600px){#cardsPage #colorKey .color-key-tooltip{left:0;right:auto;max-width:min(272px,calc(100vw - 28px))}#cardsPage #colorKey .color-key-tooltip::before{left:25px;right:auto}}
 /* Preserve pre-existing responsive document scrolling on narrower devices. */
 @media(max-width:930px){
   #cardsPage .library{display:block;overflow:visible;padding:0}
@@ -617,7 +621,7 @@ a:hover{color:#e1d7ff}
   <div class="merge-intro"><div><h2 id="mergeHeading">Merge Story Card JSONs</h2><p>Upload two sets of Story Cards, then click individual cards to add or remove them from the merged file. Files remain separate from your Story Cards editor workspace. Cards and metadata are copied without alteration.</p></div><span class="count" id="mergeTotalCount">0 selected</span></div>
   <div class="merge-columns">
     <section class="merge-panel" aria-labelledby="mergeLeftHeading">
-      <div class="merge-panel-head"><h3 id="mergeLeftHeading">First Set of Story Cards</h3><p>Source A · Select cards to include</p><div class="merge-controls merge-source-controls"><div class="merge-control-row"><label for="mergeLeftFile" class="btn slim">↓ Add JSON for First Set</label><input id="mergeLeftFile" class="file-input" type="file" accept=".json,application/json"><button type="button" class="btn slim" id="mergeLeftFromEditor" title="Use the cards currently loaded in Story Card Editor as Source A">↓ Add Cards from Editor</button></div><div class="merge-control-row"><button type="button" class="btn slim" id="mergeLeftAll" disabled>Select all</button><button type="button" class="btn slim" id="mergeLeftNone" disabled>Deselect All</button><button type="button" class="btn slim" id="mergeLeftClear" disabled title="Remove all cards from this source set">Clear</button></div></div><div id="mergeLeftFilename" class="merge-filename">No file uploaded</div></div>
+      <div class="merge-panel-head"><h3 id="mergeLeftHeading">First Set of Story Cards</h3><p>Source A · Select cards to include</p><div class="merge-controls merge-source-controls"><div class="merge-control-row"><label for="mergeLeftFile" class="btn slim">↓ Add JSON for First Set</label><input id="mergeLeftFile" class="file-input" type="file" accept=".json,application/json"><button type="button" class="btn slim" id="mergeLeftFromEditor" title="Use the cards currently loaded in Story Card Editor as Source A">← Add Cards from Editor</button></div><div class="merge-control-row"><button type="button" class="btn slim" id="mergeLeftAll" disabled>Select all</button><button type="button" class="btn slim" id="mergeLeftNone" disabled>Deselect All</button><button type="button" class="btn slim" id="mergeLeftClear" disabled title="Remove all cards from this source set">Clear</button></div></div><div id="mergeLeftFilename" class="merge-filename">No file uploaded</div></div>
       <div id="mergeLeftList" class="merge-panel-body" aria-label="Cards in first file"><div class="merge-empty">Upload a Story Card JSON file to view its types and cards.</div></div><div id="mergeLeftFoot" class="merge-footnote">0 cards · 0 selected</div>
     </section>
     <section class="merge-panel center" aria-labelledby="mergeCenterHeading">
@@ -626,7 +630,7 @@ a:hover{color:#e1d7ff}
       <div id="mergeCenterList" class="merge-panel-body" aria-label="Selected cards in merged output"><div class="merge-empty">Your unified Story Card collection will appear here as you make selections.</div></div><div id="mergeCenterFoot" class="merge-footnote">0 selected · Preserves original JSON data</div>
     </section>
     <section class="merge-panel" aria-labelledby="mergeRightHeading">
-      <div class="merge-panel-head"><h3 id="mergeRightHeading">Second Set of Story Cards</h3><p>Source B · Select cards to include</p><div class="merge-controls merge-source-controls"><div class="merge-control-row"><label for="mergeRightFile" class="btn slim">↓ Add JSON for Second Set</label><input id="mergeRightFile" class="file-input" type="file" accept=".json,application/json"><button type="button" class="btn slim" id="mergeRightFromEditor" title="Use the cards currently loaded in Story Card Editor as Source B">↓ Add Cards from Editor</button></div><div class="merge-control-row"><button type="button" class="btn slim" id="mergeRightAll" disabled>Select all</button><button type="button" class="btn slim" id="mergeRightNone" disabled>Deselect All</button><button type="button" class="btn slim" id="mergeRightClear" disabled title="Remove all cards from this source set">Clear</button></div></div><div id="mergeRightFilename" class="merge-filename">No file uploaded</div></div>
+      <div class="merge-panel-head"><h3 id="mergeRightHeading">Second Set of Story Cards</h3><p>Source B · Select cards to include</p><div class="merge-controls merge-source-controls"><div class="merge-control-row"><label for="mergeRightFile" class="btn slim">↓ Add JSON for Second Set</label><input id="mergeRightFile" class="file-input" type="file" accept=".json,application/json"><button type="button" class="btn slim" id="mergeRightFromEditor" title="Use the cards currently loaded in Story Card Editor as Source B">← Add Cards from Editor</button></div><div class="merge-control-row"><button type="button" class="btn slim" id="mergeRightAll" disabled>Select all</button><button type="button" class="btn slim" id="mergeRightNone" disabled>Deselect All</button><button type="button" class="btn slim" id="mergeRightClear" disabled title="Remove all cards from this source set">Clear</button></div></div><div id="mergeRightFilename" class="merge-filename">No file uploaded</div></div>
       <div id="mergeRightList" class="merge-panel-body" aria-label="Cards in second file"><div class="merge-empty">Upload a second Story Card JSON file and select the cards you want.</div></div><div id="mergeRightFoot" class="merge-footnote">0 cards · 0 selected</div>
     </section>
   </div>

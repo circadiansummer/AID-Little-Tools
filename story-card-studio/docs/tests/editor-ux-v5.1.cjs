@@ -10,13 +10,18 @@ function run(html){
  for(const label of [
  "Upload JSON to Studio","Download JSON for AID",
  "↓ Add JSON for First Set","↓ Add JSON for Second Set",
- "↓ Add Cards from Editor","→ Send to Editor Tab"
+ "← Add Cards from Editor","→ Send to Editor Tab"
  ])check(html.includes(label),"Button label: "+label);
  check(html.includes("id=\"cardsPage\""),"Editor tab present");
  check(html.includes('class="library-controls"'),"Fixed controls wrapper exists");
  check(html.includes('class="library-scroll"><div id="board"></div></div>'),"Card list scrolls independently");
- check(html.includes('#cardsPage .library-scroll{flex:1 1 auto;min-height:0;min-width:0;overflow-y:auto;'),"Desktop vertical scrolling");
+ check(html.includes('#cardsPage .library-scroll{position:relative;z-index:0;flex:1 1 auto;min-height:0;min-width:0;overflow-y:auto;'),"Desktop vertical scrolling");
  check(html.includes('@media(max-width:930px)')&&html.includes('#cardsPage .library-scroll{overflow:visible;max-height:none'),"Mobile retains document scroll");
+ check(html.includes('#cardsPage .library-controls{flex:0 0 auto;min-height:0;max-height:none;overflow:visible;position:relative;z-index:25;'),"Frozen controls have no overflow-scroll or 65% cap");
+ check(html.includes('#cardsPage .color-key-tooltip{z-index:1000}'),"Color Key tooltip is raised over card list");
+ check(html.includes('#cardsPage #colorKey .color-key-tooltip{left:0;right:auto;'),"Color Key tooltip uses mobile left alignment");
+ check(html.includes('id="mergeLeftFromEditor"')&&html.includes('id="mergeRightFromEditor"')&&html.split('>← Add Cards from Editor</button>').length===3,"Both Merge source arrow labels exact");
+
  const validateSource=js.slice(js.indexOf('function validate()'),js.indexOf('function saveForAID()'));
  const validateFor=cards=>new Function('state',validateSource+';return validate;')({cards})();
  check(validateFor([{keys:'',value:''}])===null,"Empty triggers and Entries can export");
