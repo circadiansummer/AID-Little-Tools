@@ -1,5 +1,5 @@
 // Story Card Studio v5.1 source checks — dependency-free source checks.
-// Run: node story-card-studio/docs/tests/editor-ux-v5.cjs
+// Run: node story-card-studio/docs/tests/editor-ux-v5.1.cjs
 "use strict";
 function run(html){
  const passed=[];const check=(ok,label)=>{if(!ok)throw Error("FAIL: "+label);passed.push(label)};
@@ -10,14 +10,41 @@ function run(html){
  for(const label of [
  "Upload JSON to Studio","Download JSON for AID",
  "↓ Add JSON for First Set","↓ Add JSON for Second Set",
- "↓ Add Cards from Editor","→ Send to Editor Tab"
+ "← Add Cards from Editor","→ Send to Editor Tab"
  ])check(html.includes(label),"Button label: "+label);
  check(html.includes("id=\"cardsPage\""),"Editor tab present");
  check(html.includes('class="library-controls"'),"Fixed controls wrapper exists");
  check(html.includes('class="library-scroll"><div id="board"></div></div>'),"Card list scrolls independently");
- check(html.includes('#cardsPage .library-scroll{flex:1 1 auto;min-height:0;min-width:0;overflow-y:auto;'),"Desktop vertical scrolling");
+ check(html.includes('#cardsPage .library-scroll{position:relative;z-index:0;flex:1 1 auto;min-height:0;min-width:0;overflow-y:auto;'),"Desktop vertical scrolling");
  check(html.includes('@media(max-width:930px)')&&html.includes('#cardsPage .library-scroll{overflow:visible;max-height:none'),"Mobile retains document scroll");
- const validateSource=js.slice(js.indexOf('function validate()'),js.indexOf('function saveForAID()'));
+ check(html.includes('#cardsPage .library-controls{flex:0 0 auto;min-height:0;max-height:none;overflow:visible;position:relative;z-index:25;'),"Frozen controls have no overflow-scroll or 65% cap");
+ check(html.includes('#cardsPage .color-key-tooltip{z-index:1000}'),"Color Key tooltip is raised over card list");
+ check(html.includes('#cardsPage #colorKey .color-key-tooltip{left:0;right:auto;'),"Color Key tooltip uses mobile left alignment");
+ check(html.includes('id="mergeLeftFromEditor"')&&html.includes('id="mergeRightFromEditor"')&&html.split('>← Add Cards from Editor</button>').length===3,"Both Merge source arrow labels exact");
+
+ check(html.includes('id="editorExportDialog"')&&html.includes('id="editorExportForm"'),"Editor filename native dialog and form");
+ check(html.includes('id="editorExportFilename"')&&html.includes('id="editorExportCancel"')&&html.includes('id="editorExportConfirm"'),"Editor dialog input/cancel/download controls");
+ check(html.includes('id="mergeExportFilename"')&&html.includes('value="merged-story-cards-AID.json"'),"Merge inline filename input and default");
+ check(html.includes('<div class="actions" id="editorTopActions">')&&!html.includes('class="filename-export-group editor-filename-export"'),"Editor topbar retains compact original layout");
+ check(html.includes('class="editor-export-dialog"')&&html.includes('aria-labelledby="editorExportDialogTitle"'),"Accessible dialog markup");
+ check(js.includes("el('editorExportDialog').showModal()")&&js.includes("el('editorExportCancel').addEventListener('click'"),"Dialog opens and cancels");
+ check(js.includes("if(saveForAID(filename))el('editorExportDialog').close()"),"Dialog only closes following successful export");
+ check(js.includes("filename=normalizeDownloadFilename('mergeExportFilename',DEFAULT_MERGE_EXPORT_FILENAME)"),"Merged export uses filename field without changing payload");
+ const helperStart=js.indexOf("const DEFAULT_EDITOR_EXPORT_FILENAME=");
+ const helperEnd=js.indexOf("function validate(){",helperStart);
+ check(helperStart>0&&helperEnd>helperStart,"Filename normalization helpers are present");
+ const filenames={editorExportFilename:{value:'',dataset:{}},mergeExportFilename:{value:'',dataset:{}}};
+ const helpers=new Function('el','state',js.slice(helperStart,helperEnd)+';return {normalizeDownloadFilename,editorDefaultExportFilename,syncEditorExportDefault};')(
+   id=>filenames[id],{fileName:'my world'});
+ for(const [typed,expected] of [['My Adventure','My Adventure.json'],['  My Adventure.JSON  ','My Adventure.json'],['draft.txt','draft.txt.json'],['foo.json.json','foo.json.json'],['  ','my-world-AID.json']]){
+   filenames.editorExportFilename.value=typed;
+   check(helpers.normalizeDownloadFilename('editorExportFilename',helpers.editorDefaultExportFilename())===expected,'Editor filename '+JSON.stringify(typed));
+ }
+ filenames.mergeExportFilename.value=' ';
+ check(helpers.normalizeDownloadFilename('mergeExportFilename','merged-story-cards-AID.json')==='merged-story-cards-AID.json',"Merge blank fallback");
+
+
+ const validateSource=js.slice(js.indexOf('function validate()'),js.indexOf('function saveForAID('));
  const validateFor=cards=>new Function('state',validateSource+';return validate;')({cards})();
  check(validateFor([{keys:'',value:''}])===null,"Empty triggers and Entries can export");
  check(validateFor([{keys:'A',value:''}])===null,"Empty Entry can export");

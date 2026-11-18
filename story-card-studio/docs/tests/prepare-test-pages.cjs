@@ -1,16 +1,16 @@
 'use strict';
 // Build the public GitHub Pages test-pages preview without changing the live app.
-// The preview candidate is pinned to a reviewed development commit in the Pages workflow; fail closed on drift.
+// Live v5.1 is the checksum-verified source for the isolated test-pages copy; fail closed on drift.
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const assert = require('node:assert/strict');
 
-const verifiedSourceSHA = '6a44d86f0a9a7518ca19984cc95dc782e7ea710d824b8189ee87e3fb45e817b4';
-const expectedPreviewSHA = '1b80e6cc926b47cd04cd218db879b7bc41ebf75b9345663999355e78a1721a7d';
+const verifiedSourceSHA = 'a35fff7d3b51e491376d61ae3499cd2c9bbd6ba61f0b041017f2ffc85206b90c';
+const expectedPreviewSHA = '3b57ae6f6e788ea9770e8d4a4332546128694213bdc9a1ec394816b8aaba878f';
 const sha256 = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const repo = path.resolve(__dirname, '../../..');
-const source = path.resolve(process.argv[2] || path.join(repo, 'test-pages-source/story-card-studio/Story-Card-Studio-v5.1.html'));
+const source = path.resolve(process.argv[2] || path.join(repo, 'story-card-studio/Story-Card-Studio-v5.1.html'));
 const outputDir = path.resolve(process.argv[3] || path.join(repo, 'pages-site/test-pages'));
 const raw = fs.readFileSync(source);
 assert.equal(sha256(raw), verifiedSourceSHA, 'Candidate source changed without review; abort preview publication');

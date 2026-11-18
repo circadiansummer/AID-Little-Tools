@@ -36,6 +36,15 @@ The four RE/Inner Self/Auto-Cards tabs ending in `*` indicate that their corresp
 
 **Verification:** [v5.1 testing and acceptance](docs/V5.1-TESTING.md) documents 45 focused source checks, 95 editor/merge browser checks, 81 destructive-control browser checks, and the RE chart-count regression on the exact v5.1 HTML. v5.0 remains preserved in GitHub as historical.
 
+## Current November 2026 updates
+
+- **Story Card Editor exports:** Click **Download JSON for AID** in the original compact toolbar to open an in-window filename dialog. Edit the filename, choose Download JSON or Cancel, or use Enter/Escape. Whitespace-only names use the current project's default; `.json` is added automatically when omitted.
+- **Merge exports:** The center column has an inline **Export filename** field next to **↓ Download merged JSON**, defaulting to `merged-story-cards-AID.json`. This field persists while selecting/deselecting cards.
+- **Editor usability:** Desktop Story Card tiles scroll independently below a stationary, unscrollable heading/search/help area. The Color Key tooltip draws above the tiles and stays horizontally visible on narrow screens. Merge sources display **← Add Cards from Editor**.
+- **Data safety:** Filename controls do not change JSON payloads, validation, creator-authored properties, or existing confirmations.
+
+See [current v5.1 testing](docs/V5.1-TESTING.md) for source and browser evidence.
+
 ## Mode-specific demo cards
 
 - **RE Support OFF:** The established **7-card** fictional-town example, emphasizing ordinary characters, locations, faction, plot, and trigger references.
@@ -51,7 +60,7 @@ Editing uses browser-side code. Save important work with **Export JSON**; local 
 
 **Encounter chart-scale fix (2026-10-21):** Verified with 18 encounters plus 120 additional ordinary Story Cards at Chromium widths 1440, 768 and 390px; both card-count chart SVGs remained identical, and a peak of 12 encounters produced an axis maximum of 12 rather than 40. Inline JavaScript passed `node --check`. Other full-suite and physical-device checks remain separate, as described below.
 
-**Current v5.1 HTML SHA-256:** `8b7b1c110e30d83ed304fd99b8c7be0cbc7f105b2dc8370ebc3261ad4ad712a4`.
+**Current v5.1 HTML SHA-256:** `a35fff7d3b51e491376d61ae3499cd2c9bbd6ba61f0b041017f2ffc85206b90c`.
 
 ## GitHub Pages (v5.1, with legacy URL compatibility)
 
@@ -61,4 +70,4 @@ Editing uses browser-side code. Save important work with **Export JSON**; local 
 - **UX test preview:** https://circadiansummer.github.io/AID-Little-Tools/test-pages/ (public; availability depends on a successful Actions deployment)
 - **Deployment:** [GitHub Pages setup and testing guide](docs/GITHUB-PAGES.md).
 
-The GitHub Actions workflow publishes the checksum-verified current v5.1 HTML at **both** `Story-Card-Studio-v5.0.html` (long-lived compatibility address) and `Story-Card-Studio-v5.1.html` (versioned address). The **hosted** root redirect points to the long-lived v5.0 filename, without downgrading the application. The repository's source `index.html` still points to canonical v5.1, and the original `Story-Card-Studio-v5.0.html` source file remains byte-preserved. The Deck Builder remains available. The `/test-pages/` preview now uses a separately committed, checksum-pinned v5.1 development candidate (frozen header, overlay Color Key tooltip and left-arrow Merge labels). It retains distinct browser storage keys, so test autosaves cannot overwrite production autosaves. The production v5.1 HTML and long-lived v5.0 Pages compatibility URL remain unchanged. Historical v5.0/v4.12 builds are preserved in the repository, but are not copied to the Pages artifact. Site publication does not constitute a tagged GitHub Release, full iOS testing, or live AI Dungeon validation.
+The GitHub Actions workflow publishes the checksum-verified current v5.1 HTML at **both** `Story-Card-Studio-v5.0.html` (long-lived compatibility address) and `Story-Card-Studio-v5.1.html` (versioned address). The **hosted** root redirect points to the long-lived v5.0 filename, without downgrading the application. The repository's source `index.html` still points to canonical v5.1, and the original `Story-Card-Studio-v5.0.html` source file remains byte-preserved. The Deck Builder remains available. The `/test-pages/` preview now uses the exact same approved v5.1 code as production, with separate browser storage keys and a TEST PREVIEW browser-tab title. The long-lived v5.0 Pages compatibility URL remains valid; the original historical v5.0 source in GitHub is preserved. Historical v5.0/v4.12 builds are preserved in the repository, but are not copied to the Pages artifact. Site publication does not constitute a tagged GitHub Release, full iOS testing, or live AI Dungeon validation.

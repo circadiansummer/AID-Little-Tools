@@ -33,3 +33,9 @@
 - Public Pages URL `/Story-Card-Studio-v5.0.html` is a **permanent compatibility alias** for the current checksum-verified application. Do not remove or redirect it to a nonexistent page when publishing later versions. The Pages root should keep its stable legacy URL while the actual app's internal version reflects the newest approved source.
 - The repo's historical `story-card-studio/Story-Card-Studio-v5.0.html` file is **not** the Pages alias source: do not change those historical bytes. Copy the active canonical HTML into the Pages artifact under both the old and current public filenames, verify their checksums/byte equality, and keep the test-pages compatibility alias alongside it.
 - `story-card-studio/index.html` in GitHub can still point to the canonical versioned file; only the Pages-packaged redirect points to the stable legacy filename. Test full Pages builds before concluding old links remain functional.
+
+## Export filename behavior (approved November 18, 2026)
+
+- Preserve the compact Story Card Editor topbar; the existing **Download JSON for AID** button opens a native accessible filename dialog, with Cancel, Download, Enter and Escape support. Do not reintroduce a permanent Editor filename field in the topbar.
+- Keep Merge's editable **Export filename** input next to its existing export button in the center column. Both filename fields follow the handoff's `.json` normalization and fallbacks and remain independent of card re-renders.
+- Filename updates must not change the JSON serializer, selected-card ordering, creator fields, validation, duplicate warnings, browser storage contract, or the stable v5.0 Pages compatibility alias. Test both download filename and payload parity.

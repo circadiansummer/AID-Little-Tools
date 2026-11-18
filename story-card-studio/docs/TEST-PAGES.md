@@ -8,6 +8,19 @@
 **Workflow:** [story-card-studio-pages.yml](../../.github/workflows/story-card-studio-pages.yml)  
 **Current verification:** [V5.1-TESTING.md](V5.1-TESTING.md)
 
+## November 18, 2026 — Filename-export release synchronization
+
+**Status at preparation:** Awaiting successful GitHub Actions build/deployment of the approved filename-export update; see the newest Actions run for completion evidence.
+
+The `/test-pages/` root, v5.0 compatibility alias and direct v5.1 filename now package the **same approved code as production**, with only the test storage keys and TEST PREVIEW browser-tab title altered. The unmodified source is checksum-verified against the current v5.1 baseline.
+
+- **Canonical production/source SHA-256:** `a35fff7d3b51e491376d61ae3499cd2c9bbd6ba61f0b041017f2ffc85206b90c`.
+- **Isolated preview SHA-256:** `3b57ae6f6e788ea9770e8d4a4332546128694213bdc9a1ec394816b8aaba878f`.
+- **Editor filename behavior:** Native, top-layer filename prompt; compact toolbar; Cancel, Enter/Download and Escape work. Filename normalization adds `.json` automatically and the dialog never alters JSON fields.
+- **Merge filename behavior:** Inline input above Download merged JSON, preserving selections and editor/merge metadata.
+- **Acceptance evidence before deployment:** 110/110 Chromium assertions, 10/10 JSON parity comparisons, 64/64 focused source checks.
+- **Compatibility safeguard:** Both old `Story-Card-Studio-v5.0.html` and new `Story-Card-Studio-v5.1.html` URLs continue serving the approved current app without overwriting the historical v5.0 source in GitHub.
+
 ## November 5, 2026 — Frozen controls and Color Key preview candidate
 
 **Deployment verified (GitHub Actions): PASS.** [Run 41995693077](https://github.com/circadiansummer/AID-Little-Tools/actions/runs/41995693077) on commit [edb4611](https://github.com/circadiansummer/AID-Little-Tools/commit/edb46111e373a37881b3434bc630893b41d02720) completed both packaging and Pages deployment jobs successfully. The build logs verified the unchanged production HTML checksum, 45/45 production source tests, 49/49 pinned candidate source tests, the candidate source and isolated preview hashes, and both stable v5.0 and versioned v5.1 filenames under `/test-pages/`. Direct external HTTP browser verification of the hosted URL remains NOT RUN.
@@ -30,7 +43,7 @@ The Actions workflow checks out **main** for the production artifact and checks 
 
 ## Isolation and checksum gates
 
-The Pages workflow checks out **main**, verifies the production `Story-Card-Studio-v5.1.html` SHA-256 against [V5.1-BASELINE.md](V5.1-BASELINE.md), runs its 45-check suite and packages the verified root editor and Deck Builder. It separately checks out the pinned development candidate and runs its 49-check suite. The `test-pages/` copy derives from the **development candidate**, with these additional preview-only differences:
+The Pages workflow checks out **main**, verifies the production `Story-Card-Studio-v5.1.html` SHA-256 against [V5.1-BASELINE.md](V5.1-BASELINE.md), runs the current 64-check focused suite and packages the verified root editor and Deck Builder. The `test-pages/` copy derives from the **same approved source** and has these preview-only differences:
 
 - Production `STORAGE_KEY` becomes `story-card-studio-project-v1-test-pages`.
 - Production `UNDO_STORAGE_KEY` becomes `story-card-studio-deleted-card-v1-test-pages`; Find/Replace preset storage also derives from the isolated key.
@@ -38,9 +51,8 @@ The Pages workflow checks out **main**, verifies the production `Story-Card-Stud
 
 The script [prepare-test-pages.cjs](tests/prepare-test-pages.cjs) rejects unexpected changes via two checksums:
 
-- Production v5.1 canonical source SHA-256 (separate workflow gate): `8b7b1c110e30d83ed304fd99b8c7be0cbc7f105b2dc8370ebc3261ad4ad712a4`.
-- Development candidate source SHA-256: `6a44d86f0a9a7518ca19984cc95dc782e7ea710d824b8189ee87e3fb45e817b4`.
-- New development preview SHA-256: `1b80e6cc926b47cd04cd218db879b7bc41ebf75b9345663999355e78a1721a7d`.
+- Current approved v5.1 canonical source SHA-256: `a35fff7d3b51e491376d61ae3499cd2c9bbd6ba61f0b041017f2ffc85206b90c`.
+- Current isolated v5.1 preview SHA-256: `3b57ae6f6e788ea9770e8d4a4332546128694213bdc9a1ec394816b8aaba878f`.
 
 The preview now ships byte-identical copies under **both** `test-pages/Story-Card-Studio-v5.0.html` and `test-pages/Story-Card-Studio-v5.1.html`, while its index opens the older filename for incoming links. The live editor retains the existing v5.0 production browser storage key to preserve current workspaces on upgrade. `/test-pages/` does **not** share autosaved editor state with the root production app. This is a publicly reachable GitHub Pages site; do not embed private user data in HTML/source artifacts.
 

@@ -482,8 +482,8 @@ a:hover{color:#e1d7ff}
 
 /* v5.1 Editor UX release: fixed left-pane controls, independent card-list scroll. */
 #cardsPage .library{display:flex;flex-direction:column;min-height:0;overflow:hidden;padding:0}
-#cardsPage .library-controls{flex:0 0 auto;min-height:0;max-height:65%;overflow-y:auto;padding:24px 26px 0;scrollbar-color:#555464 transparent}
-#cardsPage .library-scroll{flex:1 1 auto;min-height:0;min-width:0;overflow-y:auto;overflow-x:hidden;padding:0 26px 72px;scrollbar-color:#555464 transparent}
+#cardsPage .library-controls{flex:0 0 auto;min-height:0;max-height:none;overflow:visible;position:relative;z-index:25;padding:24px 26px 0}
+#cardsPage .library-scroll{position:relative;z-index:0;flex:1 1 auto;min-height:0;min-width:0;overflow-y:auto;overflow-x:hidden;padding:0 26px 72px;scrollbar-color:#555464 transparent}
 #cardsPage .cat-collapse{flex:none;display:inline-flex;align-items:center;justify-content:center;border:1px solid #565b72;border-radius:6px;background:#303342;color:#d9dbef;width:27px;height:27px;padding:0;cursor:pointer;font-size:14px;line-height:1}
 #cardsPage .cat-collapse:hover,#cardsPage .cat-collapse:focus-visible{background:#45405f;border-color:#a794e8;outline-offset:2px}
 #cardsPage .category.is-collapsed .cat-header{border-bottom:0}
@@ -497,12 +497,35 @@ a:hover{color:#e1d7ff}
 .merge-group-toggle .merge-group-left{display:flex;align-items:center;gap:8px;min-width:0}
 .merge-group-toggle .merge-chevron{font-size:12px;color:#c4b2ef;min-width:12px}
 .merge-group-items[hidden]{display:none!important}
+/* Unscrollable editor controls overlay the independently scrolling board. */
+#cardsPage .color-key{z-index:30}
+#cardsPage .color-key-tooltip{z-index:1000}
+@media(max-width:600px){#cardsPage #colorKey .color-key-tooltip{left:0;right:auto;max-width:min(272px,calc(100vw - 28px))}#cardsPage #colorKey .color-key-tooltip::before{left:25px;right:auto}}
 /* Preserve pre-existing responsive document scrolling on narrower devices. */
 @media(max-width:930px){
   #cardsPage .library{display:block;overflow:visible;padding:0}
   #cardsPage .library-controls{max-height:none;overflow:visible;padding:15px 12px 0}
   #cardsPage .library-scroll{overflow:visible;max-height:none;padding:0 12px 68px}
 }
+
+/* Editable JSON download names, scoped to their existing export actions. */
+.filename-export-group{display:flex;flex-direction:column;gap:5px;min-width:0}
+.filename-export-group>label{display:block;color:#b2b6ca;font-size:11px;font-weight:650;line-height:1.3}
+.filename-export-group input{box-sizing:border-box;min-width:0;min-height:38px;width:100%;padding:8px 10px;border:1px solid #55596d;border-radius:8px;background:#171923;color:#f2f1f8;font:inherit;font-size:12px}
+.filename-export-group input:focus-visible{outline:2px solid #c5b4fa;outline-offset:2px}
+/* Editor export filename prompt: a native top-layer dialog, not a new header control. */
+.editor-export-dialog{box-sizing:border-box;border:1px solid #756791;border-radius:13px;background:#20232e;color:#f7f6ff;box-shadow:0 20px 65px #000b;padding:23px;width:min(425px,calc(100vw - 28px));max-height:calc(100dvh - 36px);overflow-y:auto}
+.editor-export-dialog::backdrop{background:#080a10c4}
+.editor-export-form{display:flex;flex-direction:column;gap:9px;min-width:0}
+.editor-export-form h2{font-size:20px;margin:0 0 3px}
+.editor-export-form>p{font-size:12px;line-height:1.5;color:#b8bdcd;margin:0 0 8px}
+.editor-export-form>label{font-size:12px;font-weight:650;color:#d4d1e8}
+.editor-export-form>input{box-sizing:border-box;width:100%;min-width:0;height:42px;min-height:42px;padding:9px 11px;background:#161925;color:#f5f3ff;border:1px solid #6d6488;border-radius:8px;font-size:15px}
+.editor-export-form>input:focus-visible{outline:2px solid #c5b4fa;outline-offset:2px}
+.editor-export-form .editor-export-hint{font-size:11px;margin:0 0 8px;color:#aeb3c6}
+.editor-export-dialog-actions{display:flex;justify-content:flex-end;gap:9px;flex-wrap:wrap}
+.editor-export-dialog-actions .btn{min-height:39px}
+@media(max-width:480px){.editor-export-dialog{padding:18px}.editor-export-dialog-actions .btn{flex:1 1 0}}
 </style>
 </head>
 <body>
@@ -517,6 +540,19 @@ a:hover{color:#e1d7ff}
   </div>
   </div>
 </header>
+<dialog id="editorExportDialog" class="editor-export-dialog" aria-labelledby="editorExportDialogTitle" aria-describedby="editorExportDialogDescription">
+  <form id="editorExportForm" class="editor-export-form">
+    <h2 id="editorExportDialogTitle">Download JSON for AID</h2>
+    <p id="editorExportDialogDescription">Choose a filename for your Story Card JSON. This won't change any cards or their data.</p>
+    <label for="editorExportFilename">Export filename</label>
+    <input id="editorExportFilename" type="text" value="story-cards-AID.json" autocomplete="off" spellcheck="false" aria-describedby="editorExportFilenameHint">
+    <p class="editor-export-hint" id="editorExportFilenameHint">A <code>.json</code> extension is added automatically.</p>
+    <div class="editor-export-dialog-actions">
+      <button type="button" class="btn" id="editorExportCancel">Cancel</button>
+      <button type="submit" class="btn primary" id="editorExportConfirm">Download JSON</button>
+    </div>
+  </form>
+</dialog>
 <nav class="mode-tabs" aria-label="Editor views">
   <button id="mergeTab" class="tab-button" type="button" aria-selected="false">🧬 - Merge JSONs</button>
   <button id="cardsTab" class="tab-button active" type="button" aria-selected="true">📝 - Story Card Editor</button>
@@ -617,16 +653,16 @@ a:hover{color:#e1d7ff}
   <div class="merge-intro"><div><h2 id="mergeHeading">Merge Story Card JSONs</h2><p>Upload two sets of Story Cards, then click individual cards to add or remove them from the merged file. Files remain separate from your Story Cards editor workspace. Cards and metadata are copied without alteration.</p></div><span class="count" id="mergeTotalCount">0 selected</span></div>
   <div class="merge-columns">
     <section class="merge-panel" aria-labelledby="mergeLeftHeading">
-      <div class="merge-panel-head"><h3 id="mergeLeftHeading">First Set of Story Cards</h3><p>Source A · Select cards to include</p><div class="merge-controls merge-source-controls"><div class="merge-control-row"><label for="mergeLeftFile" class="btn slim">↓ Add JSON for First Set</label><input id="mergeLeftFile" class="file-input" type="file" accept=".json,application/json"><button type="button" class="btn slim" id="mergeLeftFromEditor" title="Use the cards currently loaded in Story Card Editor as Source A">↓ Add Cards from Editor</button></div><div class="merge-control-row"><button type="button" class="btn slim" id="mergeLeftAll" disabled>Select all</button><button type="button" class="btn slim" id="mergeLeftNone" disabled>Deselect All</button><button type="button" class="btn slim" id="mergeLeftClear" disabled title="Remove all cards from this source set">Clear</button></div></div><div id="mergeLeftFilename" class="merge-filename">No file uploaded</div></div>
+      <div class="merge-panel-head"><h3 id="mergeLeftHeading">First Set of Story Cards</h3><p>Source A · Select cards to include</p><div class="merge-controls merge-source-controls"><div class="merge-control-row"><label for="mergeLeftFile" class="btn slim">↓ Add JSON for First Set</label><input id="mergeLeftFile" class="file-input" type="file" accept=".json,application/json"><button type="button" class="btn slim" id="mergeLeftFromEditor" title="Use the cards currently loaded in Story Card Editor as Source A">← Add Cards from Editor</button></div><div class="merge-control-row"><button type="button" class="btn slim" id="mergeLeftAll" disabled>Select all</button><button type="button" class="btn slim" id="mergeLeftNone" disabled>Deselect All</button><button type="button" class="btn slim" id="mergeLeftClear" disabled title="Remove all cards from this source set">Clear</button></div></div><div id="mergeLeftFilename" class="merge-filename">No file uploaded</div></div>
       <div id="mergeLeftList" class="merge-panel-body" aria-label="Cards in first file"><div class="merge-empty">Upload a Story Card JSON file to view its types and cards.</div></div><div id="mergeLeftFoot" class="merge-footnote">0 cards · 0 selected</div>
     </section>
     <section class="merge-panel center" aria-labelledby="mergeCenterHeading">
-      <div class="merge-panel-head"><h3 id="mergeCenterHeading">Merged Story Cards</h3><p>Selected cards from both sources · Click a card to remove it</p><div class="merge-controls"><button class="btn primary" type="button" id="mergeDownload" disabled>↓ Download merged JSON</button><button class="btn slim" type="button" id="mergeEditStudio" disabled title="Open the selected merged Story Cards in the Story Cards editor">→ Send to Editor Tab</button><button type="button" class="btn slim" id="mergeCenterClear" disabled title="Remove all selected cards from the merged column while keeping both source sets">Clear</button></div><div id="mergeCenterSummary" class="merge-filename">Choose cards on the left and right to build a new file.</div></div>
+      <div class="merge-panel-head"><h3 id="mergeCenterHeading">Merged Story Cards</h3><p>Selected cards from both sources · Click a card to remove it</p><div class="filename-export-group merge-filename-export"><label for="mergeExportFilename">Export filename</label><input id="mergeExportFilename" type="text" value="merged-story-cards-AID.json" autocomplete="off" spellcheck="false" aria-label="Merged Story Cards export filename"><button class="btn primary" type="button" id="mergeDownload" disabled>↓ Download merged JSON</button></div><div class="merge-controls"><button class="btn slim" type="button" id="mergeEditStudio" disabled title="Open the selected merged Story Cards in the Story Cards editor">→ Send to Editor Tab</button><button type="button" class="btn slim" id="mergeCenterClear" disabled title="Remove all selected cards from the merged column while keeping both source sets">Clear</button></div><div id="mergeCenterSummary" class="merge-filename">Choose cards on the left and right to build a new file.</div></div>
       <div id="mergeCenterWarning" class="merge-warning" hidden></div>
       <div id="mergeCenterList" class="merge-panel-body" aria-label="Selected cards in merged output"><div class="merge-empty">Your unified Story Card collection will appear here as you make selections.</div></div><div id="mergeCenterFoot" class="merge-footnote">0 selected · Preserves original JSON data</div>
     </section>
     <section class="merge-panel" aria-labelledby="mergeRightHeading">
-      <div class="merge-panel-head"><h3 id="mergeRightHeading">Second Set of Story Cards</h3><p>Source B · Select cards to include</p><div class="merge-controls merge-source-controls"><div class="merge-control-row"><label for="mergeRightFile" class="btn slim">↓ Add JSON for Second Set</label><input id="mergeRightFile" class="file-input" type="file" accept=".json,application/json"><button type="button" class="btn slim" id="mergeRightFromEditor" title="Use the cards currently loaded in Story Card Editor as Source B">↓ Add Cards from Editor</button></div><div class="merge-control-row"><button type="button" class="btn slim" id="mergeRightAll" disabled>Select all</button><button type="button" class="btn slim" id="mergeRightNone" disabled>Deselect All</button><button type="button" class="btn slim" id="mergeRightClear" disabled title="Remove all cards from this source set">Clear</button></div></div><div id="mergeRightFilename" class="merge-filename">No file uploaded</div></div>
+      <div class="merge-panel-head"><h3 id="mergeRightHeading">Second Set of Story Cards</h3><p>Source B · Select cards to include</p><div class="merge-controls merge-source-controls"><div class="merge-control-row"><label for="mergeRightFile" class="btn slim">↓ Add JSON for Second Set</label><input id="mergeRightFile" class="file-input" type="file" accept=".json,application/json"><button type="button" class="btn slim" id="mergeRightFromEditor" title="Use the cards currently loaded in Story Card Editor as Source B">← Add Cards from Editor</button></div><div class="merge-control-row"><button type="button" class="btn slim" id="mergeRightAll" disabled>Select all</button><button type="button" class="btn slim" id="mergeRightNone" disabled>Deselect All</button><button type="button" class="btn slim" id="mergeRightClear" disabled title="Remove all cards from this source set">Clear</button></div></div><div id="mergeRightFilename" class="merge-filename">No file uploaded</div></div>
       <div id="mergeRightList" class="merge-panel-body" aria-label="Cards in second file"><div class="merge-empty">Upload a second Story Card JSON file and select the cards you want.</div></div><div id="mergeRightFoot" class="merge-footnote">0 cards · 0 selected</div>
     </section>
   </div>
@@ -731,7 +767,7 @@ function undoLastDelete(){
 function hideCardDetails(){state.selected=null;renderAll();}
 const serializeProject=()=>({format:'story-card-studio-project/v1',cards:state.cards.map(clean),categories:Array.from(state.categories),fileName:state.fileName});
 function notify(msg){const t=el('toast');t.textContent=msg;t.classList.add('show');clearTimeout(notify.t);notify.t=setTimeout(()=>t.classList.remove('show'),4200)}
-function load(input, filename='story-cards',fromStorage=false){let data=input;let cats=[];if(!Array.isArray(data)){if(data&&data.format==='story-card-studio-project/v1'&&Array.isArray(data.cards)){cats=Array.isArray(data.categories)?data.categories:[];filename=data.fileName||filename;data=data.cards}else throw new Error('Expected an AI Dungeon array of Story Cards or a Story Card Studio project.')}if(data.length>5000)throw new Error('AI Dungeon allows at most 5,000 Story Cards.');const parsed=data.map(normalize);if(!fromStorage)clearDeletedUndo();state.cards=parsed;state.bulkSelected.clear();state.bulkMenuOpen=false;state.categories=new Set(cats.filter(v=>typeof v==='string'&&v.trim()));state.selected=parsed[0]?._uid||null;state.fileName=filename.replace(/\.json$/i,'');state.dirty=false;el('saveStatus').textContent=fromStorage?'Restored local workspace':'Loaded '+parsed.length+' cards';renderAll();if(!fromStorage)dirty();}
+function load(input, filename='story-cards',fromStorage=false){let data=input;let cats=[];if(!Array.isArray(data)){if(data&&data.format==='story-card-studio-project/v1'&&Array.isArray(data.cards)){cats=Array.isArray(data.categories)?data.categories:[];filename=data.fileName||filename;data=data.cards}else throw new Error('Expected an AI Dungeon array of Story Cards or a Story Card Studio project.')}if(data.length>5000)throw new Error('AI Dungeon allows at most 5,000 Story Cards.');const parsed=data.map(normalize);if(!fromStorage)clearDeletedUndo();state.cards=parsed;state.bulkSelected.clear();state.bulkMenuOpen=false;state.categories=new Set(cats.filter(v=>typeof v==='string'&&v.trim()));state.selected=parsed[0]?._uid||null;state.fileName=filename.replace(/\.json$/i,'');syncEditorExportDefault();state.dirty=false;el('saveStatus').textContent=fromStorage?'Restored local workspace':'Loaded '+parsed.length+' cards';renderAll();if(!fromStorage)dirty();}
 const defaultNotes=n=>`============== ENCOUNTER STATE ==============\n- Status: Available\n- Encounter Number: ${n}\n\n============ ENCOUNTER SETTINGS ============\n--------- PROGRESSION ---------\n- Act: 1\n- Importance: Required\n---------- BEHAVIOR ----------\n- Rarity: Common\n- Duration: Default\n- Bypass Situational Awareness: false`;
 function newCard(cat){let num=1;while(state.cards.some(c=>reNumber(c)===num))num++;const a=catAct(cat);const re=state.reEnabled&&a!==null;const c=normalize({keys:re?`RAND_${String(num).padStart(2,'0')}`:'',value:'',title:re?`${String(num).padStart(2,'0')} - Encounter Card`:'New Story Card',type:re?actCat(a):cat||'Character',description:re?setMeta(defaultNotes(num),'Act',a,'progression'):'',useForCharacterCreation:false});state.cards.push(c);state.selected=c._uid;dirty();renderAll();notify('Card created. Select fields on the right to edit.');}
 function moveCard(c,cat){const a=catAct(cat);if(state.reEnabled&&isRE(c)){if(a===null){notify('Random Encounter types are controlled by Notes → Act. Move this card to another Act instead.');return}c.description=setMeta(c.description,'Act',a,'progression');c.type=actCat(a)}else{if(state.reEnabled&&a!==null){notify('An Act type requires a RAND_## trigger key. Assign a unique RAND key first.');return}c.type=cat}dirty();renderAll();notify('Moved “'+name(c)+'” to '+catFor(c))}
@@ -982,8 +1018,19 @@ function setField(field,value){
  if(state.tab==='analysis'){renderAnalysisRail();if(field==='description'||field==='keys')renderAnalysis()}
 }
 function exportFile(obj,file){const blob=new Blob([JSON.stringify(obj,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=file;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);state.dirty=false;el('saveStatus').textContent='Downloaded '+file;}
+const DEFAULT_EDITOR_EXPORT_FILENAME='story-cards-AID.json';
+const DEFAULT_MERGE_EXPORT_FILENAME='merged-story-cards-AID.json';
+function normalizeDownloadFilename(inputId,fallback){
+ const entered=String(el(inputId)?.value??'').trim();
+ return (entered||fallback).replace(/\.json$/i,'')+'.json';
+}
+function editorDefaultExportFilename(){return (state.fileName||'story-cards').replace(/[^a-z0-9_-]+/gi,'-')+'-AID.json'}
+function syncEditorExportDefault(){
+ const field=el('editorExportFilename');
+ if(field&&!field.dataset.customized){const proposed=editorDefaultExportFilename();field.value=proposed;field.dataset.defaultFilename=proposed;}
+}
 function validate(){if(state.cards.length>5000)return 'AI Dungeon supports a maximum of 5,000 cards.';return null}
-function saveForAID(){const error=validate();if(error){notify(error);return}const current=currentAct();const out=state.cards.map(c=>{const x=clean(c);if(state.reEnabled&&isRE(c))x.type=`#RE - Act ${actOf(c)} Encounters  ${actOf(c)<=current?'📜':'🔒'}`;return x});const exacts=new Set(),duplicates=[];for(const c of out){if(!String(c.keys??'').trim()||!String(c.value??'').trim())continue;const pair=JSON.stringify([c.keys,c.value]);if(exacts.has(pair))duplicates.push(name(c));exacts.add(pair)}if(duplicates.length&&!confirm(`${duplicates.length} exact duplicate card(s) may be deduplicated by AI Dungeon. Continue exporting?`))return;exportFile(out,(state.fileName||'story-cards').replace(/[^a-z0-9_-]+/gi,'-')+'-AID.json');notify('Exported '+out.length+' Story Cards as an AI Dungeon JSON array.');}
+function saveForAID(filename){const error=validate();if(error){notify(error);return false}const current=currentAct();const out=state.cards.map(c=>{const x=clean(c);if(state.reEnabled&&isRE(c))x.type=`#RE - Act ${actOf(c)} Encounters  ${actOf(c)<=current?'📜':'🔒'}`;return x});const exacts=new Set(),duplicates=[];for(const c of out){if(!String(c.keys??'').trim()||!String(c.value??'').trim())continue;const pair=JSON.stringify([c.keys,c.value]);if(exacts.has(pair))duplicates.push(name(c));exacts.add(pair)}if(duplicates.length&&!confirm(`${duplicates.length} exact duplicate card(s) may be deduplicated by AI Dungeon. Continue exporting?`))return false;exportFile(out,filename||editorDefaultExportFilename());notify('Exported '+out.length+' Story Cards as an AI Dungeon JSON array.');return true;}
 function importFile(f){if(state.dirty&&state.cards.length&&!confirm('Importing a file will replace the current editor workspace. Export a backup first if needed. Continue?')){el('fileUpload').value='';return}const fr=new FileReader();fr.onload=()=>{try{load(JSON.parse(fr.result),f.name);notify('Imported '+state.cards.length+' Story Cards.')}catch(e){notify('Import failed: '+e.message)}el('fileUpload').value=''};fr.onerror=()=>notify('Unable to read that file.');fr.readAsText(f)}
 function demo(){if(state.cards.length&&!confirm('Replace the current workspace with example cards?'))return;
  const world=[
@@ -1653,7 +1700,7 @@ function importEditorToMerge(side){
 function downloadMerged(){const chosen=mergeChosen();if(!chosen.length){notify('Select at least one Story Card from either file.');return}if(chosen.length>5000){notify('The merged file would exceed 5,000 Story Cards.');return}
  const bad=chosen.filter(({card})=>typeof card.keys!=='string'||typeof card.value!=='string');if(bad.length){notify(`${bad.length} selected record(s) are missing string keys or value fields. They cannot be exported as valid AI Dungeon Story Cards.`);return}
  const conflicts=mergeConflicts(chosen);if((conflicts.sameKeys||(state.reEnabled&&conflicts.randCollisions))&& !confirm(`Potential trigger conflicts: ${conflicts.sameKeys} repeated key set(s)${state.reEnabled?', '+conflicts.randCollisions+' repeated RAND identifier(s)':''}. Cards will still be exported separately and unchanged. Download anyway?`))return;
- const cards=chosen.map(({card})=>completeAIDFields(JSON.parse(JSON.stringify(card)))),filename='merged-story-cards-AID.json';const blob=new Blob([JSON.stringify(cards,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=filename;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);notify(`Downloaded ${cards.length} selected Story Cards without changing either source.`)}
+ const cards=chosen.map(({card})=>completeAIDFields(JSON.parse(JSON.stringify(card)))),filename=normalizeDownloadFilename('mergeExportFilename',DEFAULT_MERGE_EXPORT_FILENAME);const blob=new Blob([JSON.stringify(cards,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=filename;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);notify(`Downloaded ${cards.length} selected Story Cards without changing either source.`)}
 // Transfer the exact current merged selection through the standard Story Card import path.
 // This replaces only the editor workspace; both merge sources and the selection stay intact.
 function editMergedInStudio(){
@@ -1958,7 +2005,21 @@ document.querySelector('#editorTopActions label[for="fileUpload"]').addEventList
  if(state.tab==='merge')changeTab('cards');
 });
 el('fileUpload').addEventListener('change',e=>{if(e.target.files[0])importFile(e.target.files[0])});
-el('exportBtn').addEventListener('click',()=>{if(state.tab==='merge')changeTab('cards');saveForAID()});
+el('editorExportFilename').addEventListener('input',()=>{el('editorExportFilename').dataset.customized='true'});
+el('exportBtn').addEventListener('click',()=>{
+ if(state.tab==='merge')changeTab('cards');
+ syncEditorExportDefault();
+ const field=el('editorExportFilename');
+ el('editorExportDialog').showModal();
+ field.focus();
+ field.setSelectionRange(0,field.value.replace(/\.json$/i,'').length);
+});
+el('editorExportCancel').addEventListener('click',()=>el('editorExportDialog').close());
+el('editorExportForm').addEventListener('submit',event=>{
+ event.preventDefault();
+ const filename=normalizeDownloadFilename('editorExportFilename',editorDefaultExportFilename());
+ if(saveForAID(filename))el('editorExportDialog').close();
+});
 el('newCardBtn').addEventListener('click',()=>newCard('Character'));
 el('newCategoryBtn').addEventListener('click',()=>{const value=prompt('New type name (custom Type):');if(value===null)return;const cat=value.trim();if(!cat){notify('Please enter a type name.');return}if(catAct(cat)!==null){notify('Use an existing Act type, or add an encounter card to create a new Act.');return}state.categories.add(cat);dirty();renderAll();notify('Type added. Empty types are kept in the local workspace, not AI Dungeon JSON exports.');});
 el('newActBtn').addEventListener('click',()=>{const value=prompt('New Random Encounters Act number (positive whole number):');if(value===null)return;const n=Number(value);if(!Number.isInteger(n)||n<1||n>999){notify('Enter a valid Act between 1 and 999.');return}state.categories.add(actCat(n));dirty();renderAll();notify('Act '+n+' added. Drag RAND cards here, or click + Add.');});
