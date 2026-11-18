@@ -10,7 +10,7 @@
 
 ## November 18, 2026 — Filename-export release synchronization
 
-**Status at preparation:** Awaiting successful GitHub Actions build/deployment of the approved filename-export update; see the newest Actions run for completion evidence.
+**DEPLOYED — GitHub Pages PASS:** [Workflow run 44370757567](https://github.com/circadiansummer/AID-Little-Tools/actions/runs/44370757567) for production commit [fbcdda0](https://github.com/circadiansummer/AID-Little-Tools/commit/fbcdda0d6cef481ac16674e04de82af770946168) completed both packaging and deployment successfully on November 18, 2026. Logs confirm the canonical production SHA-256, both v5.0/v5.1 production aliases with identical content, 64/64 focused source checks, the isolated preview SHA-256, both test-pages aliases, and the Pages environment URL. Independent physical Safari and direct end-user HTTPS browser acceptance remain NOT RUN.
 
 The `/test-pages/` root, v5.0 compatibility alias and direct v5.1 filename now package the **same approved code as production**, with only the test storage keys and TEST PREVIEW browser-tab title altered. The unmodified source is checksum-verified against the current v5.1 baseline.
 
