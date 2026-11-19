@@ -84,7 +84,7 @@
     while (Date.now() < deadline) { const result = fn(); if (result) return result; await wait(80); }
     return null;
   }
-  const VERSION = '0.1.7';
+  const VERSION = '0.1.8';
   const launcher = document.createElement('div'); launcher.id = 'aid-mb-launcher'; launcher.dataset.version = VERSION;
   const open = document.createElement('button'); open.type = 'button'; open.textContent = '◈ Memories'; open.setAttribute('aria-label', 'Open AI Dungeon memories');
   const message = document.createElement('div'); message.setAttribute('role', 'status');
@@ -104,6 +104,30 @@
   dismiss.addEventListener('click', () => showMessage(''));
   let route = location.pathname;
   let session = null;
+  function positionLauncher() {
+    const narrow = window.innerWidth <= 640;
+    const viewport = window.visualViewport;
+    const viewportBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
+    const keyboardOpen = window.innerHeight - viewportBottom > 150 && document.activeElement?.matches('input, textarea, [contenteditable="true"]');
+    const dialogOpen = [...document.querySelectorAll('[role="dialog"]')].some(visible);
+    launcher.hidden = !/^\/adventure\/[^/]+(?:\/|$)/.test(location.pathname) || dialogOpen || !!keyboardOpen;
+    if (!narrow) { launcher.style.removeProperty('--aid-mb-bottom'); return; }
+    let bottom = Math.max(12, window.innerHeight - viewportBottom + 12);
+    // Lift the shortcut above AID's native action bar/composer, not over it.
+    for (const el of document.querySelectorAll('[aria-label="Command bar"], #game-text-input')) {
+      if (!visible(el)) continue;
+      const rect = el.getBoundingClientRect();
+      if (rect.top > viewportBottom * .4 && rect.top < viewportBottom && rect.bottom > 0) bottom = Math.max(bottom, window.innerHeight - rect.top + 12);
+    }
+    const maxBottom = Math.max(12, window.innerHeight - (viewport?.offsetTop || 0) - launcher.getBoundingClientRect().height - 12);
+    launcher.style.setProperty('--aid-mb-bottom', `${Math.min(bottom, maxBottom)}px`);
+  }
+  window.addEventListener('resize', positionLauncher);
+  window.addEventListener('scroll', positionLauncher, {passive: true});
+  window.visualViewport?.addEventListener('resize', positionLauncher);
+  window.visualViewport?.addEventListener('scroll', positionLauncher);
+  document.addEventListener('focusin', positionLauncher);
+  document.addEventListener('focusout', () => setTimeout(positionLauncher, 0));
   async function openMemories() {
     if (memoryRoot()) { sync(); session?.input.focus(); return; }
     open.disabled = true; showMessage('Opening memories…', false);
@@ -276,8 +300,8 @@
     s.paint = paint; paint(); return s;
   }
   function sync() {
-    const adventure = /^\/adventure\/[^/]+\//.test(location.pathname);
-    launcher.hidden = !adventure;
+    const adventure = /^\/adventure\/[^/]+(?:\/|$)/.test(location.pathname);
+    positionLauncher();
     if (route !== location.pathname) { route = location.pathname; showMessage(''); if (session) { session.destroy(); session = null; } }
     const root = adventure && memoryRoot();
     if (session && (session.root !== root || !session.tools.isConnected)) { session.destroy(); session = null; }

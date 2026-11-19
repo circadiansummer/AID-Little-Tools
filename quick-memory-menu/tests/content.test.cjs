@@ -100,7 +100,7 @@ test('supplied live context markup: finds the icon-bearing Explore Memories butt
   let clicks = 0; explore.onclick = () => { clicks++; d.querySelector('[role="dialog"]').remove(); d.body.insertAdjacentHTML('beforeend',memories); };
   d.querySelector('#aid-mb-launcher button').click(); await pause(300);
   assert.equal(clicks, 1); assert.ok(d.querySelector('.aid-mb-tools'));
-  assert.equal(d.querySelector('#aid-mb-launcher').dataset.version, '0.1.7');
+  assert.equal(d.querySelector('#aid-mb-launcher').dataset.version, '0.1.8');
   assert.equal(d.querySelector('#aid-mb-launcher button').textContent, '◈ Memories');
 });
 test('supplied response structure: clicks the latest AI prose and traverses the real context markup', async t => {

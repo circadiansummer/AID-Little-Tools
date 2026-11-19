@@ -1,5 +1,6 @@
 #aid-mb-launcher, .aid-mb-tools { color-scheme: dark; font: 14px/1.4 system-ui, sans-serif; }
 #aid-mb-launcher { position: fixed; bottom: max(20px, env(safe-area-inset-bottom)); left: max(20px, env(safe-area-inset-left)); z-index: 2147483646; display: grid; gap: 8px; max-width: min(350px, calc(100vw - 40px)); }
+#aid-mb-launcher[hidden] { display: none; }
 #aid-mb-launcher button, .aid-mb-tools button { border: 1px solid #686071; border-radius: 8px; padding: 8px 12px; background: #30243e; color: #fff; cursor: pointer; font: inherit; }
 #aid-mb-launcher button { justify-self: start; box-shadow: 0 3px 15px #0006; }
 #aid-mb-launcher button:hover, .aid-mb-tools button:hover { background: #49305e; }
@@ -16,3 +17,11 @@
 .aid-mb-tools :focus-visible, #aid-mb-launcher :focus-visible { outline: 3px solid #e2bcff; outline-offset: 2px; }
 .aid-mb-match { outline: 1px solid #bca143 !important; outline-offset: -2px; }
 .aid-mb-current { outline: 3px solid #ffc857 !important; outline-offset: -3px; background-color: #67501e !important; scroll-margin: 110px 0 20px; }
+@media (max-width: 640px) {
+  #aid-mb-launcher { bottom: max(var(--aid-mb-bottom, 12px), env(safe-area-inset-bottom)); left: max(12px, env(safe-area-inset-left)); max-width: min(350px, calc(100vw - 24px - env(safe-area-inset-left) - env(safe-area-inset-right))); }
+  #aid-mb-launcher > button, .aid-mb-tools button { min-height: 44px; }
+  #aid-mb-launcher .aid-mb-notice { max-height: 28dvh; overflow-y: auto; }
+  .aid-mb-controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .aid-mb-tools input { grid-column: 1 / -1; width: 100%; box-sizing: border-box; min-width: 0; min-height: 44px; font-size: 16px; }
+  .aid-mb-tools button { padding: 8px 4px; }
+}
